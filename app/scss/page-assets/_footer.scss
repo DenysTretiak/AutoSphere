@@ -470,6 +470,9 @@
 -------------------------------------------------------------------*/
 .f-promo-box{
 	padding: 65px 0 0;
+	.divider{
+		padding: 40px 0;
+	}
 	&.light{
 		.f-widget-item{
 			.widget-icon,

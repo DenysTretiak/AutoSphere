@@ -181,7 +181,7 @@ $media-expressions: (
 -------------------------------------------------------------------*/
 #wrapper {
 	@extend %boxreset;
-	font-family: $source-sans-pro;
+	font-family: 'Montserrat';
 }
 img{
 	display: block;
@@ -252,6 +252,9 @@ a{
 /************************ My styles ********************/ 
 .body{
 	font-family: "Montserrat";
+	h1, h2, h3, h4, h5, h6{
+		font-family: "Montserrat";
+	}
 }
 .mt-blog{
 	background: #f2f2f2;
@@ -262,7 +265,7 @@ a{
 		.mt-blog-item{
 			padding:5px;
 			background: #fff;
-			width:30%; 
+			width:32%; 
 			.caption{
 				padding:10px 0;
 				.date{
@@ -271,6 +274,7 @@ a{
 				}
 				.time{
 					padding:0 10px;
+					font-size: 12px;
 				}
 			}
 			.text{

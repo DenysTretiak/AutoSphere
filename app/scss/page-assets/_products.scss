@@ -267,7 +267,7 @@
 	}
 	.title{
 		display: block;
-		color: #747474;
+		color: rgb(1,1,1);
 		font: 600 14px/20px $source-sans-pro;
 	}
 	.price{
@@ -367,9 +367,10 @@
 	&.large{
 		width: 276px;
 		margin: 0 19px 35px 10px;
-		.box{margin: 0 0 9px;}
+		.box{margin:0}
 		.txt{
-			padding: 0 10px 25px 19px;
+			padding: 9px 10px 25px 19px;
+			background:#348be3;
 			.title{
 				margin: 0 0 9px;
 				font-size: 18px;
