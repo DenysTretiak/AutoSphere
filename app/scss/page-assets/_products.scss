@@ -90,13 +90,13 @@
 	.title{
 		display: block;
 		margin: 0 0 5px;
-		color: $color16;
+		color: $colorBlue;
 		text-transform: capitalize;
 		font: 600 14px/20px $source-sans-pro;
 		a{
-			color: $color16;
+			color: $colorBlue;
 			@include transition (all, 0.4s, linear);
-			&:hover{color: $color1;}
+			&:hover{color: $colorBlue;}
 		}
 	}
 	.price{
@@ -168,7 +168,7 @@
 				font-size: 14px;
 				margin: 0 -2px 0 10px;
 			}
-			&:hover{color: $color1;}
+			&:hover{color: $colorBlue;}
 		}
 		.icon-heart,
 		.icon-heart-empty{
@@ -258,7 +258,7 @@
 			text-decoration: none;
 			@include size(41px, 41px);
 			@include font-size(16px, 38px);
-			&:hover{color: $color1;}
+			&:hover{color: $colorBlue;}
 		}
 	}
 	.txt{
@@ -701,7 +701,7 @@
 		&:focus,
 		&:hover{
 			color: $white;
-			background: $color1;
+			background: $colorBlue;
 			&:before{color: $white;}
 		}
 	}
@@ -860,9 +860,9 @@
 		@include transition (all, 0.4s, linear);
 		&:focus,
 		&:hover{
-			color: $color1;
-			border-color: $color1;
-			&:before{color: $color1;}
+			color: $colorBlue;
+			border-color: $colorBlue;
+			&:before{color: $colorBlue;}
 		}
 	}
 	.slick-next:before{
@@ -995,7 +995,7 @@
 		a{
 			transition: all 0.25s linear;
 			color: $clr-23;
-			&:hover{ color: $clr-20;}
+			&:hover{ color: $colorBlue;}
 		}
 	}
 	.product-slider{margin: 0 0 30px;}
@@ -1068,7 +1068,7 @@
 		a{
 			transition: all 0.25s linear;
 			color: $clr-22;
-			&:hover{ color: $clr-20;}
+			&:hover{ color: $colorBlue;}
 		}
 	}
 	.rank-rating{
@@ -1188,7 +1188,7 @@
 			outline: none;
 			border-radius: 25px;
 			transition: all 0.25s linear;
-			background: $clr-20;
+			background: $colorBlue;
 			color: $white;
 			&:hover{background: $black;}
 		}
@@ -1504,7 +1504,7 @@
 		@include font(18px, 20px);
 		float: right;
 		margin: 81px 0 0;
-		color: $color1;
+		color: $colorBlue;
 		@include transition (all, 0.4s, linear);
 		&:hover{color: $clr-30;}
 	}
@@ -1710,6 +1710,7 @@
 	padding: 21px 0 19px;
 	.btn-box{
 		float: right;
+		position:relative;
 		> ul{
 			margin: 0;
 			float: left;
@@ -1727,9 +1728,15 @@
 					visibility: visible;
 				}
 				&:hover .drop-link{
-					color: $color1;
-					border-color: $color1;
+					color: $colorBlue;
+					border-color: $colorBlue;
 				}
+			}
+			.sort{
+				position:absolute;
+				top: -28px;
+				left: 23px;
+				font-size:12px;
 			}
 		}
 		.drop-link {
@@ -1741,8 +1748,8 @@
 			border: 1px solid #d8d8d8;
 			font: 14px/1 $source-sans-pro;
 			&:hover{
-				color: $color1;
-				border-color: $color1;
+				color: $colorBlue;
+				border-color: $colorBlue;
 			}
 		}
 		.mt-viewswitcher{
@@ -1754,8 +1761,8 @@
 			border-radius: 50%;
 			border: 1px solid #d8d8d8;
 			&:hover{
-				color: $color1;
-				border-color: $color1;
+				color: $colorBlue;
+				border-color: $colorBlue;
 			}
 		}
 		.drop{
@@ -1771,7 +1778,7 @@
 			a{
 				display: block;
 				padding: 10px 15px;
-				&:hover{color: $color1;}
+				&:hover{color: $colorBlue;}
 			}
 			li{border-bottom: 1px solid #d8d8d8;}
 		}
@@ -1785,7 +1792,7 @@
 		a{
 			color: #a5a5a5;
 			&:hover{
-				color: $color1;
+				color: $colorBlue;
 				text-decoration: none;
 			}
 		}
@@ -1828,10 +1835,23 @@
 			@include transition(all, ease, 0.5s);
 			&:hover{
 				color: $white;
-				background: $color1;
+				background: $colorBlue;
 				text-decoration: none;
 			}
 		}
+	}
+}
+.show-more{
+	text-align: center;
+	margin:50px 0 10px 0;
+	.show-more-btn{
+		display: inline-block;
+		padding: 10px 15px;
+		background: $colorBlue;
+		color: #fff;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: all 0.25s linear;
 	}
 }
 /*------------------------------------------------------------------
@@ -1873,14 +1893,14 @@
 	}
 	.title{
 		display: block;
-		color: $color16;
+		color: $colorBlue;
 		font-weight: 700;
 		margin: 0 0 15px;
 		@include font(18px, 20px);
 		a{
 			color: $clr-17;
 			transition: all 0.25s linear;
-			&:hover{ color: $clr-20; }
+			&:hover{ color: $colorBlue; }
 		}
 	}
 	.price{
@@ -1912,15 +1932,15 @@
 		a{
 			color: $clr-23;
 			&:hover{
-				color: $color1;
+				color: $colorBlue;
 				text-decoration: none;
 			}
 		}
 	}
 	.btn-cart{
 		@include font(14px, 16px);
-		color: $clr-23;
-		background: $clr-35;
+		color: #fff;
+		background: $colorBlue;
 		font-family: $font-family-base-1;
 		font-weight: 700;
 		width: 173px;
@@ -1934,7 +1954,7 @@
 		display: block;
 		transition: all 0.25s linear;
 		&:hover{
-			background: $clr-20;
+			background: #287acc;
 			color: $white;
 		}
 	}
@@ -1957,7 +1977,13 @@
 		a{
 			color: $clr-23;
 			transition: all 0.25s linear;
-			&:hover{ color: $clr-20; }
+			&:hover{ 
+				text-decoration: underline;
+				.fa{
+					text-decoration: none;
+					color:#d3293b;
+				} 
+			}
 		}
 	}
 }

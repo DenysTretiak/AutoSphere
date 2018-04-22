@@ -11,7 +11,7 @@
 .shop-widget{
 	margin: 0 0 38px;
 	&.filter-widget{
-		h2{margin: 0 0 35px;}
+		h2{margin: 0 0 15px;}
 		&.bg-grey{
 			background: $clr-35;
 			border: 1px solid #efefef;
@@ -20,11 +20,44 @@
 	}
 	h2{
 		@include font(22px, 24px);
-		text-transform: uppercase;
 		color: $clr-30;
 		font-family: $font-family-base-1;
 		font-weight: 700;
 		margin: 0 0 32px;
+	}
+	.active-filters-list{
+    	.active-filter{
+			padding:1px 11px;
+			background: #919191;
+			color:#fff;
+			border-radius:5px;
+			cursor:pointer;
+			transition: all 0.25s linear;
+			&:hover{
+				background: $colorBlue;
+			}
+			img{
+				display: inline-block;
+				margin-left: 8px;
+				width:9px
+			}
+		}
+	}
+	.reset{
+		text-align:right;
+		margin:25px 0;
+		.reset-btn{
+			display:inline-block;
+			padding:3px 13px;
+			background: #919191;
+			color:#fff;
+			border-radius:5px;
+			cursor:pointer;
+			transition: all 0.25s linear;
+			&:hover{
+				background: $colorBlue;
+			}
+		}
 	}
 	.sub-title{
 		@include font(14px, 16px);
@@ -105,11 +138,12 @@
 		@include font(14px, 16px);
 		background: $clr-30;
 		color: $white;
+		margin-top:15px;
 		font-weight: 400;
 		padding: 1px 7px 3px 10px;
 		border-radius: 3px;
 		transition: all 0.25s linear;
-		&:hover{ background: $clr-20;}
+		&:hover{ background: $colorBlue;}
 	}
 }
 /*------------------------------------------------------------------

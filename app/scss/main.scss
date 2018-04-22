@@ -198,7 +198,13 @@ a{
 /*------------------------------------------------------------------
 4. Main / #main
 -------------------------------------------------------------------*/
-#mt-main{overflow: hidden;}
+#mt-main{
+	overflow: hidden;
+	&.product-list-mt-main{
+	   padding: 15px 0 0 0;
+	   border-top:1px solid #ededed;
+	}
+}
 #back-top{
 	bottom: 0;
 	opacity: 0;
@@ -325,3 +331,55 @@ a{
 		}
 	}
 } 
+
+.product-list-breadcrumbs{
+	.breadcrumbs{
+		@include font(14px, 16px);
+		font-weight: 200;
+		overflow: hidden;
+		color: $clr-28;
+		ul{
+			overflow: hidden;
+			li{
+				margin: 0 10px 0 0;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			a{
+				transition: all 0.25s linear;
+				color: $clr-28;
+				&:hover{ color: $colorBlue;}
+			}
+			.fa{
+				margin: 0 0 0 5px;
+				font-size:5px;
+				color:$colorBlue;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+.product-list-header{
+	h3{
+		color:rgb(83,83,83);
+		font-weight: bold;
+	}
+}
+
+.links-product-list{
+	color:rgb(83,83,83);
+	ul{
+		-webkit-padding-start: 20px;
+		li{
+			margin-top:15px;
+			color:$colorBlue;
+			a{
+				color:rgb(83,83,83);
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+		}
+	}	
+}
