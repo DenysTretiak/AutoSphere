@@ -14,8 +14,7 @@ a:hover{
 #mt-header{
 	z-index: 4;
 	position: relative;
-	a:hover{text-decoration: none;}
-	.icon-heart{position: relative; top: 2px;}
+	.icon-heart{position: relative;}
 	.icon-magnifier{position: relative; top: 2px;}
 	&.style2{
 		.mt-logo{
@@ -506,7 +505,7 @@ a:hover{
 				margin: 0 46px 0 0;
 				font-family: "Montserrat";
 				font-weight:normal;
-				&:hover{color: $color1;}
+				&:hover{font-weight: bold;}
 				.fa{
 					font-size: 12px;
 					margin: 0 3px 0 0;
@@ -532,12 +531,6 @@ a:hover{
 				display: inline-block;
 				vertical-align: top;
 				margin-right:10px;
-			}
-			li{
-				float: right;
-				padding: 0 5px;
-				margin:0;
-				font-size:14px;
 			}
 		}
 		.mt-bottom-bar{
@@ -770,17 +763,18 @@ a:hover{
 		float: right;
 		list-style: none;
 		letter-spacing: 1px;
-		font: 700 11px/18px 'Monserrat';
+		font: 700 12px/18px 'Montserrat';
 		font-weight:normal;
 		li{
 			float: right;
+			font-family: 'Monserrat';
 			padding: 0 11px;
 			margin: 0 0 0 4px;
 			&:last-child{border: 0;}
 		}
 		a{
 			color: $color5;
-			&:hover{color: $color1;}
+			&:hover{text-decoration: underline;}
 		}
 	}
 }
@@ -840,8 +834,10 @@ a:hover{
 			> a{
 				color: $color3;
 				&:hover{
-					color: $color1;
-					text-decoration: none;
+					.icon-text{
+						text-decoration: underline;
+					}
+					
 				}
 			}
 			&.drop.open >a{
@@ -884,17 +880,31 @@ a:hover{
 			.mt-side-widget{padding: 52px 24px 45px 37px;}
 		}
 	}
+	.top-mt-icon-list{
+		float:left;
+		width:100%;
+		margin-left:3%;
+		li{
+			margin: -10px 15px 0 15%;
+		}
+		.icon-text{
+			color:rgb(83,83,83);
+			font-size:14px;
+			margin-left: 15px;
+			font-family: 'Montserrat';
+		}
+	}
 	.cart-opener{
 		display: block;
 		position: relative;
 		.num{
 			width: 22px;
-			right: -12px;
+			left:8px;
 			bottom: -2px;
 			height: 22px;
 			color: $white;
 			text-align: center;
-			background: $color2;
+			background: $colorBlue;
 			position: absolute;
 			border-radius: 50%;
 			border: 2px solid $white;
@@ -1054,7 +1064,7 @@ a:hover{
 				position: relative;
 				letter-spacing: 1px;
 				&:hover{
-					color: $color1;
+					color: $colorBlue;
 					text-decoration: none;
 				}
 			}

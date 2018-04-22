@@ -222,7 +222,12 @@
 			border-radius: 100%;
 			@include size(17px, 17px);
 			border: 2px solid #d2d2d2;
-			&.slick-active{border-color: #aeaeae;}
+			&:hover{
+				background:#333d6b;
+			}
+			&.slick-active{
+				border-color: #aeaeae;
+			}
 		}
 		button{display: none;}
 	}

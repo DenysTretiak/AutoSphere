@@ -61,12 +61,12 @@
 		}
 		&.add{margin: 0;}
 		&:hover{
-			color: $color1;
+			color: $colorBlue;
 			text-decoration: none;
 			span,
 			.fa{
-				color: $color1;
-				border-color: $color1;
+				color: $colorBlue;
+				border-color: $colorBlue;
 			}
 		}
 	}

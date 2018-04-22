@@ -165,11 +165,8 @@ a:hover {
 #mt-header {
   z-index: 4;
   position: relative; }
-  #mt-header a:hover {
-    text-decoration: none; }
   #mt-header .icon-heart {
-    position: relative;
-    top: 2px; }
+    position: relative; }
   #mt-header .icon-magnifier {
     position: relative;
     top: 2px; }
@@ -613,7 +610,7 @@ a:hover {
         font-family: "Montserrat";
         font-weight: normal; }
         #mt-header.style17 .mt-top-bar .tel:hover {
-          color: #ff6060; }
+          font-weight: bold; }
         #mt-header.style17 .mt-top-bar .tel .fa {
           font-size: 12px;
           margin: 0 3px 0 0; }
@@ -633,11 +630,6 @@ a:hover {
         display: inline-block;
         vertical-align: top;
         margin-right: 10px; }
-      #mt-header.style17 .mt-top-bar-2 li {
-        float: right;
-        padding: 0 5px;
-        margin: 0;
-        font-size: 14px; }
     #mt-header.style17 .mt-bottom-bar {
       padding: 26px 0 34px; }
       #mt-header.style17 .mt-bottom-bar .mt-logo {
@@ -843,10 +835,11 @@ a:hover {
     float: right;
     list-style: none;
     letter-spacing: 1px;
-    font: 700 11px/18px 'Monserrat';
+    font: 700 12px/18px 'Montserrat';
     font-weight: normal; }
     .mt-top-bar .mt-top-list2 li {
       float: right;
+      font-family: 'Monserrat';
       padding: 0 11px;
       margin: 0 0 0 4px; }
       .mt-top-bar .mt-top-list2 li:last-child {
@@ -854,7 +847,7 @@ a:hover {
     .mt-top-bar .mt-top-list2 a {
       color: #a1a1a1; }
       .mt-top-bar .mt-top-list2 a:hover {
-        color: #ff6060; }
+        text-decoration: underline; }
 
 /*------------------------------------------------------------------
 5. Mt Bottom Bar / .mt-bottom-bar
@@ -906,9 +899,8 @@ a:hover {
       vertical-align: middle; }
       .mt-bottom-bar .mt-icon-list li > a {
         color: #2f2f2f; }
-        .mt-bottom-bar .mt-icon-list li > a:hover {
-          color: #ff6060;
-          text-decoration: none; }
+        .mt-bottom-bar .mt-icon-list li > a:hover .icon-text {
+          text-decoration: underline; }
       .mt-bottom-bar .mt-icon-list li.drop.open > a {
         z-index: 5;
         color: #fff; }
@@ -948,17 +940,28 @@ a:hover {
         background: #fff; }
       .mt-bottom-bar .mt-icon-list .mt-drop .mt-side-widget {
         padding: 52px 24px 45px 37px; }
+  .mt-bottom-bar .top-mt-icon-list {
+    float: left;
+    width: 100%;
+    margin-left: 3%; }
+    .mt-bottom-bar .top-mt-icon-list li {
+      margin: -10px 15px 0 15%; }
+    .mt-bottom-bar .top-mt-icon-list .icon-text {
+      color: #535353;
+      font-size: 14px;
+      margin-left: 15px;
+      font-family: 'Montserrat'; }
   .mt-bottom-bar .cart-opener {
     display: block;
     position: relative; }
     .mt-bottom-bar .cart-opener .num {
       width: 22px;
-      right: -12px;
+      left: 8px;
       bottom: -2px;
       height: 22px;
       color: #fff;
       text-align: center;
-      background: #2e2e2e;
+      background: #338be3;
       position: absolute;
       border-radius: 50%;
       border: 2px solid #fff;
@@ -1114,7 +1117,7 @@ a:hover {
         position: relative;
         letter-spacing: 1px; }
         #nav > ul > li > a:hover {
-          color: #ff6060;
+          color: #338be3;
           text-decoration: none; }
       #nav > ul > li.drop {
         position: static;
@@ -2179,7 +2182,7 @@ a:hover {
       #mt-footer .nav-widget-1 .f-widget-nav li a {
         transition: all 0.25s linear; }
         #mt-footer .nav-widget-1 .f-widget-nav li a:hover {
-          color: #ff6060; }
+          font-weight: bold; }
 
 #mt-footer .f-widget-newsletter .holder {
   overflow: hidden; }
@@ -2631,6 +2634,8 @@ a:hover {
       width: 17px;
       height: 17px;
       border: 2px solid #d2d2d2; }
+      .mt-mainslider2 .slick-dots li:hover {
+        background: #333d6b; }
       .mt-mainslider2 .slick-dots li.slick-active {
         border-color: #aeaeae; }
     .mt-mainslider2 .slick-dots button {
@@ -3263,12 +3268,12 @@ a:hover {
     .banner-frame .btn-shop.add {
       margin: 0; }
     .banner-frame .btn-shop:hover {
-      color: #ff6060;
+      color: #338be3;
       text-decoration: none; }
       .banner-frame .btn-shop:hover span,
       .banner-frame .btn-shop:hover .fa {
-        color: #ff6060;
-        border-color: #ff6060; }
+        color: #338be3;
+        border-color: #338be3; }
   .banner-frame .discount {
     color: #fff;
     float: right;
@@ -4290,15 +4295,15 @@ a:hover {
     .mt-product2.large .box {
       margin: 0; }
     .mt-product2.large .txt {
-      padding: 9px 10px 25px 19px;
-      background: #348be3; }
+      padding: 9px 10px 25px 19px; }
       .mt-product2.large .txt .title {
         margin: 0 0 9px;
         font-size: 18px;
         line-height: 20px; }
       .mt-product2.large .txt .price .fa,
       .mt-product2.large .txt .price span {
-        font-size: 23px; }
+        font-size: 23px;
+        color: #338be3; }
   .mt-product2.bg-grey {
     background: #f5f5f5; }
 
@@ -4468,7 +4473,7 @@ a:hover {
           -o-transition: all 0.4s linear;
           transition: all 0.4s linear; }
           .mt-product4 .text .frame strong a:hover {
-            color: #ff6060; }
+            color: #338be3; }
     .mt-product4 .text .off {
       opacity: 0.6;
       color: #252528;
@@ -4832,7 +4837,7 @@ a:hover {
 31. Mt Productsc / .mt-productsc
 -------------------------------------------------------------------*/
 .mt-productsc {
-  padding: 40px 0 54px; }
+  padding: 100px 0 54px; }
   .mt-productsc .mt-heading {
     margin-bottom: 40px; }
   .mt-productsc.style2 {
@@ -4879,7 +4884,7 @@ a:hover {
       height: 6px;
       margin-top: 3px;
       border-radius: 5px;
-      background: #cdcdcd; }
+      background: #338be3; }
 
 /*------------------------------------------------------------------
 33. js tab hidden / .js-tab-hidden
@@ -8943,30 +8948,44 @@ a:hover, a:active, a:focus {
 .mt-blog {
   background: #f2f2f2;
   padding: 40px 5% 54px; }
+  .mt-blog h2 {
+    color: #3a3a3a;
+    font-weight: bold;
+    margin: 5px 0 40px 0; }
   .mt-blog .mt-blog-row {
     display: flex;
     justify-content: space-between; }
     .mt-blog .mt-blog-row .mt-blog-item {
       padding: 5px;
       background: #fff;
-      width: 32%; }
+      width: 32%;
+      border-bottom: 4px solid gray; }
       .mt-blog .mt-blog-row .mt-blog-item .caption {
-        padding: 10px 0; }
+        padding: 10px 0;
+        font-size: 12px; }
         .mt-blog .mt-blog-row .mt-blog-item .caption .date {
           border-right: 1px solid gray;
           padding: 0 10px; }
         .mt-blog .mt-blog-row .mt-blog-item .caption .time {
-          padding: 0 10px;
-          font-size: 12px; }
+          padding: 0 10px; }
       .mt-blog .mt-blog-row .mt-blog-item .text {
         padding: 0 10px; }
-        .mt-blog .mt-blog-row .mt-blog-item .text h3 {
+        .mt-blog .mt-blog-row .mt-blog-item .text h3 a {
           color: #3a3a3a; }
+      .mt-blog .mt-blog-row .mt-blog-item:hover {
+        border-color: #338be3; }
+        .mt-blog .mt-blog-row .mt-blog-item:hover .text h3 a:hover {
+          text-decoration: underline; }
   .mt-blog .link {
     text-align: right;
-    margin-top: 10px; }
+    margin-top: 40px; }
     .mt-blog .link .fa {
       border: 1px solid gray;
       font-size: 13px;
       padding: 1px 5px;
       border-radius: 50%; }
+    .mt-blog .link:hover a {
+      color: #338be3; }
+    .mt-blog .link:hover .fa {
+      color: #338be3;
+      border-color: #338be3; }

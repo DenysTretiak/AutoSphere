@@ -22,7 +22,7 @@ header#mt-header.style17
 							a(href='#') Войти
 					// mt-top-list end here
 	// mt top bar start here
-	.mt-top-bar.mt-top-bar-2
+	.mt-top-bar.mt-top-bar-2.mt-bottom-bar
 		.container-fluid
 			.row
 				.col-xs-12.col-sm-4
@@ -37,22 +37,25 @@ header#mt-header.style17
 							span.mt-phone +38(096)196-40-21
 					// mt-top-list start here
 					.col-xs-12.col-sm-6
-						ul.mt-top-list2.list-unstyled.social-network
-							li
-								a(href='#')
-									i.fa.fa-facebook
-							li
-								a(href='#')
-									i.fa.fa-google-plus
-							li
-								a(href='#')
-									i.fa.fa-youtube
-							li
-								a(href='#')
-									i.fa.fa-linkedin
-							li
-								a(href='#')
-									i.fa.fa-telegram
+						ul.mt-icon-list.top-mt-icon-list
+							li.hidden-lg.hidden-md
+								a.bar-opener.mobile-toggle(href='#')
+									span.bar
+									span.bar.small
+									span.bar
+							li.drop
+								a.icon-heart.cart-opener(href='#')
+									span.icon-text Избранное 	
+								// mt drop start here
+								include header/drop-cart.pug	
+							li.drop
+								a.cart-opener(href='#')
+									span.icon-handbag
+									span.num 3
+									span.icon-text Корзина
+								// mt drop start here
+								include header/drop-cart.pug		
+						// mt icon list end here
 	// mt top bar start here
 	// mt bottom bar start here
 	.mt-bottom-bar
@@ -69,124 +72,6 @@ header#mt-header.style17
 						li
 							input.mt-search(type='text', placeholder='поиск по товарам')
 							a.icon-magnifier(href='#')
-						li.drop
-							a.icon-heart.cart-opener(href='#')
-								span.num(style='margin-bottom: -3px;') 3
-							// mt drop start here
-							.mt-drop
-								// mt drop sub start here
-								.mt-drop-sub
-									// mt side widget start here
-									.mt-side-widget
-										// cart row start here
-										.cart-row
-											a.img(href='#')
-												img.img-responsive(src='http://placehold.it/75x75', alt='image')
-											.mt-h
-												span.mt-h-title
-													a(href='#') Marvelous Modern 3 Seater
-												span.price
-													i.fa.fa-eur(aria-hidden='true')
-													|  599,00
-											a.close.fa.fa-times(href='#')
-										// cart row end here
-										// cart row start here
-										.cart-row
-											a.img(href='#')
-												img.img-responsive(src='http://placehold.it/75x75', alt='image')
-											.mt-h
-												span.mt-h-title
-													a(href='#') Marvelous Modern 3 Seater
-												span.price
-													i.fa.fa-eur(aria-hidden='true')
-													|  599,00
-											a.close.fa.fa-times(href='#')
-										// cart row end here
-										// cart row start here
-										.cart-row
-											a.img(href='#')
-												img.img-responsive(src='http://placehold.it/75x75', alt='image')
-											.mt-h
-												span.mt-h-title
-													a(href='#') Marvelous Modern 3 Seater
-												span.price
-													i.fa.fa-eur(aria-hidden='true')
-													|  599,00
-											a.close.fa.fa-times(href='#')
-										// cart row end here
-										// cart row total start here
-										.cart-row-total
-											span.mt-total Add them all
-											span.mt-total-txt
-												a.btn-type2(href='#') add to CART
-										// cart row total end here
-									// mt side widget end here
-								// mt drop sub end here
-							// mt drop end here
-							span.mt-mdropover
-						li.drop
-							a.cart-opener(href='#')
-								span.icon-handbag
-								span.num 3
-							// mt drop start here
-							.mt-drop
-								// mt drop sub start here
-								.mt-drop-sub
-									// mt side widget start here
-									.mt-side-widget
-										// cart row start here
-										.cart-row
-											a.img(href='#')
-												img.img-responsive(src='http://placehold.it/75x75', alt='image')
-											.mt-h
-												span.mt-h-title
-													a(href='#') Marvelous Modern 3 Seater
-												span.price
-													i.fa.fa-eur(aria-hidden='true')
-													|  599,00
-												span.mt-h-title Qty: 1
-											a.close.fa.fa-times(href='#')
-										// cart row end here
-										// cart row start here
-										.cart-row
-											a.img(href='#')
-												img.img-responsive(src='http://placehold.it/75x75', alt='image')
-											.mt-h
-												span.mt-h-title
-													a(href='#') Marvelous Modern 3 Seater
-												span.price
-													i.fa.fa-eur(aria-hidden='true')
-													|  599,00
-												span.mt-h-title Qty: 1
-											a.close.fa.fa-times(href='#')
-										// cart row end here
-										// cart row start here
-										.cart-row
-											a.img(href='#')
-												img.img-responsive(src='http://placehold.it/75x75', alt='image')
-											.mt-h
-												span.mt-h-title
-													a(href='#') Marvelous Modern 3 Seater
-												span.price
-													i.fa.fa-eur(aria-hidden='true')
-													|  599,00
-												span.mt-h-title Qty: 1
-											a.close.fa.fa-times(href='#')
-										// cart row end here
-										// cart row total start here
-										.cart-row-total
-											span.mt-total Sub Total
-											span.mt-total-txt
-												i.fa.fa-eur(aria-hidden='true')
-												|  799,00
-										// cart row total end here
-										.cart-btn-row
-											a.btn-type2(href='#') VIEW CART
-											a.btn-type3(href='#') CHECKOUT
-									// mt side widget end here
-								// mt drop sub end here
-							// mt drop end here
-							span.mt-mdropover
 					// mt icon list end here
 					// navigation start here
 					nav#nav

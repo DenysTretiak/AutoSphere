@@ -259,40 +259,69 @@ a{
 .mt-blog{
 	background: #f2f2f2;
 	padding: 40px 5% 54px;
+	h2{
+		color:rgb(58,58,58);
+		font-weight: bold;
+		margin:5px 0 40px 0;
+	}
 	.mt-blog-row{
 		display: flex;
 		justify-content: space-between;
 		.mt-blog-item{
 			padding:5px;
 			background: #fff;
-			width:32%; 
+			width:32%;
+			border-bottom:4px solid gray;
 			.caption{
 				padding:10px 0;
+				font-size: 12px;
 				.date{
 					border-right:1px solid gray;
 					padding:0 10px;
 				}
 				.time{
 					padding:0 10px;
-					font-size: 12px;
 				}
 			}
 			.text{
 				padding: 0 10px;
 				h3{
-					color:rgb(58,58,58);
+					a{
+						color:rgb(58,58,58);
+					}
 				}
 			}
-		}
+			&:hover{
+				border-color:$colorBlue;
+					.text{
+						h3{
+						a{
+							&:hover{
+							 text-decoration: underline;
+							}
+						}
+			    	}  	
+				} 
+			}
+		}	
 	}
 	.link{
 		text-align: right;
-		margin-top:10px;
+		margin-top:40px;
 		.fa{
 			border: 1px solid gray;
 			font-size:13px;
 			padding:1px 5px;
 			border-radius: 50%;
+		}
+		&:hover{
+			a{
+				color:$colorBlue;
+			}
+			.fa{
+				color: $colorBlue;
+				border-color:$colorBlue;
+			}
 		}
 	}
 } 

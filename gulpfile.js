@@ -21,17 +21,16 @@ gulp.task('useref',['clean', 'pug', 'sass'], function (){
 
 gulp.task('img', function() {
   return gulp.src('app/images/**/*') // Берем все изображения из app
-  .pipe(cache(imagemin([
-    imagemin.gifsicle({interlaced: true}),
-    imagemin.jpegtran({progressive: true}),
-    imagemin.optipng({optimizationLevel: 5}),
-    imagemin.svgo({
-        plugins: [
-            {removeViewBox: true},
-            {cleanupIDs: false}
-        ]
-    })
-])))
+//   .pipe(cache(imagemin([
+//     imagemin.gifsicle({interlaced: true}),
+//     imagemin.jpegtran({progressive: true}),
+//     imagemin.svgo({
+//         plugins: [
+//             {removeViewBox: true},
+//             {cleanupIDs: false}
+//         ]
+//     })
+// ])))
       .pipe(gulp.dest('dist/images')); // Выгружаем на продакшен
 });
 
