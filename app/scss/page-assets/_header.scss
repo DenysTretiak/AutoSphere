@@ -687,7 +687,9 @@ a:hover{
 	background: $black;
 	padding: 12px 30px 4px 54px;
 	a{
-		color: $white;
+		color: black;
+		border-color:$colorBlue;
+		text-transform:none;
 		@extend %transition;
 		&:hover{color: $color1;}
 	}
@@ -767,7 +769,7 @@ a:hover{
 		font-weight:normal;
 		li{
 			float: right;
-			font-family: 'Monserrat';
+			font-family: 'Montserrat';
 			padding: 0 11px;
 			margin: 0 0 0 4px;
 			&:last-child{border: 0;}
@@ -846,7 +848,7 @@ a:hover{
 				&:after {
 					width: 0;
 					top: 83%;
-					left: 50%;
+					left: 12%;
 					height: 0;
 					content: " ";
 					margin-left: -13px;
@@ -870,7 +872,7 @@ a:hover{
 			z-index: 2;
 			opacity: 0;
 			width: 380px;
-			right: -49px;
+			right: -30px;
 			position: absolute;
 			visibility: hidden;
 			.mt-drop-sub{
@@ -1468,11 +1470,10 @@ a:hover{
 		&:hover{color: $color1;}
 	}
 	.cart-row{
-		overflow: hidden;
 		margin: 0 0 17px;
 		position: relative;
 		.close{
-			top: 10px;
+			top: 35px;
 			right: 15px;
 			color: $color1;
 			font-size: 14px;
@@ -1490,8 +1491,7 @@ a:hover{
 		}
 		.cart-btn-row{overflow: hidden;}
 		.mt-h{
-			overflow: hidden;
-			padding: 6px 0 0;
+			text-align:left;
 		}
 	}
 	.mt-h-title{
@@ -1519,20 +1519,47 @@ a:hover{
 			}
 		}
 	}
+	.count{
+		margin-top:5px;
+		span{
+			padding:5px 8px;
+			border:2px solid #f8f8f8;
+		}
+		.plus{
+			color: $colorBlue;
+			border-left:none;
+			cursor: pointer; 
+		}
+		.minus{
+			border-right:none;
+			cursor: pointer;
+		}
+	}
 	.cart-row-total{
 		color: #757575;
 		overflow: hidden;
 		margin: 0 0 20px;
-		padding: 16px 21px 0 10px;
+		padding: 16px 5px 0 5px;
 		border-top: 1px solid #eee;
 		font: 600 14px/26px $source-sans-pro;
+		.total{
+			padding-bottom:20px;
+			border-bottom:1px solid #eee;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
 	}
 	.mt-total{float: left;}
-	.mt-total-txt{
-		float: right;
-		color: #010101;
-		font: 600 15px/20px $source-sans-pro;
+	.buy-items{
+		margin-top:25px;
+		.mt-total-txt{
+			color: #010101;
+			background: #fff;
+			font: 600 15px/20px 'Montserrat';
+		}
 	}
+	
 	.cart-btn-row{
 		overflow: hidden;
 		padding: 22px 0 0;
@@ -1727,11 +1754,16 @@ a:hover{
 	border: 1px solid $black;
 	text-transform: uppercase;
 	font: 14px/20px $font-family-base-1;
-	&:focus,
-	&:hover{
-		color: $white;
-		background: $black;
-		border: 1px solid $black;
+	// &:focus,
+	// &:hover{
+	// 	color: $white;
+	// 	background: $black;
+	// 	border: 1px solid $black;
+	// }
+	&.order{
+		color:#fff;
+		margin-left:10px;
+		background: $colorBlue;
 	}
 }
 .btn-type3{

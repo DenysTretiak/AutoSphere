@@ -94,7 +94,7 @@
 		text-transform: capitalize;
 		font: 600 14px/20px $source-sans-pro;
 		a{
-			color: $colorBlue;
+			color: rgb(117,117,117);
 			@include transition (all, 0.4s, linear);
 			&:hover{color: $colorBlue;}
 		}
@@ -969,11 +969,10 @@
 .mt-product-detial{
 	overflow: hidden;
 	padding: 0 0 25px;
-	background: $clr-7;
 	.slider{
 		float: left;
-		width: 55.5%;
-		padding: 0 4.65% 0 0;
+		width: 35.5%;
+		padding: 50px 4.65% 0 0;
 	}
 	.comment-list{
 		margin: 0;
@@ -1042,10 +1041,65 @@
 		}
 	}
 	.detial-holder{
-		width: 40%;
+		width: 64%;
 		float: left;
-		padding: 50px 0;
+		margin: 50px 0 0 0;
+		padding: 25px;
 		position: relative;
+		border:1px solid $colorGray;
+		.in-stock{
+			color:rgb(150,191,114);
+			font-size:14px;
+			vertical-align: middle;
+			.fa{
+				margin:0 10px;
+				font-size:16px;
+			}
+		}
+		.table-bordered{
+			td{
+				vertical-align: middle;
+				padding:10px;
+				.btn{
+					border-color:$colorGray;
+					&.active{
+						border-color:$colorBlue;
+						color: $colorBlue;
+						box-shadow: none;
+					}
+					&:active{
+						box-shadow: none;
+					}
+				}
+				.delivery{
+					li{
+						list-style: none;
+						a{
+							text-decoration: underline;
+							.new-post{
+								color:$colorBlue;
+							}
+						}	
+					}
+				}
+				.count{
+					margin-top:5px;
+					span{
+						padding:5px 10px;
+						border:2px solid #f8f8f8;
+					}
+					.plus{
+						color: $colorBlue;
+						border-left:none;
+						cursor: pointer; 
+					}
+					.minus{
+						border-right:none;
+						cursor: pointer;
+					}
+				}
+			}
+		}
 	}
 	h2{
 		@include font(44px, 46px);
@@ -1234,11 +1288,55 @@
 	&.style1 h2{ padding: 0 0 0 20px;}
 	h2{
 		@include font(18px, 20px);
-		text-transform: uppercase;
 		font-family: $font-family-base-1;
 		font-weight: 400;
 		margin: 0 0 25px;
 		color: $black;
+		span{
+			color:#fff;
+			background: $colorBlue;
+			padding: 3px 11px;
+			border-radius:50%;
+			margin-right:5px;
+		}
+	}
+	.is-registered{
+		width:80%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 15px; 
+		a{
+			color:#000;
+			&.active{
+				text-decoration: underline;
+			}
+		}
+	}
+	.checkout-details{
+		table{
+			tr{
+				td{
+					vertical-align: top;
+					padding: 15px 10px;
+					.form-control{
+						margin-top: 10px;
+					}
+					&:last-child{
+						text-align: right;
+					}
+				}
+			}
+			ul{
+				padding:0;
+				li{
+					list-style: none;
+				}
+			}
+            			
+		}
+		textarea{
+			height:100px;
+		}
 	}
 	.bill-detail{
 		overflow: hidden;
@@ -1308,6 +1406,26 @@
 		background: $clr-7;
 		margin: 44px 0 0 32px;
 		padding: 51px 60px 43px;
+		.confirm{
+			text-align: center;
+			.procees-btn{
+				display: inline-block;
+				padding:10px 15px;
+				background: #88bd6e;
+				color:#fff;
+				font-weight: bold;
+				width:70%;
+				font-size:18px;
+			}
+			.politics{
+				display:block;
+				font-size:11px;
+				margin:20px 0 0 0;
+				a{
+					text-decoration: underline;
+				}
+			}
+		}
 	}
 	.block{
 		overflow: hidden;
@@ -1351,9 +1469,9 @@
 			&.sub-title{ margin: 0;}
 		}
 		span{
-			@include font(14px, 16px);
+			@include font(12px, 16px);
 			display: block;
-			font-weight: 700;
+			font-weight: 300;
 			margin: 0 0 3px;
 			color: $clr-1;
 		}
@@ -1694,7 +1812,7 @@
 		max-width: 100%;
 	}
 	.mt-product1{
-		width: 19.8%;
+		width: 19.7%;
 		padding-right: 2%;
 		.txt{padding: 0 0 0 20px;}
 		.mt-stars{left: 20px;}
@@ -1804,6 +1922,7 @@
 .mt-productlisthold{
 	margin: 0;
 	width: 103%;
+	display:none;
 	> li{
 		width: 33%;
 		padding: 0 0 62px;

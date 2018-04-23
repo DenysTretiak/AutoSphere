@@ -614,6 +614,7 @@
 -------------------------------------------------------------------*/
 .mt-process-sec{
 	padding: 76px 0;
+	border-top:1px solid $colorGray;
 	.process-list{
 		margin: 0 0 22px;
 		@include font(16px, 18px);
@@ -657,10 +658,17 @@
 		}
 		.title{display: block;}
 		.active{
-			.title{color: $black;}
+			.title{color: $colorBlue;}
 			.counter{
-				color: $black;
-				border-color: $black;
+				color: $colorBlue;
+			}
+		}
+		.visited{
+			.title{
+				color:$black
+			}
+			.counter{
+				color:$black
 			}
 		}
 	}

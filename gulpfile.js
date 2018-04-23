@@ -53,7 +53,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('pug',function() {
-    return gulp.src('app/*.pug')
+    return gulp.src('app/pug/*.pug')
     .pipe(pug({
        doctype: 'html',
        pretty: true
@@ -65,7 +65,7 @@ gulp.task('watch', ['browserSync', 'sass', 'pug'], function(){
     gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
-    gulp.watch('app/**/*.pug', ['pug'], browserSync);  
+    gulp.watch('app/**/*.pug', ['pug'], browserSync.reload);  
 })
 
 gulp.task('browserSync', function() {

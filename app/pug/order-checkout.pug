@@ -1,0 +1,185 @@
+doctype html
+html(lang='en')
+    head
+        // set the encoding of your site
+        meta(charset='utf-8')
+        // set the viewport width and initial-scale on mobile devices
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title Schön. | eCommerce HTML5 Template
+        // include the site stylesheet
+        link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic%7cMontserrat:400,700%7cOxygen:400,300,700', rel='stylesheet', type='text/css')
+        // include the site stylesheet
+        link(rel='stylesheet', href='css/bootstrap.css')
+        // include the site stylesheet
+        link(rel='stylesheet', href='css/animate.css')
+        // include the site stylesheet
+        link(rel='stylesheet', href='css/icon-fonts.css')
+        // include the site stylesheet
+        link(rel='stylesheet', href='css/main.css')
+        // include the site stylesheet
+        link(rel='stylesheet', href='css/responsive.css')
+    body
+        // main container of all the page elements
+        #wrapper
+            // Page Loader
+            #pre-loader.loader-container
+                .loader
+                    img(src='images/svg/rings.svg', alt='loader')
+            .w1
+                // mt -header style14 start from here
+                include modules/header/header-checkout
+                    span.mt-side-over
+                // mt -header style14 end here
+                // mt search popup start here
+                .mt-search-popup
+                    .mt-holder
+                        a.search-close(href='#')
+                            span
+                            span
+                        .mt-frame
+                            form(action='#')
+                                fieldset
+                                    input(type='text', placeholder='Search...')
+                                    span.icon-microphone
+                                    button.icon-magnifier(type='submit')
+                // mt search popup end here
+                // Main of the Page
+                main#mt-main
+                    // Mt Process Section of the Page
+                    .mt-process-sec.wow.fadeInUp(data-wow-delay='0.4s')
+                        .container
+                            .row
+                                .col-xs-12
+                                    // Process List of the Page
+                                    ul.list-unstyled.process-list
+                                        li.visited
+                                            span.counter 01
+                                            strong.title Корзина
+                                        li.active
+                                            span.counter.counter-2 02
+                                            strong.title Оформление заказа
+                                        li
+                                            span.counter 03
+                                            strong.title Готово
+                                    // Process List of the Page end
+                    // Mt Process Section of the Page end
+                    // Mt Detail Section of the Page
+                    section.mt-detail-sec.toppadding-zero.wow.fadeInUp(data-wow-delay='0.4s')
+                        .container
+                            .row
+                                .col-xs-12.col-sm-6
+                                    h2 
+                                        span 1
+                                        | Контактные данные  
+                                    // Bill Detail of the Page
+                                    .is-registered
+                                        a.active Я новый покупатель
+                                        a Уже зарегестрирован
+                                    form.bill-detail(action='#')
+                                        fieldset
+                                            .form-group
+                                                input.form-control(type='text', placeholder='Имя и фамилия')
+                                            .form-group
+                                                select.form-control
+                                                    option(value='1') Город
+                                            .form-group
+                                                textarea.form-control(type='email', placeholder='Email')
+                                            .form-group
+                                                input.form-control(type='text', placeholder='Телефон')
+                                    h2
+                                        span 2
+                                        | Доставка и оплата
+                                    .checkout-details
+                                        form.delivery-method(action="")
+                                            table
+                                                tr
+                                                    td Способ доставки
+                                                    td
+                                                        input(type="radio" name="delivery" value="pickup" id="pickup") 
+                                                        label(for="pickup") Самовывоз из нашего магазина
+                                                        select.form-control
+                                                            option(value="1") Киев, Днепровская набережная, 26
+                                                    td Бесплатно
+                                                tr
+                                                    td
+                                                    td
+                                                        input(type="radio" name="delivery" value="new-post" id = "new-post") 
+                                                        label(for="new-post") Доставка в отделение Новой почты
+                                                        select.form-control
+                                                            option(value="1") Выберите город доставки
+                                                        select.form-control
+                                                            option(value="1") Выберите отделение
+                                                    td 50 грн
+                                                tr
+                                                    td
+                                                    td
+                                                        input(type="radio" name="delivery" value="courier" id="courier") 
+                                                        label(for="courier") Доставка курьером по адресу
+                                                    td 30 грн
+                                                tr.payment
+                                                    td Способ оплаты
+                                                    td
+                                                        ul
+                                                            li
+                                                                input(type="radio" name="payment" value="cash" id = "cash") 
+                                                                label(for="cash") Наличными
+                                                            li
+                                                                input(type="radio" name="payment" value="credit" id = "credit") 
+                                                                label(for="credit") Безналичный платеж 
+                                                            li
+                                                                input(type="radio" name="payment" value="cash-payment" id = "cash-payment") 
+                                                                label(for="cash-payment") Наложенный платеж     
+                                                    td
+                                            .form-group
+                                                textarea.form-control(placeholder='Коментарий')
+                                    // Bill Detail of the Page end
+                                .col-xs-12.col-sm-6
+                                    .holder
+                                        h2 Ваш заказ
+                                        ul.list-unstyled.block
+                                            li
+                                                .txt-holder
+                                                    .text-wrap.pull-left
+                                                        strong.title Товары
+                                                        span Моторное масло SHELL HELIX HX7 10W-40 1л.    
+                                                            b x1
+                                                        span Моторное масло SHELL HELIX HX7 10W-40 1л.
+                                                            b    x1
+                                                    .text-wrap.txt.text-right.pull-right
+                                                        strong.title Всего
+                                                        span 299,00 грн
+                                                        span 532,00 грн 
+                                            li
+                                                .txt-holder
+                                                    strong.title.sub-title.pull-left Стоимость товара
+                                                    .txt.pull-right
+                                                        span 532,00 грн
+                                            li
+                                                .txt-holder
+                                                    strong.title.sub-title.pull-left Стоимость доставки
+                                                    .txt.pull-right
+                                                        span Бесплатно
+                                            li(style='border-bottom: none;')
+                                                .txt-holder
+                                                    strong.title.sub-title.pull-left Итого
+                                                    .txt.pull-right
+                                                        span 1299,00 грн
+                                        .confirm
+                                            a.procees-btn(href="#") Подтвердить заказ
+                                            span.politics Подтверждая заказ вы соглашаетесь с 
+                                                a(href="#") политикой конфиденциальност
+                                        //-  a.process-btn(href='#') Подтвердить заказ
+                                    //- .block-holder
+                                    //-     | I’ve read & accept the 
+                                    //-     a(href='#') terms & conditi
+                    // Mt Detail Section of the Page end
+                // Main of the Page end here
+                // footer of the Page
+                include modules/footer
+            span#back-top.fa.fa-arrow-up
+        // include jQuery
+        script(src='js/jquery.js')
+        // include jQuery
+        script(src='js/plugins.js')
+        // include jQuery
+        script(src='js/jquery.main.js')

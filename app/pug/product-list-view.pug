@@ -14,6 +14,7 @@ html(lang='en')
     link(rel='stylesheet', href='css/main.css')
     link(rel='stylesheet', href='css/responsive.css')
     //endbuild
+    script(src='https://use.fontawesome.com/125208436b.js')
   body
     // main container of all the page elements
     #wrapper
@@ -24,7 +25,7 @@ html(lang='en')
       // W1 start here
       .w1
         // mt header style4 start here
-        include modules/header
+        include modules/header/header
         // mt header style4 end here
         // mt search popup start here
         .mt-search-popup
@@ -212,10 +213,10 @@ html(lang='en')
                             li
                               a(href='#') Relevance
                       li
-                        a.mt-viewswitcher(href='#')
+                        a.mt-viewswitcher.view-grid
                           i.fa.fa-th-large(aria-hidden='true')
                       li
-                        a.mt-viewswitcher(href='#')
+                        a.mt-viewswitcher.view-list
                           i.fa.fa-th-list(aria-hidden='true')
                   // btn-box end here
                   // mt-textbox start here
@@ -238,6 +239,39 @@ html(lang='en')
                   // mt-textbox end here
                 // mt shoplist header end here
                 // product post start here
+                ul.mt-productlisthold.list-inline
+                  li
+                    // mt product1 large start here
+                    .mt-product1.large
+                      .box
+                        .b1
+                          .b2
+                            a(href='product-detail.html')
+                              img(src='images/product-list/size-2.png', alt='image description')
+                            ul.mt-stars
+                              li
+                                i.fa.fa-star
+                              li
+                                i.fa.fa-star
+                              li
+                                i.fa.fa-star
+                              li
+                                i.fa.fa-star-o
+                            ul.links
+                              li
+                                a(href='#')
+                                  i.icon-handbag
+                                  span В корзину
+                              li
+                                a(href='#')
+                                  i.icomoon.icon-heart-empty
+                              li
+                                a(href='#')
+                                  i.icomoon.icon-exchange
+                      .txt
+                        strong.title
+                          a(href='product-detail.html') Моторное масло SHELL HELIX HX7 10W-40 1л.
+                        span.price 3900 грн
                 .product-post
                   // img holder start here
                   .img-holder

@@ -10355,7 +10355,7 @@ a:hover {
   .mt-product1 .title {
     display: block;
     margin: 0 0 5px;
-    color: #757575;
+    color: #338be3;
     text-transform: capitalize;
     font: 600 14px/20px "Monserrat", sans-serif; }
     .mt-product1 .title a {
@@ -10365,7 +10365,7 @@ a:hover {
       -o-transition: all 0.4s linear;
       transition: all 0.4s linear; }
       .mt-product1 .title a:hover {
-        color: #ff6060; }
+        color: #338be3; }
   .mt-product1 .price {
     display: block;
     color: #010101;
@@ -10440,7 +10440,7 @@ a:hover {
         font-size: 14px;
         margin: 0 -2px 0 10px; }
       .mt-product1 .links a:hover {
-        color: #ff6060; }
+        color: #338be3; }
     .mt-product1 .links .icon-heart,
     .mt-product1 .links .icon-heart-empty {
       top: 3px;
@@ -10530,7 +10530,7 @@ a:hover {
       font-size: 16px;
       line-height: 38px; }
       .mt-product2 .links a:hover {
-        color: #ff6060; }
+        color: #338be3; }
   .mt-product2 .txt {
     overflow: hidden;
     padding: 0 10px 15px; }
@@ -10955,7 +10955,7 @@ a:hover {
     .mt-producttabs .slick-next:focus,
     .mt-producttabs .slick-next:hover {
       color: #fff;
-      background: #ff6060; }
+      background: #338be3; }
       .mt-producttabs .slick-prev:focus:before, .mt-producttabs .slick-prev:hover:before,
       .mt-producttabs .slick-next:focus:before,
       .mt-producttabs .slick-next:hover:before {
@@ -11124,12 +11124,12 @@ a:hover {
     .mt-bestseller .slick-prev:focus, .mt-bestseller .slick-prev:hover,
     .mt-bestseller .slick-next:focus,
     .mt-bestseller .slick-next:hover {
-      color: #ff6060;
-      border-color: #ff6060; }
+      color: #338be3;
+      border-color: #338be3; }
       .mt-bestseller .slick-prev:focus:before, .mt-bestseller .slick-prev:hover:before,
       .mt-bestseller .slick-next:focus:before,
       .mt-bestseller .slick-next:hover:before {
-        color: #ff6060; }
+        color: #338be3; }
   .mt-bestseller .slick-next:before {
     top: 8px;
     opacity: 1;
@@ -11261,7 +11261,7 @@ a:hover {
       transition: all 0.25s linear;
       color: #b6b6b6; }
       .mt-product-detial .comment-list a:hover {
-        color: #ff8283; }
+        color: #338be3; }
   .mt-product-detial .product-slider {
     margin: 0 0 30px; }
   .mt-product-detial .pagg-slider {
@@ -11337,7 +11337,7 @@ a:hover {
       transition: all 0.25s linear;
       color: #a9a9a9; }
       .mt-product-detial .breadcrumbs a:hover {
-        color: #ff8283; }
+        color: #338be3; }
   .mt-product-detial .rank-rating {
     overflow: hidden;
     padding: 3px 0 0;
@@ -11453,7 +11453,7 @@ a:hover {
       outline: none;
       border-radius: 25px;
       transition: all 0.25s linear;
-      background: #ff8283;
+      background: #338be3;
       color: #fff; }
       .mt-product-detial .product-form button:hover {
         background: #000; }
@@ -11762,7 +11762,7 @@ a:hover {
     line-height: 20px;
     float: right;
     margin: 81px 0 0;
-    color: #ff6060;
+    color: #338be3;
     -moz-transition: all 0.4s linear;
     -webkit-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
@@ -11961,7 +11961,8 @@ a:hover {
   position: relative;
   padding: 21px 0 19px; }
   .mt-shoplist-header .btn-box {
-    float: right; }
+    float: right;
+    position: relative; }
     .mt-shoplist-header .btn-box > ul {
       margin: 0;
       float: left; }
@@ -11981,8 +11982,13 @@ a:hover {
           opacity: 1;
           visibility: visible; }
         .mt-shoplist-header .btn-box > ul > li:hover .drop-link {
-          color: #ff6060;
-          border-color: #ff6060; }
+          color: #338be3;
+          border-color: #338be3; }
+      .mt-shoplist-header .btn-box > ul .sort {
+        position: absolute;
+        top: -28px;
+        left: 23px;
+        font-size: 12px; }
     .mt-shoplist-header .btn-box .drop-link {
       display: block;
       color: #a5a5a5;
@@ -11992,8 +11998,8 @@ a:hover {
       border: 1px solid #d8d8d8;
       font: 14px/1 "Monserrat", sans-serif; }
       .mt-shoplist-header .btn-box .drop-link:hover {
-        color: #ff6060;
-        border-color: #ff6060; }
+        color: #338be3;
+        border-color: #338be3; }
     .mt-shoplist-header .btn-box .mt-viewswitcher {
       padding: 11px;
       display: block;
@@ -12003,8 +12009,8 @@ a:hover {
       border-radius: 50%;
       border: 1px solid #d8d8d8; }
       .mt-shoplist-header .btn-box .mt-viewswitcher:hover {
-        color: #ff6060;
-        border-color: #ff6060; }
+        color: #338be3;
+        border-color: #338be3; }
     .mt-shoplist-header .btn-box .drop {
       left: 0;
       right: 0;
@@ -12022,7 +12028,7 @@ a:hover {
         display: block;
         padding: 10px 15px; }
         .mt-shoplist-header .btn-box .drop a:hover {
-          color: #ff6060; }
+          color: #338be3; }
       .mt-shoplist-header .btn-box .drop li {
         border-bottom: 1px solid #d8d8d8; }
   .mt-shoplist-header .mt-textbox {
@@ -12035,7 +12041,7 @@ a:hover {
     .mt-shoplist-header .mt-textbox a {
       color: #a5a5a5; }
       .mt-shoplist-header .mt-textbox a:hover {
-        color: #ff6060;
+        color: #338be3;
         text-decoration: none; }
 
 /*------------------------------------------------------------------
@@ -12043,7 +12049,8 @@ a:hover {
 -------------------------------------------------------------------*/
 .mt-productlisthold {
   margin: 0;
-  width: 103%; }
+  width: 103%;
+  display: none; }
   .mt-productlisthold > li {
     width: 33%;
     padding: 0 0 62px;
@@ -12076,8 +12083,20 @@ a:hover {
       transition: all ease 0.5s; }
       .mt-pagination ul a:hover {
         color: #fff;
-        background: #ff6060;
+        background: #338be3;
         text-decoration: none; }
+
+.show-more {
+  text-align: center;
+  margin: 50px 0 10px 0; }
+  .show-more .show-more-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #338be3;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.25s linear; }
 
 /*------------------------------------------------------------------
 42. product post / .product-post
@@ -12113,7 +12132,7 @@ a:hover {
       padding: 4px 2.6% 0 0; }
   .product-post .title {
     display: block;
-    color: #757575;
+    color: #338be3;
     font-weight: 700;
     margin: 0 0 15px;
     font-size: 18px;
@@ -12122,7 +12141,7 @@ a:hover {
       color: #757575;
       transition: all 0.25s linear; }
       .product-post .title a:hover {
-        color: #ff8283; }
+        color: #338be3; }
   .product-post .price {
     display: block;
     font-size: 22px;
@@ -12152,13 +12171,13 @@ a:hover {
     .product-post .rating-list a {
       color: #b6b6b6; }
       .product-post .rating-list a:hover {
-        color: #ff6060;
+        color: #338be3;
         text-decoration: none; }
   .product-post .btn-cart {
     font-size: 14px;
     line-height: 16px;
-    color: #b6b6b6;
-    background: #f4f4f4;
+    color: #fff;
+    background: #338be3;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     width: 173px;
@@ -12172,7 +12191,7 @@ a:hover {
     display: block;
     transition: all 0.25s linear; }
     .product-post .btn-cart:hover {
-      background: #ff8283;
+      background: #287acc;
       color: #fff; }
   .product-post .nav {
     font-size: 11px;
@@ -12194,7 +12213,10 @@ a:hover {
       color: #b6b6b6;
       transition: all 0.25s linear; }
       .product-post .nav a:hover {
-        color: #ff8283; }
+        text-decoration: underline; }
+        .product-post .nav a:hover .fa {
+          text-decoration: none;
+          color: #d3293b; }
 
 /*------------------------------------------------------------------
 43. product masonry / #product-masonry
@@ -14800,7 +14822,7 @@ a:hover {
 .shop-widget {
   margin: 0 0 38px; }
   .shop-widget.filter-widget h2 {
-    margin: 0 0 35px; }
+    margin: 0 0 15px; }
   .shop-widget.filter-widget.bg-grey {
     background: #f4f4f4;
     border: 1px solid #efefef;
@@ -14808,11 +14830,36 @@ a:hover {
   .shop-widget h2 {
     font-size: 22px;
     line-height: 24px;
-    text-transform: uppercase;
     color: #494949;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     margin: 0 0 32px; }
+  .shop-widget .active-filters-list .active-filter {
+    padding: 1px 11px;
+    background: #919191;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.25s linear; }
+    .shop-widget .active-filters-list .active-filter:hover {
+      background: #338be3; }
+    .shop-widget .active-filters-list .active-filter img {
+      display: inline-block;
+      margin-left: 8px;
+      width: 9px; }
+  .shop-widget .reset {
+    text-align: right;
+    margin: 25px 0; }
+    .shop-widget .reset .reset-btn {
+      display: inline-block;
+      padding: 3px 13px;
+      background: #919191;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.25s linear; }
+      .shop-widget .reset .reset-btn:hover {
+        background: #338be3; }
   .shop-widget .sub-title {
     font-size: 14px;
     line-height: 16px;
@@ -14895,12 +14942,13 @@ a:hover {
     line-height: 16px;
     background: #494949;
     color: #fff;
+    margin-top: 15px;
     font-weight: 400;
     padding: 1px 7px 3px 10px;
     border-radius: 3px;
     transition: all 0.25s linear; }
     .shop-widget .filter-btn:hover {
-      background: #ff8283; }
+      background: #338be3; }
 
 /*------------------------------------------------------------------
 75. Nice Form / .nice-form
@@ -15217,6 +15265,9 @@ a:hover, a:active, a:focus {
 -------------------------------------------------------------------*/
 #mt-main {
   overflow: hidden; }
+  #mt-main.product-list-mt-main {
+    padding: 15px 0 0 0;
+    border-top: 1px solid #ededed; }
 
 #back-top {
   bottom: 0;
@@ -15326,6 +15377,45 @@ a:hover, a:active, a:focus {
     .mt-blog .link:hover .fa {
       color: #338be3;
       border-color: #338be3; }
+
+.product-list-breadcrumbs .breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 200;
+  overflow: hidden;
+  color: #383838; }
+  .product-list-breadcrumbs .breadcrumbs ul {
+    overflow: hidden; }
+    .product-list-breadcrumbs .breadcrumbs ul li {
+      margin: 0 10px 0 0;
+      display: inline-block;
+      vertical-align: middle; }
+    .product-list-breadcrumbs .breadcrumbs ul a {
+      transition: all 0.25s linear;
+      color: #383838; }
+      .product-list-breadcrumbs .breadcrumbs ul a:hover {
+        color: #338be3; }
+    .product-list-breadcrumbs .breadcrumbs ul .fa {
+      margin: 0 0 0 5px;
+      font-size: 5px;
+      color: #338be3;
+      vertical-align: middle; }
+
+.product-list-header h3 {
+  color: #535353;
+  font-weight: bold; }
+
+.links-product-list {
+  color: #535353; }
+  .links-product-list ul {
+    -webkit-padding-start: 20px; }
+    .links-product-list ul li {
+      margin-top: 15px;
+      color: #338be3; }
+      .links-product-list ul li a {
+        color: #535353; }
+        .links-product-list ul li a:hover {
+          text-decoration: underline; }
 
 @media (max-width: 1499px) {
   .mt-workspace-sec .work-slider .img-holder:first-child {

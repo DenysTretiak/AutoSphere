@@ -1,17 +1,43 @@
 function extendItems(item, number, before){
-   console.log(item);
    for(i = 0; i<number; i++){
-       let sidebarItem = item.cloneNode(true);
-       if(before){
-           item.parentNode.insertBefore(sidebarItem, before);
-           continue;
+       if(item){
+        let sidebarItem = item.cloneNode(true);
+        if(before){
+            item.parentNode.insertBefore(sidebarItem, before);
+            continue;
+        }
+        item.parentNode.appendChild(sidebarItem);   
        }
-       item.parentNode.appendChild(sidebarItem); 
+       
    }
 }
+
 
 const sidebarItem = document.querySelector('.mt-product4');
 const productPost = document.querySelector('.product-post');
 const showMore = document.querySelector('.show-more');
+const productGridPost = document.querySelector('.mt-productlisthold>li');
 extendItems(sidebarItem, 3);
-extendItems(productPost, 5, showMore);
+extendItems(productPost, 4, showMore);
+extendItems(productGridPost, 8);
+
+const listViewBtn = document.querySelector('.view-list');
+const gridViewBtn = document.querySelector('.view-grid');
+const productList = document.querySelectorAll('.product-post');
+const productGrid = document.querySelector('.mt-productlisthold');
+
+listViewBtn.addEventListener('click', function(){
+     productList.forEach(item=>{
+        item.style.display = 'block';
+     })
+    //  productList.style.display = 'block';
+     productGrid.style.display = 'none';
+});
+
+gridViewBtn.addEventListener('click', function(){
+    console.log(productList);
+    productList.forEach(item=>{
+        item.style.display = 'none';
+     })
+    productGrid.style.display = 'block';
+})

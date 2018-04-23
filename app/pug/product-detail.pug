@@ -1,0 +1,575 @@
+doctype html
+head
+  // set the encoding of your site
+  meta(charset='utf-8')
+  // set the viewport width and initial-scale on mobile devices
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Sch&ouml;n. | eCommerce HTML5 Template
+  link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic%7cMontserrat:400,700%7cOxygen:400,300,700', rel='stylesheet', type='text/css')
+  // include the site stylesheet
+  link(rel='stylesheet', href='css/bootstrap.css')
+  // include the site stylesheet
+  link(rel='stylesheet', href='css/animate.css')
+  // include the site stylesheet
+  link(rel='stylesheet', href='css/icon-fonts.css')
+  // include the site stylesheet
+  link(rel='stylesheet', href='css/main.css')
+  // include the site stylesheet
+  link(rel='stylesheet', href='css/responsive.css')
+// main container of all the page elements
+#wrapper
+  // Page Loader
+  #pre-loader.loader-container
+    .loader
+      img(src='images/svg/rings.svg', alt='loader')
+  // W1 start here
+  .w1
+    // mt header style4 start here
+    include modules/header/header
+    // mt side menu end here
+    // mt search popup start here
+    .mt-search-popup
+      .mt-holder
+        a.search-close(href='#')
+          span
+          span
+        .mt-frame
+          form(action='#')
+            fieldset
+              input(type='text', placeholder='Search...')
+              span.icon-microphone
+              button.icon-magnifier(type='submit')
+    // mt search popup end here
+    // mt main start here
+    main#mt-main
+      // Mt Product Detial of the Page
+      section.mt-product-detial.wow.fadeInUp(data-wow-delay='0.4s')
+        .container
+          .row
+            .col-xs-12.product-list-breadcrumbs
+              nav.breadcrumbs
+                  ul.list-unstyled
+                    li
+                      a(href='index.html')
+                        | Главная 
+                        i.fa.fa-circle
+                    li
+                      a(href='product-detail.html')
+                        | Каталог 
+                        i.fa.fa-circle
+                    li
+                      a(href='product-detail.html')
+                        | Масла 
+                        i.fa.fa-circle
+                    li
+                      a(href='product-detail.html')
+                        | Моторные масла 
+                        i.fa.fa-circle 
+                    li Моторное масло SHELL HELIX HX7 10W-40 1л.
+              // Slider of the Page
+              .slider
+                // Comment List of the Page
+                // Product Slider of the Page
+                .product-slider
+                  .slide
+                    img(src='images/product-list/size-2.png', alt='image descrption')
+                  .slide
+                    img(src='images/product-list/size.png', alt='image descrption')
+                  .slide
+                    img(src='images/product-list/size-2.png', alt='image descrption')
+                  .slide
+                    img(src='images/product-list/size.png', alt='image descrption')
+                // Product Slider of the Page end
+                // Pagg Slider of the Page
+                ul.list-unstyled.slick-slider.pagg-slider
+                  li
+                    .img
+                      img(src='images/product-list/size-2.png', alt='image description')
+                  li
+                    .img
+                      img(src='images/product-list/size.png', alt='image description')
+                  li
+                    .img
+                      img(src='images/product-list/size-2.png', alt='image description')
+                  li
+                    .img
+                      img(src='images/product-list/size.png', alt='image description')
+                  li
+                    .img
+                      img(src='images/product-list/size.png', alt='image description')
+                // Pagg Slider of the Page end
+              // Slider of the Page end
+              // Detail Holder of the Page
+              .detial-holder
+                h3 Моторное масло SHELL HELIX HX7 10W-40 1л.
+                // Rank Rating of the Page
+                .product-id
+                  span код товара 822564
+                .rank-rating
+                  ul.list-unstyled.rating-list
+                    li
+                      a(href='#slider')
+                        i.fa.fa-star
+                    li
+                      a(href='#')
+                        i.fa.fa-star
+                    li
+                      a(href='#')
+                        i.fa.fa-star
+                    li
+                      a(href='#')
+                        i.fa.fa-star-o
+                  span.total-price Оценок (12)
+                // Rank Rating of the Page end
+                .text-holder
+                  span.price
+                    del 399,00
+                    | 79.00 грн
+                    span.in-stock 
+                      i.fa.fa-check-circle-o
+                      | В наличии 
+                // Product Form of the Page
+                table.table-bordered
+                  tr
+                    td
+                      table
+                        tr
+                          td Літри
+                          td
+                            ul
+                              li.btn.active 1л
+                              li.btn 4л
+                              li.btn 5л
+                              li.btn.disabled 10л
+                    td
+                      ul.delivery
+                        li
+                          b Самовывоз
+                          | из 
+                          a(href="#") наших магазинов
+                          | - бесплатно 
+                        li
+                          b Самовывоз из 
+                          a.new-post(href="#") Новой почты
+                          | - 10 грн
+                  tr
+                    td
+                      .count
+                        span.minus -
+                        span.number 3
+                        span.plus +
+                    td
+                form.product-form(action='#', style='margin-bottom: 40px')
+                  fieldset
+                    .row-val
+                      label(for='qty') qty
+                      input#qty(type='number', placeholder='1')
+                    .row-val
+                      button(type='submit') ADD TO CART
+                .txt-wrap
+                  p
+                    | Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.
+                  p
+                    | Koila is a seat designed for restaurants and gastronomic places in general. Designed in collaboration with professional of restaurants and hotels field, this armchair is composed of a curved shell with a base in oak who has pinched the back upholstered in fabric or leather. It provides comfort and holds for ideal sitting position,the arms may rest on the sides ofthe armchair.
+                // Product Form of the Page end
+                ul.list-unstyled.list
+                  li
+                    a(href='#')
+                      i.fa.fa-share-alt
+                      | SHARE
+                  li
+                    a(href='#')
+                      i.fa.fa-exchange
+                      | COMPARE
+                  li
+                    a(href='#')
+                      i.fa.fa-heart
+                      | ADD TO WISHLIST
+              // Detail Holder of the Page end
+      // Mt Product Detial of the Page end
+      .product-detail-tab.wow.fadeInUp(data-wow-delay='0.4s')
+        .container
+          .row
+            .col-xs-12
+              ul.mt-tabs.text-center.text-uppercase
+                li
+                  a(href='#tab1') DESCRIPTION
+                li
+                  a(href='#tab2') INFORMATION
+                li
+                  a.active(href='#tab3') REVIEWS (12)
+              .tab-content
+                #tab1
+                  p
+                    | Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.
+                  p
+                    | Koila is a seat designed for restaurants and gastronomic places in general. Designed in collaboration with professional of restaurants and hotels field, this armchair is composed of a curved shell with a base in oak who has pinched the back upholstered in fabric or leather. It provides comfort and holds for ideal sitting position,the arms may rest on the sides ofthe armchair. 
+                    br
+                    | Solid oak construction.
+                    br
+                    |  Back in plywood (2  faces oak veneer) or upholstered in fabric, leather or eco-leather.
+                    br
+                    |  Seat upholstered in fabric, leather or eco-leather. 
+                    br
+                    |  H 830 x L 585 x P 540 mm.
+                #tab2
+                  p
+                    | Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.
+                  p
+                    | Koila is a seat designed for restaurants and gastronomic places in general. Designed in collaboration with professional of restaurants and hotels field, this armchair is composed of a curved shell with a base in oak who has pinched the back upholstered in fabric or leather. It provides comfort and holds for ideal sitting position,the arms may rest on the sides ofthe armchair. 
+                    br
+                    | Solid oak construction.
+                    br
+                    |  Back in plywood (2  faces oak veneer) or upholstered in fabric, leather or eco-leather.
+                    br
+                    |  Seat upholstered in fabric, leather or eco-leather. 
+                    br
+                    |  H 830 x L 585 x P 540 mm.
+                #tab3
+                  .product-comment
+                    .mt-box
+                      .mt-hold
+                        ul.mt-star
+                          li
+                            i.fa.fa-star
+                          li
+                            i.fa.fa-star
+                          li
+                            i.fa.fa-star
+                          li
+                            i.fa.fa-star-o
+                        span.name John Wick
+                        time(datetime='2016-01-01') 09:10 Nov, 19 2016
+                      p
+                        | Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit sse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    .mt-box
+                      .mt-hold
+                        ul.mt-star
+                          li
+                            i.fa.fa-star
+                          li
+                            i.fa.fa-star
+                          li
+                            i.fa.fa-star-o
+                          li
+                            i.fa.fa-star-o
+                        span.name John Wick
+                        time(datetime='2016-01-01') 09:10 Nov, 19 2016
+                      p
+                        | Usmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit sse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    form.p-commentform(action='#')
+                      fieldset
+                        h2 Add  Comment
+                        .mt-row
+                          label Rating
+                          ul.mt-star
+                            li
+                              i.fa.fa-star
+                            li
+                              i.fa.fa-star
+                            li
+                              i.fa.fa-star-o
+                            li
+                              i.fa.fa-star-o
+                        .mt-row
+                          label Name
+                          input.form-control(type='text')
+                        .mt-row
+                          label E-Mail
+                          input.form-control(type='text')
+                        .mt-row
+                          label Review
+                          textarea.form-control
+                        button.btn-type4(type='submit') ADD REVIEW
+      // related products start here
+      .related-products.wow.fadeInUp(data-wow-delay='0.4s')
+        .container
+          .row
+            .col-xs-12
+              h2 RELATED PRODUCTS
+              .row
+                .col-xs-12
+                  // mt product1 center start here
+                  .mt-product1.mt-paddingbottom20
+                    .box
+                      .b1
+                        .b2
+                          a(href='product-detail.html')
+                            img(src='http://placehold.it/215x215', alt='image description')
+                          span.caption
+                            span.new NEW
+                          ul.mt-stars
+                            li
+                              i.fa.fa-star
+                            li
+                              i.fa.fa-star
+                            li
+                              i.fa.fa-star
+                            li
+                              i.fa.fa-star-o
+                          ul.links
+                            li
+                              a(href='#')
+                                i.icon-handbag
+                                span Add to Cart
+                            li
+                              a(href='#')
+                                i.icomoon.icon-heart-empty
+                            li
+                              a(href='#')
+                                i.icomoon.icon-exchange
+                    .txt
+                      strong.title
+                        a(href='product-detail.html') Puff Chair
+                      span.price
+                        i.fa.fa-eur
+                        span 287,00
+                  // mt product1 center end here
+                  // mt product1 center start here
+                  .mt-product1.mt-paddingbottom20
+                    .box
+                      .b1
+                        .b2
+                          a(href='product-detail.html')
+                            img(src='http://placehold.it/215x215', alt='image description')
+                          ul.links
+                            li
+                              a(href='#')
+                                i.icon-handbag
+                                span Add to Cart
+                            li
+                              a(href='#')
+                                i.icomoon.icon-heart-empty
+                            li
+                              a(href='#')
+                                i.icomoon.icon-exchange
+                    .txt
+                      strong.title
+                        a(href='product-detail.html') Bombi Chair
+                      span.price
+                        i.fa.fa-eur
+                        span 399,00
+                  // mt product1 center end here
+                  // mt product1 center start here
+                  .mt-product1.mt-paddingbottom20
+                    .box
+                      .b1
+                        .b2
+                          a(href='product-detail.html')
+                            img(src='http://placehold.it/215x215', alt='image description')
+                          ul.links
+                            li
+                              a(href='#')
+                                i.icon-handbag
+                                span Add to Cart
+                            li
+                              a(href='#')
+                                i.icomoon.icon-heart-empty
+                            li
+                              a(href='#')
+                                i.icomoon.icon-exchange
+                    .txt
+                      strong.title
+                        a(href='product-detail.html') Wood Chair
+                      span.price
+                        i.fa.fa-eur
+                        span 198,00
+                  // mt product1 center end here
+                  // mt product1 center start here
+                  .mt-product1.mt-paddingbottom20
+                    .box
+                      .b1
+                        .b2
+                          a(href='product-detail.html')
+                            img(src='http://placehold.it/215x215', alt='image description')
+                          span.caption
+                            span.off 15% Off
+                            span.new NEW
+                          ul.mt-stars
+                            li
+                              i.fa.fa-star
+                            li
+                              i.fa.fa-star
+                            li
+                              i.fa.fa-star
+                            li
+                              i.fa.fa-star-o
+                          ul.links
+                            li
+                              a(href='#')
+                                i.icon-handbag
+                                span Add to Cart
+                            li
+                              a(href='#')
+                                i.icomoon.icon-heart-empty
+                            li
+                              a(href='#')
+                                i.icomoon.icon-exchange
+                    .txt
+                      strong.title
+                        a(href='product-detail.html') Bombi Chair
+                      span.price
+                        i.fa.fa-eur
+                        span 200,00
+                  // mt product1 center end here
+                  // mt product1 center start here
+                  .mt-product1.mt-paddingbottom20
+                    .box
+                      .b1
+                        .b2
+                          a(href='product-detail.html')
+                            img(src='http://placehold.it/215x215', alt='image description')
+                          ul.links
+                            li
+                              a(href='#')
+                                i.icon-handbag
+                                span Add to Cart
+                            li
+                              a(href='#')
+                                i.icomoon.icon-heart-empty
+                            li
+                              a(href='#')
+                                i.icomoon.icon-exchange
+                    .txt
+                      strong.title
+                        a(href='product-detail.html') Bombi Chair
+                      span.price
+                        i.fa.fa-eur
+                        span 200,00
+                  // mt product1 center end here
+        // related products end here
+    // mt main end here
+    // footer of the Page
+    footer#mt-footer.style1.wow.fadeInUp(data-wow-delay='0.4s')
+      // Footer Holder of the Page
+      .footer-holder.dark
+        .container
+          .row
+            .col-xs-12.col-sm-6.col-md-3.mt-paddingbottomsm
+              // F Widget About of the Page
+              .f-widget-about
+                .logo
+                  a(href='#')
+                    img(src='images/logo.png', alt='Schon')
+                p
+                  | Exercitation ullamco laboris nisi ut aliquip ex commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                // Social Network of the Page
+                ul.list-unstyled.social-network
+                  li
+                    a(href='#')
+                      i.fa.fa-twitter
+                  li
+                    a(href='#')
+                      i.fa.fa-facebook
+                  li
+                    a(href='#')
+                      i.fa.fa-google-plus
+                  li
+                    a(href='#')
+                      i.fa.fa-youtube
+                  li
+                    a(href='#')
+                      i.fa.fa-linkedin
+                  li
+                    a(href='#')
+                      i.fa.fa-whatsapp
+                // Social Network of the Page end
+              // F Widget About of the Page end
+            .col-xs-12.col-sm-6.col-md-3.mt-paddingbottomsm
+              .f-widget-news
+                h3.f-widget-heading Twitter
+                .news-articles
+                  .news-column
+                    i.fa.fa-twitter
+                    .txt-box
+                      p
+                        | Laboris nisi ut 
+                        a(href='#') #sch&ouml;n
+                        |  aliquip econse- 
+                        br
+                        | quat. 
+                        a(href='#') https://t.co/vreNJ9nEDt
+                  .news-column
+                    i.fa.fa-twitter
+                    .txt-box
+                      p
+                        | Ficia deserunt mollit anim id est labo- 
+                        br
+                        | rum. incididunt ut labore et dolore 
+                        br
+                        a(href='#') https://t.co/vreNJ9nEDt
+            .col-xs-12.col-sm-6.col-md-3.mt-paddingbottomxs
+              // Footer Tabs of the Page
+              .f-widget-tabs
+                h3.f-widget-heading Product Tags
+                ul.list-unstyled.tabs
+                  li
+                    a(href='#') Sofas
+                  li
+                    a(href='#') Armchairs
+                  li
+                    a(href='#') Living
+                  li
+                    a(href='#') Bedroom
+                  li
+                    a(href='#') Lighting
+                  li
+                    a(href='#') Tables
+                  li
+                    a(href='#') Pouf
+                  li
+                    a(href='#') Wood
+                  li
+                    a(href='#') Office
+                  li
+                    a(href='#') Outdoor
+                  li
+                    a(href='#') Kitchen
+                  li
+                    a(href='#') Stools
+                  li
+                    a(href='#') Footstools
+                  li
+                    a(href='#') Desks
+              // Footer Tabs of the Page
+            .col-xs-12.col-sm-6.col-md-3.text-right
+              // F Widget About of the Page
+              .f-widget-about
+                h3.f-widget-heading Information
+                ul.list-unstyled.address-list.align-right
+                  li
+                    i.fa.fa-map-marker
+                    address
+                      | Connaugt Road Central Suite 18B, 148 
+                      br
+                      | New Yankee
+                  li
+                    i.fa.fa-phone
+                    a(href='tel:15553332211') +1 (555) 333 22 11
+                  li
+                    i.fa.fa-envelope-o
+                    a(href='mailto:info@schon.chair') info@schon.chair
+              // F Widget About of the Page end
+      // Footer Holder of the Page end
+      // Footer Area of the Page
+      .footer-area
+        .container
+          .row
+            .col-xs-12.col-sm-6
+              p
+                | &copy; 
+                a(href='index.html') sch&ouml;n.
+                |  - All rights Reserved
+            .col-xs-12.col-sm-6.text-right
+              .bank-card
+                img(src='images/bank-card.png', alt='bank-card')
+      // Footer Area of the Page end
+    // footer of the Page end
+  // W1 end here
+  span#back-top.fa.fa-arrow-up
+// include jQuery
+script(src='js/jquery.js')
+// include jQuery
+script(src='js/plugins.js')
+// include jQuery
+script(src='js/jquery.main.js')
