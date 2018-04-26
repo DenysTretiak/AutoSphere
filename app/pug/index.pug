@@ -1,18 +1,6 @@
 doctype html
 html(lang='en')
-	head
-		meta(charset='utf-8')
-		meta(name='viewport', content='width=device-width, initial-scale=1.0')
-		title Schön. | eCommerce HTML5 Template
-		//build:css css/styles.min.css
-		link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic%7cMontserrat:400,700%7cOxygen:400,300,700', rel='stylesheet', type='text/css')
-		link(rel='stylesheet', href='css/bootstrap.css')
-		link(rel='stylesheet', href='css/animate.css')
-		link(rel='stylesheet', href='css/icon-fonts.css')
-		link(rel='stylesheet', href='css/main.css')
-		link(rel='stylesheet', href='css/responsive.css')
-		//endbuild
-		script(src='https://use.fontawesome.com/125208436b.js')
+	include modules/header/head
 	body
 		// main container of all the page elements
 		#wrapper
@@ -24,19 +12,6 @@ html(lang='en')
 			.w1
 				// mt header start here
 				include modules/header/header
-				// mt search popup start here
-				.mt-search-popup
-					.mt-holder
-						a.search-close(href='#')
-							span
-							span
-						.mt-frame
-							form(action='#')
-								fieldset
-									input(type='text', placeholder='Search...')
-									span.icon-microphone
-									button.icon-magnifier(type='submit')
-				// mt search popup end here
 				// mt-mainslider2 start here
 				.mt-mainslider2
 					// banner-slider start here
@@ -203,7 +178,7 @@ html(lang='en')
 												.box
 													img(alt='item-2', src='images/main-page/5.png')
 													span.caption
-														span.off 15% Off
+														span.off 15% Скида
 													ul.mt-stars
 														li
 															i.fa.fa-star
@@ -237,7 +212,7 @@ html(lang='en')
 												.box
 													img(alt='item-3', src='images/main-page/4.png')
 													span.caption
-														span.off 15% Off
+														span.off 15% Скидка
 													ul.mt-stars
 														li
 															i.fa.fa-star
@@ -587,7 +562,7 @@ html(lang='en')
 									h2.heading.text-center Последние статьи
 									.mt-blog-row
 										.mt-blog-item
-											img(src='images/main-page/11.jpg', alt='car1')
+											img(src='images/main-page/blog1.png', alt='car1')
 											.caption
 												span.date 12 апреля 2018
 												span.time
@@ -599,7 +574,7 @@ html(lang='en')
 												p
 													| Tesla планирует начать производство малого кроссовера Model Y на ноябрь 2019 года, а через два года начнется его выпуск в Китае
 										.mt-blog-item
-											img(src='images/main-page/12.jpg', alt='car2')
+											img(src='images/main-page/blog2.png', alt='car2')
 											.caption
 												span.date 13 июня 2018
 												span.time
@@ -611,7 +586,7 @@ html(lang='en')
 												p
 													| Skoda может понадобиться новый завод в Европе, чтобы удовлетворить рекордные продажи. Генеральный директор Skoda
 										.mt-blog-item
-											img(src='images/main-page/13.jpg', alt='car3')
+											img(src='images/main-page/blog3.png', alt='car3')
 											.caption
 												span.date 25 мая 2018
 												span.time
@@ -655,7 +630,8 @@ html(lang='en')
 											.col-xs-12.col-sm-6.col-md-3.mt-paddingbottomxs
 												// F Widget Item of the Page
 												.f-widget-item
-													img.medal.widget-icon(src='images/svg/medal-1.svg', alt='medal')
+													span.widget-icon
+														i.fa.fa-trophy
 													.txt-holder
 														h1.f-promo-box-heading Помощь профессионалов
 														p
@@ -663,12 +639,7 @@ html(lang='en')
 															| бы сами
 												// F Widget Item of the Page
 								// F Promo Box of the Page end
-				include modules/footer
+				include modules/footer/footer
 			// W1 end here
 			span#back-top.fa.fa-arrow-up
-		//build:js js/main.min.js
-		script(src='js/headerScript.js')
-		script(src='js/libs/jquery.js')
-		script(src='js/libs/plugins.js')
-		script(src='js/libs/jquery.main.js')
-		//endbuild
+		include modules/footer/scripts

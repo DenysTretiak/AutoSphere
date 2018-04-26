@@ -557,12 +557,12 @@
 			color: #252528;
 			margin: 0 13px 0 0;
 			position: relative;
-			font: 14px/18px $font-family-base-1;
+			font: 12px/18px $font-family-base-1;
 			@include alignment(inline-block, middle);
 		}
 		.price{
 			color: #252528;
-			font: 18px/18px $font-family-base-1;
+			font: 16px/18px $font-family-base-1;
 			@include alignment(inline-block, middle);
 		}
 	}
@@ -1044,7 +1044,6 @@
 		width: 64%;
 		float: left;
 		margin: 50px 0 0 0;
-		padding: 25px;
 		position: relative;
 		border:1px solid $colorGray;
 		.in-stock{
@@ -1056,7 +1055,13 @@
 				font-size:16px;
 			}
 		}
+		.detial-holder-top{
+			padding:25px 25px 0 25px;
+		}
 		.table-bordered{
+			width:100%;
+			border-left:none;
+			border-right:none;
 			td{
 				vertical-align: middle;
 				padding:10px;
@@ -1074,6 +1079,7 @@
 				.delivery{
 					li{
 						list-style: none;
+						margin-bottom: 20px;
 						a{
 							text-decoration: underline;
 							.new-post{
@@ -1082,22 +1088,150 @@
 						}	
 					}
 				}
-				.count{
-					margin-top:5px;
-					span{
-						padding:5px 10px;
-						border:2px solid #f8f8f8;
+				.td-container{
+					display:flex;
+					justify-content: space-around;
+					align-items: baseline;
+					.count{
+						margin-top:5px;
+						span{
+							padding:5px 10px;
+							border:2px solid #f8f8f8;
+						}
+						.plus{
+							color: $colorBlue;
+							border-left:none;
+							cursor: pointer; 
+						}
+						.minus{
+							border-right:none;
+							cursor: pointer;
+						}
+						h6{
+							margin: 20px 0 0 0;
+						}
 					}
-					.plus{
-						color: $colorBlue;
-						border-left:none;
-						cursor: pointer; 
+					.row-val{
+						margin-left:20px;
+						text-align: center;
+						button{
+							width: 173px;
+							padding: 12px 10px 10px;
+							margin:0 0 10px 0;
+							text-align: center;
+							text-transform: uppercase;
+							font-size: 14px;
+							line-height: 20px;
+							font-family: "Montserrat", sans-serif;
+							font-weight: 700;
+							border: none;
+							outline: none;
+							border-radius: 25px;
+							transition: all 0.25s linear;
+							background: #338be3;
+							color: #fff;
+						}
 					}
-					.minus{
-						border-right:none;
-						cursor: pointer;
+					.garanty{
+						padding: 0;
+						td{
+							padding:0;
+						}
 					}
+				}	
+			}
+			ul{
+				padding:0;
+			}
+		}
+		.consultation{
+			display: flex;
+			justify-content: space-around;
+			align-items: baseline;
+			padding: 30px 0 10px 0;
+			border-bottom: 1px solid #ddd;
+			span{
+				font-weight:bold;
+			}
+			.phone{
+				.hint{
+					display:block;
+					font-size:9px;
+					color:$colorGray;
+					font-weight:normal;
 				}
+			}
+			input{
+				border: 2px solid #348ce4;
+    			border-radius: 4px;
+			}
+			.reset-btn{
+				display: inline-block;
+				padding: 3px 13px;
+				background: $colorBlue;
+				color: #fff;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: all 0.25s linear;
+			}
+		}
+		.link-to-item{
+			padding:15px 0 20px 30px;
+			a{
+				margin-right:10px;
+				padding:4px;
+				border:1px solid $colorGray;
+				border-radius:3px;
+				&.facebook{
+					background: #466aa8;
+					color:#fff;
+					border-color:#466aa8;
+				}
+				.fa-twitter{
+					color:#00b5ec
+				}
+				.fa-google-plus{
+					color:#e94730;
+				}
+				.fa{
+					margin-right:5px;
+				}
+			}
+			.num{
+				border:1px solid $colorGray;
+				border-radius:3px;
+				padding:4px 9px;
+				margin:0 5px 0 3px;
+				position: relative;
+				&:before,
+				&:after{
+					content: '';
+					display: block;
+					position: absolute;
+					left: -14px;
+					top: 50%;
+					width: 0;
+					height: 0;
+					border-style: solid;
+				}
+				&:after {
+					top: 5px;
+					border-color: transparent #fff transparent transparent;
+					border-width: 7px;
+				}
+				&:before {
+					top: 3px;
+					left: -18px;
+					border-color: transparent #d2d2d2 transparent transparent;
+					border-width: 9px;
+				}
+			}
+			.link{
+				margin-right:80px;
+			}
+			p{
+				margin-top:20px;
+				color:rgb(12,39,60);
 			}
 		}
 	}
@@ -1287,11 +1421,12 @@
 	padding: 40px 0 164px;
 	&.style1 h2{ padding: 0 0 0 20px;}
 	h2{
-		@include font(18px, 20px);
+		@include font(24px, 26px);
 		font-family: $font-family-base-1;
 		font-weight: 400;
 		margin: 0 0 25px;
-		color: $black;
+		color: rgb(51,51,51);
+		font-weight: bold;
 		span{
 			color:#fff;
 			background: $colorBlue;
@@ -1301,7 +1436,7 @@
 		}
 	}
 	.is-registered{
-		width:80%;
+		width:70%;
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 15px; 
@@ -1341,14 +1476,16 @@
 	.bill-detail{
 		overflow: hidden;
 		width: 549px;
+		margin: 0 0 50px 0;
 		.form-group{
 			margin-bottom: 17px;
 			overflow: hidden;
 			@include placeholder {color: $clr-37;}
 		}
+		
 		.form-control{
 			@include font(14px, 16px);
-			background: none;
+			background: url("images/svg/item_1.png") right center no-repeat;
 			outline: none;
 			box-shadow: none;
 			border-style: solid;
@@ -1359,6 +1496,14 @@
 			height: 55px;
 			color: $clr-37;
 			border-color: $clr-38;
+		}
+		.select-form{
+			background: url("/images/svg/item_1.png") 98% center no-repeat;
+			background-size: 20px 20px;
+			background-color: #fff;
+			appearance: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
 		}
 		textarea{
 			min-height: 99px;
@@ -1452,6 +1597,21 @@
 				}
 			}
 		}
+		.final-price{
+			strong{
+				color: #333333;
+				font-size: 24px;
+				font-weight: bold;
+			}
+			.txt{
+				span{
+					color: #333333;
+					font-size: 24px;
+					font-weight: bold;
+					}
+			}
+				
+		}
 		li{
 			margin: 0 0 10px;
 			padding: 0 0 9px;
@@ -1464,16 +1624,16 @@
 			@include font(16px, 18px);
 			display: block;
 			margin: 0 0 11px;
-			text-transform: uppercase;
 			color: $clr-1;
-			&.sub-title{ margin: 0;}
+			&.sub-title{ 
+				margin: 0;
+			}
 		}
 		span{
 			@include font(12px, 16px);
 			display: block;
 			font-weight: 300;
 			margin: 0 0 3px;
-			color: $clr-1;
 		}
 		.txt{
 			.title{ margin: 0 0 9px;}
@@ -1570,6 +1730,7 @@
 			color: $clr-30;
 		}
 	}
+	
 }
 /*------------------------------------------------------------------
 35. Mt Product Table / .mt-product-table
@@ -1581,10 +1742,55 @@
 		border-style: solid;
 		border-width: 0 0 1px;
 		border-color: $clr-38;
+		.count{
+			padding: 81px 0 0;
+			span{
+				padding:5px 10px;
+				border:2px solid #f8f8f8;
+			}
+			.plus{
+				color: $colorBlue;
+				font-weight: bold;
+				border-left:none;
+				font-size:20px;
+				cursor: pointer; 
+			}
+			.minus{
+				border-right:none;
+				cursor: pointer;
+				font-weight: bold;
+				font-size:20px;
+			}
+			.number{
+				padding: 10px;
+			}
+		}
+		
+		
 	}
+	.confirm{
+		text-align: center;
+		padding: 30px 0 52px;
+		.procees-btn{
+			display: inline-block;
+			padding:10px 10px;
+			background: #88bd6e;
+			border-radius: 30px;
+			color:#fff;
+			font-weight: bold;
+			margin-left:20px;
+			width:40%;
+			font-size:18px;
+		}
+		.total{
+			display:inline-block;
+			color:rgb(49,49,49);
+			font-weight:bold;
+		}
+	}
+
 	.title{
 		@include font(16px, 18px);
-		text-transform: uppercase;
 		display: block;
 		padding: 0 0 18px;
 		color: $clr-1;
@@ -1597,7 +1803,7 @@
 	.product-name{
 		@include font(18px, 20px);
 		display: block;
-		padding: 69px 0 0;
+		padding: 69px 0 10px;
 		color: $clr-17;
 	}
 	.price{
@@ -1622,14 +1828,13 @@
 		@include font(18px, 20px);
 		float: right;
 		margin: 81px 0 0;
-		color: $colorBlue;
+		color: #f05c5c;
 		@include transition (all, 0.4s, linear);
 		&:hover{color: $clr-30;}
 	}
 	.coupon-form{
 		overflow: hidden;
 		padding: 40px 0 52px;
-		border-bottom: 1px solid #dcdcdc;
 		.form-control{
 			border-style: solid;
 			border-width: 1px;
@@ -1648,27 +1853,42 @@
 		}
 		button{
 			@include font(18px, 20px);
-			text-transform: uppercase;
 			font-weight: 700;
 			font-family: $font-family-base-1;
-			border: none;
+			border: 1px solid $colorBlue;
+			border-radius: 30px;
 			outline: none;
-			border-radius: 0;
+			background: #fff;
 			display: block;
 			text-align: center;
 			padding: 16px 10px 13px 7px;
-			width: 111px;
 			float: left;
 			transition: all 0.25s linear;
-			background: $clr-42;
-			color: $white;
-			&:hover{ background: $clr-41;}
-		}
-		.mt-holder{
-			width: 389px;
-			margin: 0 auto;
+			color: rgb(49,49,49);
 		}
 	}
+}
+.complete-container{
+	.mt-product-table{
+		width:60%;
+		margin:0 auto;
+		padding: 0;
+		h2{
+			font-weight:bold;
+			color:rgb(49,49,49);
+			margin-bottom:15px;
+		}
+		a{
+			color:$colorBlue;
+			font-weight: bold;
+		}
+		.confirm{
+			.procees-btn{
+				background: $colorBlue;
+			}
+		}
+	}
+		
 }
 /*------------------------------------------------------------------
 36. product detail ab / .product-detail-tab
@@ -1694,11 +1914,11 @@
 			display: block;
 			margin: 0 0 -1px;
 			padding: 0 0 12px;
-			border-bottom: 1px solid transparent;
+			border-bottom: 2px solid transparent;
 			&:hover,
 			&.active{
 				color: $black;
-				border-bottom-color: $black;
+				border-bottom-color: $colorBlue;
 			}
 		}
 	}
@@ -1865,6 +2085,9 @@
 			border-radius: 20px;
 			border: 1px solid #d8d8d8;
 			font: 14px/1 $source-sans-pro;
+			.fa{
+				margin-left:10px;
+			}
 			&:hover{
 				color: $colorBlue;
 				border-color: $colorBlue;
@@ -1939,12 +2162,22 @@
 .mt-pagination{
 	padding: 42px 0 100px;
 	font: 700 16px/20px $font-family-base-1;
+	&.mt-pagination-blog{
+		padding: 42px 0 0;
+	}
 	ul{
 		margin: 0;
 		text-align: center;
 		li{
 			padding: 0 3px;
 			vertical-align: top;
+			&.active{
+				a{
+					color: $white;
+					background: $colorBlue;
+					text-decoration: none;
+				}
+			}
 		}
 		a{
 			color: $clr-34;
@@ -1952,6 +2185,14 @@
 			padding: 5px 10px;
 			background: $clr-7;
 			@include transition(all, ease, 0.5s);
+			&.next{
+				background: none;
+				padding: 0 10px;
+				.fa{
+					font-size:30px;
+					font-weight: bold;
+				}
+			}
 			&:hover{
 				color: $white;
 				background: $colorBlue;
@@ -2099,7 +2340,7 @@
 			&:hover{ 
 				text-decoration: underline;
 				.fa{
-					text-decoration: none;
+					border-bottom:none;
 					color:#d3293b;
 				} 
 			}

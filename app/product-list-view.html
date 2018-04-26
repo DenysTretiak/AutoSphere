@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- set the encoding of your site-->
     <meta charset="utf-8">
-    <!-- set the viewport width and initial-scale on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schön. | eCommerce HTML5 Template</title>
     <!--build:css css/styles.min.css-->
@@ -48,11 +46,12 @@
           <div class="mt-top-bar mt-top-bar-2 mt-bottom-bar">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-4">
                   <div class="mt-logo"><a href="#"><img src="images/mt-logo.png" alt="schon"></a></div>
                 </div>
-                <div class="col-xs-12 col-sm-8 text-right">
-                  <div class="col-xs-12 col-sm-6"><img class="telephone-icon" src="images/svg/telephone.svg" alt="phone">
+                <div class="col-xs-8 text-right">
+                  <div class="col-xs-12 col-sm-6"><span>
+                      <div class="fa fa-phone"></div></span>
                     <div class="phones"><span class="mt-phone">+38(050)583-81-51</span><span class="mt-phone">+38(096)196-40-21</span></div>
                   </div>
                   <!-- mt-top-list start here-->
@@ -266,25 +265,10 @@
           <!-- mt bottom bar end here--><span class="mt-side-over"></span>
         </header>
         <!-- mt header end here-->
-        <!-- mt header style4 end here-->
-        <!-- mt search popup start here-->
-        <div class="mt-search-popup">
-          <div class="mt-holder"><a class="search-close" href="#"><span></span><span></span></a>
-            <div class="mt-frame">
-              <form action="#">
-                <fieldset>
-                  <input type="text" placeholder="Search..."><span class="icon-microphone"></span>
-                  <button class="icon-magnifier" type="submit"></button>
-                </fieldset>
-              </form>
-            </div>
-          </div>
-        </div>
-        <!-- mt search popup end here-->
         <!-- mt main start here-->
         <main class="product-list-mt-main" id="mt-main">
           <!-- Mt Contact Banner of the Page end-->
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
               <!-- sidebar of the Page start here-->
               <div class="col-xs-12 product-list-breadcrumbs">
@@ -375,7 +359,7 @@
                 <section class="shop-widget">
                   <h2>Товары со скидкой</h2>
                   <!-- mt product4 start here-->
-                  <div class="mt-product4 mt-paddingbottom20">
+                  <div class="mt-product4 mt-paddingbottom20 sidebar-product">
                     <div class="img"><a href="product-detail.html"><img src="images/product-list/bg.png" alt="image description"></a></div>
                     <div class="text">
                       <div class="frame"><strong><a href="product-detail.html">Вижимной подшибник</a></strong>
@@ -431,7 +415,7 @@
                     <div class="mt-product1 large">
                       <div class="box">
                         <div class="b1">
-                          <div class="b2"><a href="product-detail.html"><img src="images/product-list/size-2.png" alt="image description"></a>
+                          <div class="b2"><a href="product-detail.html"><img src="images/product-list/grid.png" alt="image description"></a>
                             <ul class="mt-stars">
                               <li><i class="fa fa-star"></i></li>
                               <li><i class="fa fa-star"></i></li>
@@ -485,10 +469,11 @@
                 </div>
                 <nav class="mt-pagination">
                   <ul class="list-inline">
-                    <li><a href="#">1</a></li>
+                    <li class="active"><a href="#">1</a></li>
                     <li><a href="#">2</a></li>
                     <li><a href="#">3</a></li>
                     <li><a href="#">4</a></li>
+                    <li><a class="next" href="#"><i class="fa fa-angle-right"></i></a></li>
                   </ul>
                 </nav>
                 <!-- mt pagination end here-->
@@ -584,32 +569,23 @@
                     <!-- Social Network of the Page end-->
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!-- Footer Holder of the Page end-->
-          <!-- Footer Area of the Page-->
-          <div class="footer-area">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-12 text-center">
+                <div class="col-xs-12 text-center footer-area">
                   <p>© <a href="index.html">Autospere.</a>- Все права защищены</p>
                 </div>
               </div>
             </div>
           </div>
         </footer>
-        <!-- Footer Area of the Page end-->
-        <!-- footer of the Page end-->
-      </div>
-      <!-- W1 end here--><span class="fa fa-arrow-up" id="back-top"></span>
+      </div><span class="fa fa-arrow-up" id="back-top"></span>
     </div>
-    <!--build:js js/main.min.j-->
-    <script src="js/headerScript.js"></script>
-    <script src="js/productListScript.js"></script>
-    <script src="js/libs/jquery.js"></script>
-    <script src="js/libs/plugins.js"></script>
-    <script src="js/libs/jquery.main.js"></script>
-    <!--endbuild-->
   </body>
+  <!--build:js js/main.min.js-->
+  <script src="js/headerScript.js"></script>
+  <script src="js/productItemScript.js"></script>
+  <script src="js/productListScript.js"></script>
+  <script src="js/blogScript.js"></script>
+  <script src="js/libs/jquery.js"></script>
+  <script src="js/libs/plugins.js"></script>
+  <script src="js/libs/jquery.main.js"></script>
+  <!--endbuild-->
 </html>

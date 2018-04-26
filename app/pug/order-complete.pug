@@ -1,0 +1,47 @@
+doctype html
+html(lang='en')
+    include modules/header/head
+    body
+        // main container of all the page elements
+        #wrapper
+            // Page Loader
+            #pre-loader.loader-container
+                .loader
+                    img(src='images/svg/rings.svg', alt='loader')
+            .w1
+                // mt -header style14 start from here
+                include modules/header/header-checkout
+                // Main of the Page
+                main#mt-main
+                    // Mt Process Section of the Page
+                    .mt-process-sec.wow.fadeInUp(data-wow-delay='0.4s')
+                        .container
+                            .row
+                                .col-xs-12
+                                    // Process List of the Page
+                                    ul.list-unstyled.process-list
+                                        li.visited
+                                            span.counter 01
+                                            strong.title Корзина
+                                        li.visited
+                                            span.counter.counter-2 02
+                                            strong.title Оформление заказа
+                                        li.active
+                                            span.counter 03
+                                            strong.title Готово
+                                    // Process List of the Page end
+                    // Mt Process Section of the Page end
+                    // Mt Detail Section of the Page
+                    section.complete-container.text-center
+                        .mt-product-table
+                            h2 Cпасибо за покупку!
+                            p Ваш заказ 
+                                a(href="#") №123456789 
+                                | успешно оформлен. Наш менеджер свяжется с вами в ближайшее время.
+                                | На ваш електронный адрес было отправлено автоматическое письмо с данными по вашему заказу.
+                            .confirm
+                                a.procees-btn(href="#") Вернутся в магазин 
+                include modules/footer/footer 
+            span#back-top.fa.fa-arrow-up
+        // include jQuery
+        include modules/footer/scripts

@@ -360,7 +360,8 @@
 -------------------------------------------------------------------*/
 .mt-about-sec{
 	@extend %clearfix;
-	padding: 86px 0 106px;
+	padding:20px 0;
+	border-top:1px solid $colorGray;
 	.txt{
 		overflow: hidden;
 		@include font(18px, 31px);
@@ -379,7 +380,6 @@
 		font-weight: bold;
 		margin: 0 0 50px;
 		font-family: $font-family-base-1;
-		text-transform: uppercase;
 		color: $clr-30;
 	}
 	.social-network{
@@ -750,7 +750,7 @@
 21. Mt Patners / .mt-patners
 -------------------------------------------------------------------*/
 .mt-patners{
-	padding: 0 0 36px;
+	padding: 50px 0 100px;
 	.heading{
 		color: #3a3a3a;
 		margin: 0 0 7px;

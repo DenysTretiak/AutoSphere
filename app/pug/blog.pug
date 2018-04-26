@@ -1,0 +1,72 @@
+doctype html
+html(lang='en')
+  include modules/header/head
+  body
+    #wrapper
+      #pre-loader.loader-container
+        .loader
+          img(src='images/svg/rings.svg', alt='loader')
+      .w1
+        include modules/header/header
+        main#mt-main
+          .mt-blog-detail.style1
+            .container-fluid
+              .row
+                .col-xs-12.product-list-breadcrumbs
+                  nav.breadcrumbs
+                    ul.list-unstyled
+                      li
+                      a(href='index.html')
+                        | Главная 
+                        i.fa.fa-circle
+                      li Блог
+                .page-title.text-right
+                  h1 Блог
+                .col-xs-12.col-sm-8.wow.fadeInLeft(data-wow-delay='0.4s')
+                  // Blog Post of the Page
+                  article.blog-post.style2
+                    .img-holder
+                      a(href='blog-post-detail-sidebar.html')
+                        img(src='images/main-page/blog1.png', alt='blog img')
+                      ul.list-unstyled.comment-nav
+                        li
+                          a(href='#')
+                            i.fa.fa-comments
+                            | 12
+                        li
+                          a(href='#')
+                            i.fa.fa-share-alt
+                            | 14
+                    .blog-txt
+                      h2
+                        a(href='blog-post-detail-sidebar.html') Skoda построит новый завод ввиду рекордного спроса
+                      .caption
+                        span.date 13 июня 2018
+                        span.time-blog
+                          i.fa.fa-clock-o
+                          |  Время на прочтение: 5 мин  
+                      p
+                        | Fusce mattis nunc lacus. Vestibulum sit amet metus euismod, condimentum lectus id, ultrices sem.
+                      a.btn-more(href='blog-post-detail-sidebar.html') Читать дальше
+                  // Blog Post of the Page end
+                  // Btn Holder of the Page
+                  .show-more
+                    btn.show-more-btn Показать еще статьи
+                  nav.mt-pagination.mt-pagination-blog
+                    ul.list-inline
+                      li.active
+                        a(href='#') 1
+                      li
+                        a(href='#') 2
+                      li
+                        a(href='#') 3
+                      li
+                        a(href='#') 4
+                      li
+                        a.next(href='#')
+                          i.fa.fa-angle-right
+                  // Btn Holder of the Page end
+                include modules/blog/blog-sidebar 
+        include modules/footer/footer 
+      span#back-top.fa.fa-arrow-up
+    include modules/footer/scripts

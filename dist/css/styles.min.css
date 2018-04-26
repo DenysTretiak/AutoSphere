@@ -6957,18 +6957,17 @@ a:hover {
       #mt-header.style17 .mt-top-bar-2 .mt-logo {
         margin: 6px 0 0;
         float: left; }
+      #mt-header.style17 .mt-top-bar-2 .fa {
+        color: #338be3;
+        font-size: 37px; }
       #mt-header.style17 .mt-top-bar-2 .phones {
-        display: inline-block; }
+        display: inline-block;
+        margin-left: 10px; }
         #mt-header.style17 .mt-top-bar-2 .phones .mt-phone {
           color: #535353;
           display: block; }
-      #mt-header.style17 .mt-top-bar-2 .telephone-icon {
-        width: 10%;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 10px; }
     #mt-header.style17 .mt-bottom-bar {
-      padding: 26px 0 34px; }
+      padding: 10px 0 27px; }
       #mt-header.style17 .mt-bottom-bar .mt-logo {
         margin: 6px 0 0; }
       #mt-header.style17 .mt-bottom-bar .mt-icon-list {
@@ -7106,7 +7105,9 @@ a:hover {
   background: #000;
   padding: 12px 30px 4px 54px; }
   .mt-top-bar a {
-    color: #fff; }
+    color: black;
+    border-color: #338be3;
+    text-transform: none; }
     .mt-top-bar a:hover {
       color: #ff6060; }
   .mt-top-bar .tel {
@@ -7176,7 +7177,7 @@ a:hover {
     font-weight: normal; }
     .mt-top-bar .mt-top-list2 li {
       float: right;
-      font-family: 'Monserrat';
+      font-family: 'Montserrat';
       padding: 0 11px;
       margin: 0 0 0 4px; }
       .mt-top-bar .mt-top-list2 li:last-child {
@@ -7244,7 +7245,7 @@ a:hover {
         .mt-bottom-bar .mt-icon-list li.drop.open > a:after {
           width: 0;
           top: 83%;
-          left: 50%;
+          left: 12%;
           height: 0;
           content: " ";
           margin-left: -13px;
@@ -7269,7 +7270,7 @@ a:hover {
       z-index: 2;
       opacity: 0;
       width: 380px;
-      right: -49px;
+      right: -30px;
       position: absolute;
       visibility: hidden; }
       .mt-bottom-bar .mt-icon-list .mt-drop .mt-drop-sub {
@@ -7443,7 +7444,7 @@ a:hover {
     #nav > ul > li {
       position: relative;
       vertical-align: top;
-      margin: 0 36px 0 7px;
+      margin: 0 36px 0 0;
       display: inline-block;
       text-transform: none; }
       #nav > ul > li .mt-mdropover {
@@ -7854,11 +7855,10 @@ a:hover {
     .mt-side-widget .fa-search:hover {
       color: #ff6060; }
   .mt-side-widget .cart-row {
-    overflow: hidden;
     margin: 0 0 17px;
     position: relative; }
     .mt-side-widget .cart-row .close {
-      top: 10px;
+      top: 35px;
       right: 15px;
       color: #ff6060;
       font-size: 14px;
@@ -7877,8 +7877,7 @@ a:hover {
     .mt-side-widget .cart-row .cart-btn-row {
       overflow: hidden; }
     .mt-side-widget .cart-row .mt-h {
-      overflow: hidden;
-      padding: 6px 0 0; }
+      text-align: left; }
   .mt-side-widget .mt-h-title {
     display: block;
     color: #757575;
@@ -7904,19 +7903,39 @@ a:hover {
       .mt-side-widget .price a:hover {
         color: #ff6060;
         text-decoration: none; }
+  .mt-side-widget .count {
+    margin-top: 5px; }
+    .mt-side-widget .count span {
+      padding: 5px 8px;
+      border: 2px solid #f8f8f8; }
+    .mt-side-widget .count .plus {
+      color: #338be3;
+      border-left: none;
+      cursor: pointer; }
+    .mt-side-widget .count .minus {
+      border-right: none;
+      cursor: pointer; }
   .mt-side-widget .cart-row-total {
     color: #757575;
     overflow: hidden;
     margin: 0 0 20px;
-    padding: 16px 21px 0 10px;
+    padding: 16px 5px 0 5px;
     border-top: 1px solid #eee;
     font: 600 14px/26px "Monserrat", sans-serif; }
+    .mt-side-widget .cart-row-total .total {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; }
   .mt-side-widget .mt-total {
     float: left; }
-  .mt-side-widget .mt-total-txt {
-    float: right;
-    color: #010101;
-    font: 600 15px/20px "Monserrat", sans-serif; }
+  .mt-side-widget .buy-items {
+    margin-top: 25px; }
+    .mt-side-widget .buy-items .mt-total-txt {
+      color: #010101;
+      background: #fff;
+      font: 600 15px/20px 'Montserrat'; }
   .mt-side-widget .cart-btn-row {
     overflow: hidden;
     padding: 22px 0 0;
@@ -8124,10 +8143,10 @@ a:hover {
   border: 1px solid #000;
   text-transform: uppercase;
   font: 14px/20px "Montserrat", sans-serif; }
-  .btn-type2:focus, .btn-type2:hover {
+  .btn-type2.order {
     color: #fff;
-    background: #000;
-    border: 1px solid #000; }
+    margin-left: 10px;
+    background: #338be3; }
 
 .btn-type3 {
   outline: none;
@@ -8180,7 +8199,7 @@ a:hover {
     padding: 76px 0 70px; }
 
 #mt-footer.style2 .footer-holder {
-  padding: 51px 0 60px; }
+  padding: 51px 0 0; }
 
 #mt-footer.style2 .f-widget-about p {
   margin: 0 0 33px; }
@@ -10816,12 +10835,12 @@ a:hover {
       color: #252528;
       margin: 0 13px 0 0;
       position: relative;
-      font: 14px/18px "Montserrat", sans-serif;
+      font: 12px/18px "Montserrat", sans-serif;
       display: inline-block;
       vertical-align: middle; }
     .mt-product4 .text .price {
       color: #252528;
-      font: 18px/18px "Montserrat", sans-serif;
+      font: 16px/18px "Montserrat", sans-serif;
       display: inline-block;
       vertical-align: middle; }
 
@@ -11235,12 +11254,11 @@ a:hover {
 -------------------------------------------------------------------*/
 .mt-product-detial {
   overflow: hidden;
-  padding: 0 0 25px;
-  background: #f6f6f6; }
+  padding: 0 0 25px; }
   .mt-product-detial .slider {
     float: left;
-    width: 55.5%;
-    padding: 0 4.65% 0 0; }
+    width: 35.5%;
+    padding: 50px 4.65% 0 0; }
   .mt-product-detial .comment-list {
     margin: 0;
     color: #b6b6b6;
@@ -11310,10 +11328,155 @@ a:hover {
       .mt-product-detial .pagg-slider .slick-next:before {
         content: "\f054"; }
   .mt-product-detial .detial-holder {
-    width: 40%;
+    width: 64%;
     float: left;
-    padding: 50px 0;
-    position: relative; }
+    margin: 50px 0 0 0;
+    position: relative;
+    border: 1px solid #d2d2d2; }
+    .mt-product-detial .detial-holder .in-stock {
+      color: #96bf72;
+      font-size: 14px;
+      vertical-align: middle; }
+      .mt-product-detial .detial-holder .in-stock .fa {
+        margin: 0 10px;
+        font-size: 16px; }
+    .mt-product-detial .detial-holder .detial-holder-top {
+      padding: 25px 25px 0 25px; }
+    .mt-product-detial .detial-holder .table-bordered {
+      width: 100%;
+      border-left: none;
+      border-right: none; }
+      .mt-product-detial .detial-holder .table-bordered td {
+        vertical-align: middle;
+        padding: 10px; }
+        .mt-product-detial .detial-holder .table-bordered td .btn {
+          border-color: #d2d2d2; }
+          .mt-product-detial .detial-holder .table-bordered td .btn.active {
+            border-color: #338be3;
+            color: #338be3;
+            box-shadow: none; }
+          .mt-product-detial .detial-holder .table-bordered td .btn:active {
+            box-shadow: none; }
+        .mt-product-detial .detial-holder .table-bordered td .delivery li {
+          list-style: none;
+          margin-bottom: 20px; }
+          .mt-product-detial .detial-holder .table-bordered td .delivery li a {
+            text-decoration: underline; }
+            .mt-product-detial .detial-holder .table-bordered td .delivery li a .new-post {
+              color: #338be3; }
+        .mt-product-detial .detial-holder .table-bordered td .td-container {
+          display: flex;
+          justify-content: space-around;
+          align-items: baseline; }
+          .mt-product-detial .detial-holder .table-bordered td .td-container .count {
+            margin-top: 5px; }
+            .mt-product-detial .detial-holder .table-bordered td .td-container .count span {
+              padding: 5px 10px;
+              border: 2px solid #f8f8f8; }
+            .mt-product-detial .detial-holder .table-bordered td .td-container .count .plus {
+              color: #338be3;
+              border-left: none;
+              cursor: pointer; }
+            .mt-product-detial .detial-holder .table-bordered td .td-container .count .minus {
+              border-right: none;
+              cursor: pointer; }
+            .mt-product-detial .detial-holder .table-bordered td .td-container .count h6 {
+              margin: 20px 0 0 0; }
+          .mt-product-detial .detial-holder .table-bordered td .td-container .row-val {
+            margin-left: 20px;
+            text-align: center; }
+            .mt-product-detial .detial-holder .table-bordered td .td-container .row-val button {
+              width: 173px;
+              padding: 12px 10px 10px;
+              margin: 0 0 10px 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-size: 14px;
+              line-height: 20px;
+              font-family: "Montserrat", sans-serif;
+              font-weight: 700;
+              border: none;
+              outline: none;
+              border-radius: 25px;
+              transition: all 0.25s linear;
+              background: #338be3;
+              color: #fff; }
+          .mt-product-detial .detial-holder .table-bordered td .td-container .garanty {
+            padding: 0; }
+            .mt-product-detial .detial-holder .table-bordered td .td-container .garanty td {
+              padding: 0; }
+      .mt-product-detial .detial-holder .table-bordered ul {
+        padding: 0; }
+    .mt-product-detial .detial-holder .consultation {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      padding: 30px 0 10px 0;
+      border-bottom: 1px solid #ddd; }
+      .mt-product-detial .detial-holder .consultation span {
+        font-weight: bold; }
+      .mt-product-detial .detial-holder .consultation .phone .hint {
+        display: block;
+        font-size: 9px;
+        color: #d2d2d2;
+        font-weight: normal; }
+      .mt-product-detial .detial-holder .consultation input {
+        border: 2px solid #348ce4;
+        border-radius: 4px; }
+      .mt-product-detial .detial-holder .consultation .reset-btn {
+        display: inline-block;
+        padding: 3px 13px;
+        background: #338be3;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.25s linear; }
+    .mt-product-detial .detial-holder .link-to-item {
+      padding: 15px 0 20px 30px; }
+      .mt-product-detial .detial-holder .link-to-item a {
+        margin-right: 10px;
+        padding: 4px;
+        border: 1px solid #d2d2d2;
+        border-radius: 3px; }
+        .mt-product-detial .detial-holder .link-to-item a.facebook {
+          background: #466aa8;
+          color: #fff;
+          border-color: #466aa8; }
+        .mt-product-detial .detial-holder .link-to-item a .fa-twitter {
+          color: #00b5ec; }
+        .mt-product-detial .detial-holder .link-to-item a .fa-google-plus {
+          color: #e94730; }
+        .mt-product-detial .detial-holder .link-to-item a .fa {
+          margin-right: 5px; }
+      .mt-product-detial .detial-holder .link-to-item .num {
+        border: 1px solid #d2d2d2;
+        border-radius: 3px;
+        padding: 4px 9px;
+        margin: 0 5px 0 3px;
+        position: relative; }
+        .mt-product-detial .detial-holder .link-to-item .num:before, .mt-product-detial .detial-holder .link-to-item .num:after {
+          content: '';
+          display: block;
+          position: absolute;
+          left: -14px;
+          top: 50%;
+          width: 0;
+          height: 0;
+          border-style: solid; }
+        .mt-product-detial .detial-holder .link-to-item .num:after {
+          top: 5px;
+          border-color: transparent #fff transparent transparent;
+          border-width: 7px; }
+        .mt-product-detial .detial-holder .link-to-item .num:before {
+          top: 3px;
+          left: -18px;
+          border-color: transparent #d2d2d2 transparent transparent;
+          border-width: 9px; }
+      .mt-product-detial .detial-holder .link-to-item .link {
+        margin-right: 80px; }
+      .mt-product-detial .detial-holder .link-to-item p {
+        margin-top: 20px;
+        color: #0c273c; }
   .mt-product-detial h2 {
     font-size: 44px;
     line-height: 46px;
@@ -11497,16 +11660,45 @@ a:hover {
   .mt-detail-sec.style1 h2 {
     padding: 0 0 0 20px; }
   .mt-detail-sec h2 {
-    font-size: 18px;
-    line-height: 20px;
-    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 26px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     margin: 0 0 25px;
-    color: #000; }
+    color: #333333;
+    font-weight: bold; }
+    .mt-detail-sec h2 span {
+      color: #fff;
+      background: #338be3;
+      padding: 3px 11px;
+      border-radius: 50%;
+      margin-right: 5px; }
+  .mt-detail-sec .is-registered {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; }
+    .mt-detail-sec .is-registered a {
+      color: #000; }
+      .mt-detail-sec .is-registered a.active {
+        text-decoration: underline; }
+  .mt-detail-sec .checkout-details table tr td {
+    vertical-align: top;
+    padding: 15px 10px; }
+    .mt-detail-sec .checkout-details table tr td .form-control {
+      margin-top: 10px; }
+    .mt-detail-sec .checkout-details table tr td:last-child {
+      text-align: right; }
+  .mt-detail-sec .checkout-details table ul {
+    padding: 0; }
+    .mt-detail-sec .checkout-details table ul li {
+      list-style: none; }
+  .mt-detail-sec .checkout-details textarea {
+    height: 100px; }
   .mt-detail-sec .bill-detail {
     overflow: hidden;
-    width: 549px; }
+    width: 549px;
+    margin: 0 0 50px 0; }
     .mt-detail-sec .bill-detail .form-group {
       margin-bottom: 17px;
       overflow: hidden; }
@@ -11524,7 +11716,7 @@ a:hover {
     .mt-detail-sec .bill-detail .form-control {
       font-size: 14px;
       line-height: 16px;
-      background: none;
+      background: url("images/svg/item_1.png") right center no-repeat;
       outline: none;
       box-shadow: none;
       border-style: solid;
@@ -11535,6 +11727,13 @@ a:hover {
       height: 55px;
       color: #7d7d7d;
       border-color: #dcdcdc; }
+    .mt-detail-sec .bill-detail .select-form {
+      background: url("/images/svg/item_1.png") 98% center no-repeat;
+      background-size: 20px 20px;
+      background-color: #fff;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
     .mt-detail-sec .bill-detail textarea {
       min-height: 99px;
       width: 100%;
@@ -11577,6 +11776,22 @@ a:hover {
     background: #f6f6f6;
     margin: 44px 0 0 32px;
     padding: 51px 60px 43px; }
+    .mt-detail-sec .holder .confirm {
+      text-align: center; }
+      .mt-detail-sec .holder .confirm .procees-btn {
+        display: inline-block;
+        padding: 10px 15px;
+        background: #88bd6e;
+        color: #fff;
+        font-weight: bold;
+        width: 70%;
+        font-size: 18px; }
+      .mt-detail-sec .holder .confirm .politics {
+        display: block;
+        font-size: 11px;
+        margin: 20px 0 0 0; }
+        .mt-detail-sec .holder .confirm .politics a {
+          text-decoration: underline; }
   .mt-detail-sec .block {
     overflow: hidden;
     padding: 21px 0 0 2px;
@@ -11600,6 +11815,14 @@ a:hover {
         font-weight: 400;
         display: block;
         color: #010101; }
+    .mt-detail-sec .block .final-price strong {
+      color: #333333;
+      font-size: 24px;
+      font-weight: bold; }
+    .mt-detail-sec .block .final-price .txt span {
+      color: #333333;
+      font-size: 24px;
+      font-weight: bold; }
     .mt-detail-sec .block li {
       margin: 0 0 10px;
       padding: 0 0 9px;
@@ -11611,17 +11834,15 @@ a:hover {
       line-height: 18px;
       display: block;
       margin: 0 0 11px;
-      text-transform: uppercase;
       color: #868686; }
       .mt-detail-sec .block .title.sub-title {
         margin: 0; }
     .mt-detail-sec .block span {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 16px;
       display: block;
-      font-weight: 700;
-      margin: 0 0 3px;
-      color: #868686; }
+      font-weight: 300;
+      margin: 0 0 3px; }
     .mt-detail-sec .block .txt .title {
       margin: 0 0 9px; }
     .mt-detail-sec .block .txt span {
@@ -11723,10 +11944,44 @@ a:hover {
     border-style: solid;
     border-width: 0 0 1px;
     border-color: #dcdcdc; }
+    .mt-product-table .border .count {
+      padding: 81px 0 0; }
+      .mt-product-table .border .count span {
+        padding: 5px 10px;
+        border: 2px solid #f8f8f8; }
+      .mt-product-table .border .count .plus {
+        color: #338be3;
+        font-weight: bold;
+        border-left: none;
+        font-size: 20px;
+        cursor: pointer; }
+      .mt-product-table .border .count .minus {
+        border-right: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 20px; }
+      .mt-product-table .border .count .number {
+        padding: 10px; }
+  .mt-product-table .confirm {
+    text-align: center;
+    padding: 30px 0 52px; }
+    .mt-product-table .confirm .procees-btn {
+      display: inline-block;
+      padding: 10px 10px;
+      background: #88bd6e;
+      border-radius: 30px;
+      color: #fff;
+      font-weight: bold;
+      margin-left: 20px;
+      width: 40%;
+      font-size: 18px; }
+    .mt-product-table .confirm .total {
+      display: inline-block;
+      color: #313131;
+      font-weight: bold; }
   .mt-product-table .title {
     font-size: 16px;
     line-height: 18px;
-    text-transform: uppercase;
     display: block;
     padding: 0 0 18px;
     color: #868686; }
@@ -11738,7 +11993,7 @@ a:hover {
     font-size: 18px;
     line-height: 20px;
     display: block;
-    padding: 69px 0 0;
+    padding: 69px 0 10px;
     color: #757575; }
   .mt-product-table .price {
     font-size: 18px;
@@ -11762,7 +12017,7 @@ a:hover {
     line-height: 20px;
     float: right;
     margin: 81px 0 0;
-    color: #338be3;
+    color: #f05c5c;
     -moz-transition: all 0.4s linear;
     -webkit-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
@@ -11771,8 +12026,7 @@ a:hover {
       color: #494949; }
   .mt-product-table .coupon-form {
     overflow: hidden;
-    padding: 40px 0 52px;
-    border-bottom: 1px solid #dcdcdc; }
+    padding: 40px 0 52px; }
     .mt-product-table .coupon-form .form-control {
       border-style: solid;
       border-width: 1px;
@@ -11792,25 +12046,32 @@ a:hover {
     .mt-product-table .coupon-form button {
       font-size: 18px;
       line-height: 20px;
-      text-transform: uppercase;
       font-weight: 700;
       font-family: "Montserrat", sans-serif;
-      border: none;
+      border: 1px solid #338be3;
+      border-radius: 30px;
       outline: none;
-      border-radius: 0;
+      background: #fff;
       display: block;
       text-align: center;
       padding: 16px 10px 13px 7px;
-      width: 111px;
       float: left;
       transition: all 0.25s linear;
-      background: #cba233;
-      color: #fff; }
-      .mt-product-table .coupon-form button:hover {
-        background: #f05c5c; }
-    .mt-product-table .coupon-form .mt-holder {
-      width: 389px;
-      margin: 0 auto; }
+      color: #313131; }
+
+.complete-container .mt-product-table {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0; }
+  .complete-container .mt-product-table h2 {
+    font-weight: bold;
+    color: #313131;
+    margin-bottom: 15px; }
+  .complete-container .mt-product-table a {
+    color: #338be3;
+    font-weight: bold; }
+  .complete-container .mt-product-table .confirm .procees-btn {
+    background: #338be3; }
 
 /*------------------------------------------------------------------
 36. product detail ab / .product-detail-tab
@@ -11835,10 +12096,10 @@ a:hover {
       display: block;
       margin: 0 0 -1px;
       padding: 0 0 12px;
-      border-bottom: 1px solid transparent; }
+      border-bottom: 2px solid transparent; }
       .product-detail-tab .mt-tabs a:hover, .product-detail-tab .mt-tabs a.active {
         color: #000;
-        border-bottom-color: #000; }
+        border-bottom-color: #338be3; }
   .product-detail-tab p {
     margin: 0 0 20px; }
 
@@ -11946,7 +12207,7 @@ a:hover {
     width: inherit;
     max-width: 100%; }
   .related-products .mt-product1 {
-    width: 19.8%;
+    width: 19.7%;
     padding-right: 2%; }
     .related-products .mt-product1 .txt {
       padding: 0 0 0 20px; }
@@ -11997,6 +12258,8 @@ a:hover {
       border-radius: 20px;
       border: 1px solid #d8d8d8;
       font: 14px/1 "Monserrat", sans-serif; }
+      .mt-shoplist-header .btn-box .drop-link .fa {
+        margin-left: 10px; }
       .mt-shoplist-header .btn-box .drop-link:hover {
         color: #338be3;
         border-color: #338be3; }
@@ -12072,6 +12335,10 @@ a:hover {
     .mt-pagination ul li {
       padding: 0 3px;
       vertical-align: top; }
+      .mt-pagination ul li.active a {
+        color: #fff;
+        background: #338be3;
+        text-decoration: none; }
     .mt-pagination ul a {
       color: #bababa;
       display: block;
@@ -12081,6 +12348,12 @@ a:hover {
       -webkit-transition: all ease 0.5s;
       -o-transition: all ease 0.5s;
       transition: all ease 0.5s; }
+      .mt-pagination ul a.next {
+        background: none;
+        padding: 0 10px; }
+        .mt-pagination ul a.next .fa {
+          font-size: 30px;
+          font-weight: bold; }
       .mt-pagination ul a:hover {
         color: #fff;
         background: #338be3;
@@ -12215,7 +12488,7 @@ a:hover {
       .product-post .nav a:hover {
         text-decoration: underline; }
         .product-post .nav a:hover .fa {
-          text-decoration: none;
+          border-bottom: none;
           color: #d3293b; }
 
 /*------------------------------------------------------------------
@@ -14544,7 +14817,8 @@ a:hover {
 17. Mt Process Section / .mt-process-sec
 -------------------------------------------------------------------*/
 .mt-process-sec {
-  padding: 76px 0; }
+  padding: 76px 0;
+  border-top: 1px solid #d2d2d2; }
   .mt-process-sec .process-list {
     margin: 0 0 22px;
     font-size: 16px;
@@ -14594,10 +14868,13 @@ a:hover {
     .mt-process-sec .process-list .title {
       display: block; }
     .mt-process-sec .process-list .active .title {
-      color: #000; }
+      color: #338be3; }
     .mt-process-sec .process-list .active .counter {
-      color: #000;
-      border-color: #000; }
+      color: #338be3; }
+    .mt-process-sec .process-list .visited .title {
+      color: #000; }
+    .mt-process-sec .process-list .visited .counter {
+      color: #000; }
 
 /*------------------------------------------------------------------
 18. Mt seller Section / .mt-seller-sec
@@ -14665,7 +14942,7 @@ a:hover {
 21. Mt Patners / .mt-patners
 -------------------------------------------------------------------*/
 .mt-patners {
-  padding: 0 0 36px; }
+  padding: 50px 0 100px; }
   .mt-patners .heading {
     color: #3a3a3a;
     margin: 0 0 7px;
@@ -14944,7 +15221,7 @@ a:hover {
     color: #fff;
     margin-top: 15px;
     font-weight: 400;
-    padding: 1px 7px 3px 10px;
+    padding: 5px 7px 7px 10px;
     border-radius: 3px;
     transition: all 0.25s linear; }
     .shop-widget .filter-btn:hover {
@@ -15363,7 +15640,7 @@ a:hover, a:active, a:focus {
       .mt-blog .mt-blog-row .mt-blog-item:hover {
         border-color: #338be3; }
         .mt-blog .mt-blog-row .mt-blog-item:hover .text h3 a:hover {
-          text-decoration: underline; }
+          color: #338be3; }
   .mt-blog .link {
     text-align: right;
     margin-top: 40px; }

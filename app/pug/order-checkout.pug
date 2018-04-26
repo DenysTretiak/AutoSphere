@@ -1,23 +1,6 @@
 doctype html
 html(lang='en')
-    head
-        // set the encoding of your site
-        meta(charset='utf-8')
-        // set the viewport width and initial-scale on mobile devices
-        meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        title Schön. | eCommerce HTML5 Template
-        // include the site stylesheet
-        link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic%7cMontserrat:400,700%7cOxygen:400,300,700', rel='stylesheet', type='text/css')
-        // include the site stylesheet
-        link(rel='stylesheet', href='css/bootstrap.css')
-        // include the site stylesheet
-        link(rel='stylesheet', href='css/animate.css')
-        // include the site stylesheet
-        link(rel='stylesheet', href='css/icon-fonts.css')
-        // include the site stylesheet
-        link(rel='stylesheet', href='css/main.css')
-        // include the site stylesheet
-        link(rel='stylesheet', href='css/responsive.css')
+    include modules/header/head
     body
         // main container of all the page elements
         #wrapper
@@ -28,21 +11,6 @@ html(lang='en')
             .w1
                 // mt -header style14 start from here
                 include modules/header/header-checkout
-                    span.mt-side-over
-                // mt -header style14 end here
-                // mt search popup start here
-                .mt-search-popup
-                    .mt-holder
-                        a.search-close(href='#')
-                            span
-                            span
-                        .mt-frame
-                            form(action='#')
-                                fieldset
-                                    input(type='text', placeholder='Search...')
-                                    span.icon-microphone
-                                    button.icon-magnifier(type='submit')
-                // mt search popup end here
                 // Main of the Page
                 main#mt-main
                     // Mt Process Section of the Page
@@ -80,7 +48,7 @@ html(lang='en')
                                             .form-group
                                                 input.form-control(type='text', placeholder='Имя и фамилия')
                                             .form-group
-                                                select.form-control
+                                                select.form-control.select-form
                                                     option(value='1') Город
                                             .form-group
                                                 textarea.form-control(type='email', placeholder='Email')
@@ -91,12 +59,13 @@ html(lang='en')
                                         | Доставка и оплата
                                     .checkout-details
                                         form.delivery-method(action="")
-                                            table
+                                            table.table-responsive
                                                 tr
                                                     td Способ доставки
                                                     td
-                                                        input(type="radio" name="delivery" value="pickup" id="pickup") 
-                                                        label(for="pickup") Самовывоз из нашего магазина
+                                                        input(type="radio" name="delivery" value="pickup" id="pickup")
+                                                        span 
+                                                            label(for="pickup") Самовывоз из нашего магазина
                                                         select.form-control
                                                             option(value="1") Киев, Днепровская набережная, 26
                                                     td Бесплатно
@@ -160,7 +129,7 @@ html(lang='en')
                                                     .txt.pull-right
                                                         span Бесплатно
                                             li(style='border-bottom: none;')
-                                                .txt-holder
+                                                .txt-holder.final-price
                                                     strong.title.sub-title.pull-left Итого
                                                     .txt.pull-right
                                                         span 1299,00 грн
@@ -175,11 +144,6 @@ html(lang='en')
                     // Mt Detail Section of the Page end
                 // Main of the Page end here
                 // footer of the Page
-                include modules/footer
+                include modules/footer/footer 
             span#back-top.fa.fa-arrow-up
-        // include jQuery
-        script(src='js/jquery.js')
-        // include jQuery
-        script(src='js/plugins.js')
-        // include jQuery
-        script(src='js/jquery.main.js')
+        include modules/footer/scripts

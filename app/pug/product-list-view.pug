@@ -1,20 +1,6 @@
 doctype html
 html(lang='en')
-  head
-    // set the encoding of your site
-    meta(charset='utf-8')
-    // set the viewport width and initial-scale on mobile devices
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title Schön. | eCommerce HTML5 Template
-    //build:css css/styles.min.css
-    link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic%7cMontserrat:400,700%7cOxygen:400,300,700', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', href='css/bootstrap.css')
-    link(rel='stylesheet', href='css/animate.css')
-    link(rel='stylesheet', href='css/icon-fonts.css')
-    link(rel='stylesheet', href='css/main.css')
-    link(rel='stylesheet', href='css/responsive.css')
-    //endbuild
-    script(src='https://use.fontawesome.com/125208436b.js')
+  include modules/header/head
   body
     // main container of all the page elements
     #wrapper
@@ -26,24 +12,10 @@ html(lang='en')
       .w1
         // mt header style4 start here
         include modules/header/header
-        // mt header style4 end here
-        // mt search popup start here
-        .mt-search-popup
-          .mt-holder
-            a.search-close(href='#')
-              span
-              span
-            .mt-frame
-              form(action='#')
-                fieldset
-                  input(type='text', placeholder='Search...')
-                  span.icon-microphone
-                  button.icon-magnifier(type='submit')
-        // mt search popup end here
         // mt main start here
         main#mt-main.product-list-mt-main
           // Mt Contact Banner of the Page end
-          .container
+          .container-fluid
             .row
               // sidebar of the Page start here
               .col-xs-12.product-list-breadcrumbs
@@ -168,7 +140,7 @@ html(lang='en')
                 section.shop-widget
                   h2 Товары со скидкой
                   // mt product4 start here
-                  .mt-product4.mt-paddingbottom20
+                  .mt-product4.mt-paddingbottom20.sidebar-product
                     .img
                       a(href='product-detail.html')
                         img(src='images/product-list/bg.png', alt='image description')
@@ -247,7 +219,7 @@ html(lang='en')
                         .b1
                           .b2
                             a(href='product-detail.html')
-                              img(src='images/product-list/size-2.png', alt='image description')
+                              img(src='images/product-list/grid.png', alt='image description')
                             ul.mt-stars
                               li
                                 i.fa.fa-star
@@ -317,7 +289,7 @@ html(lang='en')
                   btn.show-more-btn Показать еще товары
                 nav.mt-pagination
                   ul.list-inline
-                    li
+                    li.active
                       a(href='#') 1
                     li
                       a(href='#') 2
@@ -325,6 +297,9 @@ html(lang='en')
                       a(href='#') 3
                     li
                       a(href='#') 4
+                    li
+                      a.next(href='#')
+                        i.fa.fa-angle-right
                 // mt pagination end here
               section.links-product-list
                 .col-md-6
@@ -343,13 +318,6 @@ html(lang='en')
                   | В интернет-магазине AUTOSPHERE вы сможете купить качественное автомобильное масло любого типа и необходимой степени вязкости. В выборе вам смогут помочь консультации менеджеров и отзывы покупателей. Мы осуществляем быструю доставку для жителей Киева и других регионов Украины.  
         // mt main end here
         // footer of the Page
-        include modules/footer
-      // W1 end here
+        include modules/footer/footer 
       span#back-top.fa.fa-arrow-up
-    //build:js js/main.min.j
-    script(src='js/headerScript.js')
-    script(src='js/productListScript.js')
-    script(src='js/libs/jquery.js')
-    script(src='js/libs/plugins.js')
-    script(src='js/libs/jquery.main.js')
-    //endbuild
+  include modules/footer/scripts

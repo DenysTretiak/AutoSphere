@@ -15,7 +15,7 @@
   	.footer-holder{padding: 76px 0 70px;}
   }
   &.style2{
-  	.footer-holder{padding: 51px 0 60px;}
+  	.footer-holder{padding: 51px 0 0;}
   	.f-widget-about p{margin: 0 0 33px;}
   	.f-widget-about .address-list li:first-child{margin: 0 0 20px;}
   	.footer-area{padding: 24px 0 20px;}
@@ -398,14 +398,6 @@
 	  }
 	}
   }
-  .social-network{
-	&.social-icon{ @include font(18px, 20px); }
-	li{
-	  display: inline-block;
-	  vertical-align: middle;
-	  margin: 0 6px 0 2px;
-	}
-  }
   .f-widget-news{
 	.news-articles{
 	  overflow: hidden;
@@ -465,13 +457,22 @@
 	}
   }
 }
+
+.social-network{
+	&.social-icon{ @include font(18px, 20px); }
+	li{
+	  display: inline-block;
+	  vertical-align: middle;
+	  margin: 0 6px 0 2px;
+	}
+  }
 /*------------------------------------------------------------------
 72. Mt Footer / #mt-footer
 -------------------------------------------------------------------*/
 .f-promo-box{
 	padding: 65px 0 0;
 	.divider{
-		padding: 40px 0;
+		padding: 40px 15px;
 	}
 	&.light{
 		.f-widget-item{
@@ -582,4 +583,11 @@
 		}
 	}
 	&.style2{padding: 56px 0 17px;}
+	&.f-promo-box-about-us{
+		.heading{
+			color:rgb(58,58,58);
+			font-weight: bold;
+			font-size: 26px;
+		}
+	}
 }

@@ -1,22 +1,5 @@
 doctype html
-head
-  // set the encoding of your site
-  meta(charset='utf-8')
-  // set the viewport width and initial-scale on mobile devices
-  meta(name='viewport', content='width=device-width, initial-scale=1.0')
-  title Sch&ouml;n. | eCommerce HTML5 Template
-  link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic%7cMontserrat:400,700%7cOxygen:400,300,700', rel='stylesheet', type='text/css')
-  // include the site stylesheet
-  link(rel='stylesheet', href='css/bootstrap.css')
-  // include the site stylesheet
-  link(rel='stylesheet', href='css/animate.css')
-  // include the site stylesheet
-  link(rel='stylesheet', href='css/icon-fonts.css')
-  // include the site stylesheet
-  link(rel='stylesheet', href='css/main.css')
-  // include the site stylesheet
-  link(rel='stylesheet', href='css/responsive.css')
-// main container of all the page elements
+include modules/header/head
 #wrapper
   // Page Loader
   #pre-loader.loader-container
@@ -26,27 +9,13 @@ head
   .w1
     // mt header style4 start here
     include modules/header/header
-    // mt side menu end here
-    // mt search popup start here
-    .mt-search-popup
-      .mt-holder
-        a.search-close(href='#')
-          span
-          span
-        .mt-frame
-          form(action='#')
-            fieldset
-              input(type='text', placeholder='Search...')
-              span.icon-microphone
-              button.icon-magnifier(type='submit')
-    // mt search popup end here
     // mt main start here
     main#mt-main
       // Mt Product Detial of the Page
       section.mt-product-detial.wow.fadeInUp(data-wow-delay='0.4s')
         .container
           .row
-            .col-xs-12.product-list-breadcrumbs
+            .col-xs-12
               nav.breadcrumbs
                   ul.list-unstyled
                     li
@@ -101,34 +70,35 @@ head
               // Slider of the Page end
               // Detail Holder of the Page
               .detial-holder
-                h3 Моторное масло SHELL HELIX HX7 10W-40 1л.
-                // Rank Rating of the Page
-                .product-id
-                  span код товара 822564
-                .rank-rating
-                  ul.list-unstyled.rating-list
-                    li
-                      a(href='#slider')
-                        i.fa.fa-star
-                    li
-                      a(href='#')
-                        i.fa.fa-star
-                    li
-                      a(href='#')
-                        i.fa.fa-star
-                    li
-                      a(href='#')
-                        i.fa.fa-star-o
-                  span.total-price Оценок (12)
-                // Rank Rating of the Page end
-                .text-holder
-                  span.price
-                    del 399,00
-                    | 79.00 грн
-                    span.in-stock 
-                      i.fa.fa-check-circle-o
-                      | В наличии 
-                // Product Form of the Page
+                .detial-holder-top
+                  h3 Моторное масло SHELL HELIX HX7 10W-40 1л.
+                  // Rank Rating of the Page
+                  .product-id
+                    span код товара 822564
+                  .rank-rating
+                    ul.list-unstyled.rating-list
+                      li
+                        a(href='#slider')
+                          i.fa.fa-star
+                      li
+                        a(href='#')
+                          i.fa.fa-star
+                      li
+                        a(href='#')
+                          i.fa.fa-star
+                      li
+                        a(href='#')
+                          i.fa.fa-star-o
+                    span.total-price Оценок (12)
+                  // Rank Rating of the Page end
+                  .text-holder
+                    span.price
+                      del 399,00
+                      | 79.00 грн
+                      span.in-stock 
+                        i.fa.fa-check-circle-o
+                        | В наличии 
+                  // Product Form of the Page
                 table.table-bordered
                   tr
                     td
@@ -144,7 +114,7 @@ head
                     td
                       ul.delivery
                         li
-                          b Самовывоз
+                          b Самовывоз 
                           | из 
                           a(href="#") наших магазинов
                           | - бесплатно 
@@ -153,51 +123,63 @@ head
                           a.new-post(href="#") Новой почты
                           | - 10 грн
                   tr
+                    td.buy-buttons
+                      .td-container
+                        .count
+                          span.minus -
+                          span.number 3
+                          span.plus +
+                          h6
+                            a Перезвоните мне
+                        .row-val
+                            button(type='submit') Купить
+                            ul.list-unstyled.nav
+                              li
+                                a(href='#')
+                                  i.fa.fa-heart
+                                  |  В избранное
                     td
-                      .count
-                        span.minus -
-                        span.number 3
-                        span.plus +
-                    td
-                form.product-form(action='#', style='margin-bottom: 40px')
-                  fieldset
-                    .row-val
-                      label(for='qty') qty
-                      input#qty(type='number', placeholder='1')
-                    .row-val
-                      button(type='submit') ADD TO CART
-                .txt-wrap
-                  p
-                    | Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.
-                  p
-                    | Koila is a seat designed for restaurants and gastronomic places in general. Designed in collaboration with professional of restaurants and hotels field, this armchair is composed of a curved shell with a base in oak who has pinched the back upholstered in fabric or leather. It provides comfort and holds for ideal sitting position,the arms may rest on the sides ofthe armchair.
+                      ul.delivery
+                        li
+                          b Гарантия 
+                          | 12 месяцев официальной гарантии
+                        li
+                          b Оплата 
+                          | Наличными, безналичными
+                .consultation
+                  span Получите бесплатную консультацию по товару
+                  .phone
+                    input(type = 'text')
+                    span.hint например 063-888-88-88
+                  btn.reset-btn Перезвоните мне
+                .link-to-item
+                  span.link Поделится ссылкой на товара
+                  a.facebook(href="#")
+                    i.fa.fa-facebook-square
+                    | Like
+                  span.num 1
+                  a.twitter(href="#")
+                    i.fa.fa-twitter
+                    | Tweet
+                  span.num 0
+                  a.twitter(href="#")
+                    i.fa.fa-google-plus
+                  span.num 0
+                  p Koila is a chair designed for restaurants and food lovers in general. Designed and an ideal posture, as there are armrests on both sides of the chair.
                 // Product Form of the Page end
-                ul.list-unstyled.list
-                  li
-                    a(href='#')
-                      i.fa.fa-share-alt
-                      | SHARE
-                  li
-                    a(href='#')
-                      i.fa.fa-exchange
-                      | COMPARE
-                  li
-                    a(href='#')
-                      i.fa.fa-heart
-                      | ADD TO WISHLIST
               // Detail Holder of the Page end
       // Mt Product Detial of the Page end
       .product-detail-tab.wow.fadeInUp(data-wow-delay='0.4s')
         .container
           .row
             .col-xs-12
-              ul.mt-tabs.text-center.text-uppercase
+              ul.mt-tabs.text-center
                 li
-                  a(href='#tab1') DESCRIPTION
+                  a(href='#tab1') Описание
                 li
-                  a(href='#tab2') INFORMATION
+                  a(href='#tab2') Характеристики
                 li
-                  a.active(href='#tab3') REVIEWS (12)
+                  a.active(href='#tab3') Отзывы (12)
               .tab-content
                 #tab1
                   p
@@ -238,8 +220,8 @@ head
                             i.fa.fa-star
                           li
                             i.fa.fa-star-o
-                        span.name John Wick
-                        time(datetime='2016-01-01') 09:10 Nov, 19 2016
+                        span.name Сергей Толюпа
+                        time(datetime='2016-01-01') 18 ноября 2018
                       p
                         | Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit sse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     .mt-box
@@ -253,13 +235,13 @@ head
                             i.fa.fa-star-o
                           li
                             i.fa.fa-star-o
-                        span.name John Wick
-                        time(datetime='2016-01-01') 09:10 Nov, 19 2016
+                        span.name Татьяна Бабенко
+                        time(datetime='2016-01-01') 18 ноября 2018
                       p
                         | Usmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit sse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     form.p-commentform(action='#')
                       fieldset
-                        h2 Add  Comment
+                        h2 Добавить отзыв
                         .mt-row
                           label Rating
                           ul.mt-star
@@ -272,30 +254,30 @@ head
                             li
                               i.fa.fa-star-o
                         .mt-row
-                          label Name
+                          label Имя
                           input.form-control(type='text')
                         .mt-row
                           label E-Mail
                           input.form-control(type='text')
                         .mt-row
-                          label Review
+                          label Отзыв
                           textarea.form-control
-                        button.btn-type4(type='submit') ADD REVIEW
+                        button.btn-type4(type='submit') Добавить отзыв
       // related products start here
       .related-products.wow.fadeInUp(data-wow-delay='0.4s')
         .container
           .row
             .col-xs-12
-              h2 RELATED PRODUCTS
+              h2 Топ продаж
               .row
                 .col-xs-12
                   // mt product1 center start here
-                  .mt-product1.mt-paddingbottom20
+                  .mt-product1.mt-paddingbottom20.detail-product
                     .box
                       .b1
                         .b2
                           a(href='product-detail.html')
-                            img(src='http://placehold.it/215x215', alt='image description')
+                            img(src='images/product-list/item.png', alt='image description')
                           span.caption
                             span.new NEW
                           ul.mt-stars
@@ -311,7 +293,7 @@ head
                             li
                               a(href='#')
                                 i.icon-handbag
-                                span Add to Cart
+                                span В корзину
                             li
                               a(href='#')
                                 i.icomoon.icon-heart-empty
@@ -320,256 +302,12 @@ head
                                 i.icomoon.icon-exchange
                     .txt
                       strong.title
-                        a(href='product-detail.html') Puff Chair
-                      span.price
-                        i.fa.fa-eur
-                        span 287,00
-                  // mt product1 center end here
-                  // mt product1 center start here
-                  .mt-product1.mt-paddingbottom20
-                    .box
-                      .b1
-                        .b2
-                          a(href='product-detail.html')
-                            img(src='http://placehold.it/215x215', alt='image description')
-                          ul.links
-                            li
-                              a(href='#')
-                                i.icon-handbag
-                                span Add to Cart
-                            li
-                              a(href='#')
-                                i.icomoon.icon-heart-empty
-                            li
-                              a(href='#')
-                                i.icomoon.icon-exchange
-                    .txt
-                      strong.title
-                        a(href='product-detail.html') Bombi Chair
-                      span.price
-                        i.fa.fa-eur
-                        span 399,00
-                  // mt product1 center end here
-                  // mt product1 center start here
-                  .mt-product1.mt-paddingbottom20
-                    .box
-                      .b1
-                        .b2
-                          a(href='product-detail.html')
-                            img(src='http://placehold.it/215x215', alt='image description')
-                          ul.links
-                            li
-                              a(href='#')
-                                i.icon-handbag
-                                span Add to Cart
-                            li
-                              a(href='#')
-                                i.icomoon.icon-heart-empty
-                            li
-                              a(href='#')
-                                i.icomoon.icon-exchange
-                    .txt
-                      strong.title
-                        a(href='product-detail.html') Wood Chair
-                      span.price
-                        i.fa.fa-eur
-                        span 198,00
-                  // mt product1 center end here
-                  // mt product1 center start here
-                  .mt-product1.mt-paddingbottom20
-                    .box
-                      .b1
-                        .b2
-                          a(href='product-detail.html')
-                            img(src='http://placehold.it/215x215', alt='image description')
-                          span.caption
-                            span.off 15% Off
-                            span.new NEW
-                          ul.mt-stars
-                            li
-                              i.fa.fa-star
-                            li
-                              i.fa.fa-star
-                            li
-                              i.fa.fa-star
-                            li
-                              i.fa.fa-star-o
-                          ul.links
-                            li
-                              a(href='#')
-                                i.icon-handbag
-                                span Add to Cart
-                            li
-                              a(href='#')
-                                i.icomoon.icon-heart-empty
-                            li
-                              a(href='#')
-                                i.icomoon.icon-exchange
-                    .txt
-                      strong.title
-                        a(href='product-detail.html') Bombi Chair
-                      span.price
-                        i.fa.fa-eur
-                        span 200,00
-                  // mt product1 center end here
-                  // mt product1 center start here
-                  .mt-product1.mt-paddingbottom20
-                    .box
-                      .b1
-                        .b2
-                          a(href='product-detail.html')
-                            img(src='http://placehold.it/215x215', alt='image description')
-                          ul.links
-                            li
-                              a(href='#')
-                                i.icon-handbag
-                                span Add to Cart
-                            li
-                              a(href='#')
-                                i.icomoon.icon-heart-empty
-                            li
-                              a(href='#')
-                                i.icomoon.icon-exchange
-                    .txt
-                      strong.title
-                        a(href='product-detail.html') Bombi Chair
-                      span.price
-                        i.fa.fa-eur
-                        span 200,00
+                        a(href='product-detail.html') Компрессор LA 159489
+                      span.price 300 грн
                   // mt product1 center end here
         // related products end here
     // mt main end here
     // footer of the Page
-    footer#mt-footer.style1.wow.fadeInUp(data-wow-delay='0.4s')
-      // Footer Holder of the Page
-      .footer-holder.dark
-        .container
-          .row
-            .col-xs-12.col-sm-6.col-md-3.mt-paddingbottomsm
-              // F Widget About of the Page
-              .f-widget-about
-                .logo
-                  a(href='#')
-                    img(src='images/logo.png', alt='Schon')
-                p
-                  | Exercitation ullamco laboris nisi ut aliquip ex commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                // Social Network of the Page
-                ul.list-unstyled.social-network
-                  li
-                    a(href='#')
-                      i.fa.fa-twitter
-                  li
-                    a(href='#')
-                      i.fa.fa-facebook
-                  li
-                    a(href='#')
-                      i.fa.fa-google-plus
-                  li
-                    a(href='#')
-                      i.fa.fa-youtube
-                  li
-                    a(href='#')
-                      i.fa.fa-linkedin
-                  li
-                    a(href='#')
-                      i.fa.fa-whatsapp
-                // Social Network of the Page end
-              // F Widget About of the Page end
-            .col-xs-12.col-sm-6.col-md-3.mt-paddingbottomsm
-              .f-widget-news
-                h3.f-widget-heading Twitter
-                .news-articles
-                  .news-column
-                    i.fa.fa-twitter
-                    .txt-box
-                      p
-                        | Laboris nisi ut 
-                        a(href='#') #sch&ouml;n
-                        |  aliquip econse- 
-                        br
-                        | quat. 
-                        a(href='#') https://t.co/vreNJ9nEDt
-                  .news-column
-                    i.fa.fa-twitter
-                    .txt-box
-                      p
-                        | Ficia deserunt mollit anim id est labo- 
-                        br
-                        | rum. incididunt ut labore et dolore 
-                        br
-                        a(href='#') https://t.co/vreNJ9nEDt
-            .col-xs-12.col-sm-6.col-md-3.mt-paddingbottomxs
-              // Footer Tabs of the Page
-              .f-widget-tabs
-                h3.f-widget-heading Product Tags
-                ul.list-unstyled.tabs
-                  li
-                    a(href='#') Sofas
-                  li
-                    a(href='#') Armchairs
-                  li
-                    a(href='#') Living
-                  li
-                    a(href='#') Bedroom
-                  li
-                    a(href='#') Lighting
-                  li
-                    a(href='#') Tables
-                  li
-                    a(href='#') Pouf
-                  li
-                    a(href='#') Wood
-                  li
-                    a(href='#') Office
-                  li
-                    a(href='#') Outdoor
-                  li
-                    a(href='#') Kitchen
-                  li
-                    a(href='#') Stools
-                  li
-                    a(href='#') Footstools
-                  li
-                    a(href='#') Desks
-              // Footer Tabs of the Page
-            .col-xs-12.col-sm-6.col-md-3.text-right
-              // F Widget About of the Page
-              .f-widget-about
-                h3.f-widget-heading Information
-                ul.list-unstyled.address-list.align-right
-                  li
-                    i.fa.fa-map-marker
-                    address
-                      | Connaugt Road Central Suite 18B, 148 
-                      br
-                      | New Yankee
-                  li
-                    i.fa.fa-phone
-                    a(href='tel:15553332211') +1 (555) 333 22 11
-                  li
-                    i.fa.fa-envelope-o
-                    a(href='mailto:info@schon.chair') info@schon.chair
-              // F Widget About of the Page end
-      // Footer Holder of the Page end
-      // Footer Area of the Page
-      .footer-area
-        .container
-          .row
-            .col-xs-12.col-sm-6
-              p
-                | &copy; 
-                a(href='index.html') sch&ouml;n.
-                |  - All rights Reserved
-            .col-xs-12.col-sm-6.text-right
-              .bank-card
-                img(src='images/bank-card.png', alt='bank-card')
-      // Footer Area of the Page end
-    // footer of the Page end
-  // W1 end here
+    include modules/footer/footer 
   span#back-top.fa.fa-arrow-up
-// include jQuery
-script(src='js/jquery.js')
-// include jQuery
-script(src='js/plugins.js')
-// include jQuery
-script(src='js/jquery.main.js')
+include modules/footer/scripts

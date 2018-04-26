@@ -620,18 +620,17 @@ a:hover {
       #mt-header.style17 .mt-top-bar-2 .mt-logo {
         margin: 6px 0 0;
         float: left; }
+      #mt-header.style17 .mt-top-bar-2 .fa {
+        color: #338be3;
+        font-size: 37px; }
       #mt-header.style17 .mt-top-bar-2 .phones {
-        display: inline-block; }
+        display: inline-block;
+        margin-left: 10px; }
         #mt-header.style17 .mt-top-bar-2 .phones .mt-phone {
           color: #535353;
           display: block; }
-      #mt-header.style17 .mt-top-bar-2 .telephone-icon {
-        width: 10%;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 10px; }
     #mt-header.style17 .mt-bottom-bar {
-      padding: 26px 0 34px; }
+      padding: 10px 0 27px; }
       #mt-header.style17 .mt-bottom-bar .mt-logo {
         margin: 6px 0 0; }
       #mt-header.style17 .mt-bottom-bar .mt-icon-list {
@@ -1108,7 +1107,7 @@ a:hover {
     #nav > ul > li {
       position: relative;
       vertical-align: top;
-      margin: 0 36px 0 7px;
+      margin: 0 36px 0 0;
       display: inline-block;
       text-transform: none; }
       #nav > ul > li .mt-mdropover {
@@ -1863,7 +1862,7 @@ a:hover {
     padding: 76px 0 70px; }
 
 #mt-footer.style2 .footer-holder {
-  padding: 51px 0 60px; }
+  padding: 51px 0 0; }
 
 #mt-footer.style2 .f-widget-about p {
   margin: 0 0 33px; }
@@ -2270,15 +2269,6 @@ a:hover {
     width: 6%;
     padding: 6px 0 0 0; }
 
-#mt-footer .social-network.social-icon {
-  font-size: 18px;
-  line-height: 20px; }
-
-#mt-footer .social-network li {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 6px 0 2px; }
-
 #mt-footer .f-widget-news .news-articles {
   overflow: hidden; }
   #mt-footer .f-widget-news .news-articles .news-column {
@@ -2325,13 +2315,22 @@ a:hover {
   #mt-footer .social-network a:hover {
     color: #ff6060; }
 
+.social-network.social-icon {
+  font-size: 18px;
+  line-height: 20px; }
+
+.social-network li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 6px 0 2px; }
+
 /*------------------------------------------------------------------
 72. Mt Footer / #mt-footer
 -------------------------------------------------------------------*/
 .f-promo-box {
   padding: 65px 0 0; }
   .f-promo-box .divider {
-    padding: 40px 0; }
+    padding: 40px 15px; }
   .f-promo-box.light .f-widget-item .widget-icon,
   .f-promo-box.light .f-widget-item .f-promo-box-heading {
     color: #fff; }
@@ -2439,6 +2438,10 @@ a:hover {
     position: relative; }
   .f-promo-box.style2 {
     padding: 56px 0 17px; }
+  .f-promo-box.f-promo-box-about-us .heading {
+    color: #3a3a3a;
+    font-weight: bold;
+    font-size: 26px; }
 
 /*------------------------------------------------------------------
 76. Mt Main Slider / .mt-main-slider
@@ -4499,12 +4502,12 @@ a:hover {
       color: #252528;
       margin: 0 13px 0 0;
       position: relative;
-      font: 14px/18px "Montserrat", sans-serif;
+      font: 12px/18px "Montserrat", sans-serif;
       display: inline-block;
       vertical-align: middle; }
     .mt-product4 .text .price {
       color: #252528;
-      font: 18px/18px "Montserrat", sans-serif;
+      font: 16px/18px "Montserrat", sans-serif;
       display: inline-block;
       vertical-align: middle; }
 
@@ -4995,7 +4998,6 @@ a:hover {
     width: 64%;
     float: left;
     margin: 50px 0 0 0;
-    padding: 25px;
     position: relative;
     border: 1px solid #d2d2d2; }
     .mt-product-detial .detial-holder .in-stock {
@@ -5005,35 +5007,143 @@ a:hover {
       .mt-product-detial .detial-holder .in-stock .fa {
         margin: 0 10px;
         font-size: 16px; }
-    .mt-product-detial .detial-holder .table-bordered td {
-      vertical-align: middle;
-      padding: 10px; }
-      .mt-product-detial .detial-holder .table-bordered td .btn {
-        border-color: #d2d2d2; }
-        .mt-product-detial .detial-holder .table-bordered td .btn.active {
-          border-color: #338be3;
-          color: #338be3;
-          box-shadow: none; }
-        .mt-product-detial .detial-holder .table-bordered td .btn:active {
-          box-shadow: none; }
-      .mt-product-detial .detial-holder .table-bordered td .delivery li {
-        list-style: none; }
-        .mt-product-detial .detial-holder .table-bordered td .delivery li a {
-          text-decoration: underline; }
-          .mt-product-detial .detial-holder .table-bordered td .delivery li a .new-post {
-            color: #338be3; }
-      .mt-product-detial .detial-holder .table-bordered td .count {
-        margin-top: 5px; }
-        .mt-product-detial .detial-holder .table-bordered td .count span {
-          padding: 5px 10px;
-          border: 2px solid #f8f8f8; }
-        .mt-product-detial .detial-holder .table-bordered td .count .plus {
-          color: #338be3;
-          border-left: none;
-          cursor: pointer; }
-        .mt-product-detial .detial-holder .table-bordered td .count .minus {
-          border-right: none;
-          cursor: pointer; }
+    .mt-product-detial .detial-holder .detial-holder-top {
+      padding: 25px 25px 0 25px; }
+    .mt-product-detial .detial-holder .table-bordered {
+      width: 100%;
+      border-left: none;
+      border-right: none; }
+      .mt-product-detial .detial-holder .table-bordered td {
+        vertical-align: middle;
+        padding: 10px; }
+        .mt-product-detial .detial-holder .table-bordered td .btn {
+          border-color: #d2d2d2; }
+          .mt-product-detial .detial-holder .table-bordered td .btn.active {
+            border-color: #338be3;
+            color: #338be3;
+            box-shadow: none; }
+          .mt-product-detial .detial-holder .table-bordered td .btn:active {
+            box-shadow: none; }
+        .mt-product-detial .detial-holder .table-bordered td .delivery li {
+          list-style: none;
+          margin-bottom: 20px; }
+          .mt-product-detial .detial-holder .table-bordered td .delivery li a {
+            text-decoration: underline; }
+            .mt-product-detial .detial-holder .table-bordered td .delivery li a .new-post {
+              color: #338be3; }
+        .mt-product-detial .detial-holder .table-bordered td .td-container {
+          display: flex;
+          justify-content: space-around;
+          align-items: baseline; }
+          .mt-product-detial .detial-holder .table-bordered td .td-container .count {
+            margin-top: 5px; }
+            .mt-product-detial .detial-holder .table-bordered td .td-container .count span {
+              padding: 5px 10px;
+              border: 2px solid #f8f8f8; }
+            .mt-product-detial .detial-holder .table-bordered td .td-container .count .plus {
+              color: #338be3;
+              border-left: none;
+              cursor: pointer; }
+            .mt-product-detial .detial-holder .table-bordered td .td-container .count .minus {
+              border-right: none;
+              cursor: pointer; }
+            .mt-product-detial .detial-holder .table-bordered td .td-container .count h6 {
+              margin: 20px 0 0 0; }
+          .mt-product-detial .detial-holder .table-bordered td .td-container .row-val {
+            margin-left: 20px;
+            text-align: center; }
+            .mt-product-detial .detial-holder .table-bordered td .td-container .row-val button {
+              width: 173px;
+              padding: 12px 10px 10px;
+              margin: 0 0 10px 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-size: 14px;
+              line-height: 20px;
+              font-family: "Montserrat", sans-serif;
+              font-weight: 700;
+              border: none;
+              outline: none;
+              border-radius: 25px;
+              transition: all 0.25s linear;
+              background: #338be3;
+              color: #fff; }
+          .mt-product-detial .detial-holder .table-bordered td .td-container .garanty {
+            padding: 0; }
+            .mt-product-detial .detial-holder .table-bordered td .td-container .garanty td {
+              padding: 0; }
+      .mt-product-detial .detial-holder .table-bordered ul {
+        padding: 0; }
+    .mt-product-detial .detial-holder .consultation {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      padding: 30px 0 10px 0;
+      border-bottom: 1px solid #ddd; }
+      .mt-product-detial .detial-holder .consultation span {
+        font-weight: bold; }
+      .mt-product-detial .detial-holder .consultation .phone .hint {
+        display: block;
+        font-size: 9px;
+        color: #d2d2d2;
+        font-weight: normal; }
+      .mt-product-detial .detial-holder .consultation input {
+        border: 2px solid #348ce4;
+        border-radius: 4px; }
+      .mt-product-detial .detial-holder .consultation .reset-btn {
+        display: inline-block;
+        padding: 3px 13px;
+        background: #338be3;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.25s linear; }
+    .mt-product-detial .detial-holder .link-to-item {
+      padding: 15px 0 20px 30px; }
+      .mt-product-detial .detial-holder .link-to-item a {
+        margin-right: 10px;
+        padding: 4px;
+        border: 1px solid #d2d2d2;
+        border-radius: 3px; }
+        .mt-product-detial .detial-holder .link-to-item a.facebook {
+          background: #466aa8;
+          color: #fff;
+          border-color: #466aa8; }
+        .mt-product-detial .detial-holder .link-to-item a .fa-twitter {
+          color: #00b5ec; }
+        .mt-product-detial .detial-holder .link-to-item a .fa-google-plus {
+          color: #e94730; }
+        .mt-product-detial .detial-holder .link-to-item a .fa {
+          margin-right: 5px; }
+      .mt-product-detial .detial-holder .link-to-item .num {
+        border: 1px solid #d2d2d2;
+        border-radius: 3px;
+        padding: 4px 9px;
+        margin: 0 5px 0 3px;
+        position: relative; }
+        .mt-product-detial .detial-holder .link-to-item .num:before, .mt-product-detial .detial-holder .link-to-item .num:after {
+          content: '';
+          display: block;
+          position: absolute;
+          left: -14px;
+          top: 50%;
+          width: 0;
+          height: 0;
+          border-style: solid; }
+        .mt-product-detial .detial-holder .link-to-item .num:after {
+          top: 5px;
+          border-color: transparent #fff transparent transparent;
+          border-width: 7px; }
+        .mt-product-detial .detial-holder .link-to-item .num:before {
+          top: 3px;
+          left: -18px;
+          border-color: transparent #d2d2d2 transparent transparent;
+          border-width: 9px; }
+      .mt-product-detial .detial-holder .link-to-item .link {
+        margin-right: 80px; }
+      .mt-product-detial .detial-holder .link-to-item p {
+        margin-top: 20px;
+        color: #0c273c; }
   .mt-product-detial h2 {
     font-size: 44px;
     line-height: 46px;
@@ -5217,12 +5327,13 @@ a:hover {
   .mt-detail-sec.style1 h2 {
     padding: 0 0 0 20px; }
   .mt-detail-sec h2 {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 24px;
+    line-height: 26px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     margin: 0 0 25px;
-    color: #000; }
+    color: #333333;
+    font-weight: bold; }
     .mt-detail-sec h2 span {
       color: #fff;
       background: #338be3;
@@ -5230,7 +5341,7 @@ a:hover {
       border-radius: 50%;
       margin-right: 5px; }
   .mt-detail-sec .is-registered {
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px; }
@@ -5253,7 +5364,8 @@ a:hover {
     height: 100px; }
   .mt-detail-sec .bill-detail {
     overflow: hidden;
-    width: 549px; }
+    width: 549px;
+    margin: 0 0 50px 0; }
     .mt-detail-sec .bill-detail .form-group {
       margin-bottom: 17px;
       overflow: hidden; }
@@ -5271,7 +5383,7 @@ a:hover {
     .mt-detail-sec .bill-detail .form-control {
       font-size: 14px;
       line-height: 16px;
-      background: none;
+      background: url("images/svg/item_1.png") right center no-repeat;
       outline: none;
       box-shadow: none;
       border-style: solid;
@@ -5282,6 +5394,13 @@ a:hover {
       height: 55px;
       color: #7d7d7d;
       border-color: #dcdcdc; }
+    .mt-detail-sec .bill-detail .select-form {
+      background: url("/images/svg/item_1.png") 98% center no-repeat;
+      background-size: 20px 20px;
+      background-color: #fff;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
     .mt-detail-sec .bill-detail textarea {
       min-height: 99px;
       width: 100%;
@@ -5363,6 +5482,14 @@ a:hover {
         font-weight: 400;
         display: block;
         color: #010101; }
+    .mt-detail-sec .block .final-price strong {
+      color: #333333;
+      font-size: 24px;
+      font-weight: bold; }
+    .mt-detail-sec .block .final-price .txt span {
+      color: #333333;
+      font-size: 24px;
+      font-weight: bold; }
     .mt-detail-sec .block li {
       margin: 0 0 10px;
       padding: 0 0 9px;
@@ -5374,7 +5501,6 @@ a:hover {
       line-height: 18px;
       display: block;
       margin: 0 0 11px;
-      text-transform: uppercase;
       color: #868686; }
       .mt-detail-sec .block .title.sub-title {
         margin: 0; }
@@ -5383,8 +5509,7 @@ a:hover {
       line-height: 16px;
       display: block;
       font-weight: 300;
-      margin: 0 0 3px;
-      color: #868686; }
+      margin: 0 0 3px; }
     .mt-detail-sec .block .txt .title {
       margin: 0 0 9px; }
     .mt-detail-sec .block .txt span {
@@ -5486,10 +5611,44 @@ a:hover {
     border-style: solid;
     border-width: 0 0 1px;
     border-color: #dcdcdc; }
+    .mt-product-table .border .count {
+      padding: 81px 0 0; }
+      .mt-product-table .border .count span {
+        padding: 5px 10px;
+        border: 2px solid #f8f8f8; }
+      .mt-product-table .border .count .plus {
+        color: #338be3;
+        font-weight: bold;
+        border-left: none;
+        font-size: 20px;
+        cursor: pointer; }
+      .mt-product-table .border .count .minus {
+        border-right: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 20px; }
+      .mt-product-table .border .count .number {
+        padding: 10px; }
+  .mt-product-table .confirm {
+    text-align: center;
+    padding: 30px 0 52px; }
+    .mt-product-table .confirm .procees-btn {
+      display: inline-block;
+      padding: 10px 10px;
+      background: #88bd6e;
+      border-radius: 30px;
+      color: #fff;
+      font-weight: bold;
+      margin-left: 20px;
+      width: 40%;
+      font-size: 18px; }
+    .mt-product-table .confirm .total {
+      display: inline-block;
+      color: #313131;
+      font-weight: bold; }
   .mt-product-table .title {
     font-size: 16px;
     line-height: 18px;
-    text-transform: uppercase;
     display: block;
     padding: 0 0 18px;
     color: #868686; }
@@ -5501,7 +5660,7 @@ a:hover {
     font-size: 18px;
     line-height: 20px;
     display: block;
-    padding: 69px 0 0;
+    padding: 69px 0 10px;
     color: #757575; }
   .mt-product-table .price {
     font-size: 18px;
@@ -5525,7 +5684,7 @@ a:hover {
     line-height: 20px;
     float: right;
     margin: 81px 0 0;
-    color: #338be3;
+    color: #f05c5c;
     -moz-transition: all 0.4s linear;
     -webkit-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
@@ -5534,8 +5693,7 @@ a:hover {
       color: #494949; }
   .mt-product-table .coupon-form {
     overflow: hidden;
-    padding: 40px 0 52px;
-    border-bottom: 1px solid #dcdcdc; }
+    padding: 40px 0 52px; }
     .mt-product-table .coupon-form .form-control {
       border-style: solid;
       border-width: 1px;
@@ -5555,25 +5713,32 @@ a:hover {
     .mt-product-table .coupon-form button {
       font-size: 18px;
       line-height: 20px;
-      text-transform: uppercase;
       font-weight: 700;
       font-family: "Montserrat", sans-serif;
-      border: none;
+      border: 1px solid #338be3;
+      border-radius: 30px;
       outline: none;
-      border-radius: 0;
+      background: #fff;
       display: block;
       text-align: center;
       padding: 16px 10px 13px 7px;
-      width: 111px;
       float: left;
       transition: all 0.25s linear;
-      background: #cba233;
-      color: #fff; }
-      .mt-product-table .coupon-form button:hover {
-        background: #f05c5c; }
-    .mt-product-table .coupon-form .mt-holder {
-      width: 389px;
-      margin: 0 auto; }
+      color: #313131; }
+
+.complete-container .mt-product-table {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0; }
+  .complete-container .mt-product-table h2 {
+    font-weight: bold;
+    color: #313131;
+    margin-bottom: 15px; }
+  .complete-container .mt-product-table a {
+    color: #338be3;
+    font-weight: bold; }
+  .complete-container .mt-product-table .confirm .procees-btn {
+    background: #338be3; }
 
 /*------------------------------------------------------------------
 36. product detail ab / .product-detail-tab
@@ -5598,10 +5763,10 @@ a:hover {
       display: block;
       margin: 0 0 -1px;
       padding: 0 0 12px;
-      border-bottom: 1px solid transparent; }
+      border-bottom: 2px solid transparent; }
       .product-detail-tab .mt-tabs a:hover, .product-detail-tab .mt-tabs a.active {
         color: #000;
-        border-bottom-color: #000; }
+        border-bottom-color: #338be3; }
   .product-detail-tab p {
     margin: 0 0 20px; }
 
@@ -5760,6 +5925,8 @@ a:hover {
       border-radius: 20px;
       border: 1px solid #d8d8d8;
       font: 14px/1 "Monserrat", sans-serif; }
+      .mt-shoplist-header .btn-box .drop-link .fa {
+        margin-left: 10px; }
       .mt-shoplist-header .btn-box .drop-link:hover {
         color: #338be3;
         border-color: #338be3; }
@@ -5829,12 +5996,18 @@ a:hover {
 .mt-pagination {
   padding: 42px 0 100px;
   font: 700 16px/20px "Montserrat", sans-serif; }
+  .mt-pagination.mt-pagination-blog {
+    padding: 42px 0 0; }
   .mt-pagination ul {
     margin: 0;
     text-align: center; }
     .mt-pagination ul li {
       padding: 0 3px;
       vertical-align: top; }
+      .mt-pagination ul li.active a {
+        color: #fff;
+        background: #338be3;
+        text-decoration: none; }
     .mt-pagination ul a {
       color: #bababa;
       display: block;
@@ -5844,6 +6017,12 @@ a:hover {
       -webkit-transition: all ease 0.5s;
       -o-transition: all ease 0.5s;
       transition: all ease 0.5s; }
+      .mt-pagination ul a.next {
+        background: none;
+        padding: 0 10px; }
+        .mt-pagination ul a.next .fa {
+          font-size: 30px;
+          font-weight: bold; }
       .mt-pagination ul a:hover {
         color: #fff;
         background: #338be3;
@@ -5978,7 +6157,7 @@ a:hover {
       .product-post .nav a:hover {
         text-decoration: underline; }
         .product-post .nav a:hover .fa {
-          text-decoration: none;
+          border-bottom: none;
           color: #d3293b; }
 
 /*------------------------------------------------------------------
@@ -6519,14 +6698,14 @@ a:hover {
   margin: 0 0 112px; }
   .mt-blog-detail.style1 .blog-post {
     font-size: 16px;
-    margin: 0 0 142px; }
+    margin: 0 0 61px; }
     .mt-blog-detail.style1 .blog-post.style2 {
       margin: 0 0 33px; }
       .mt-blog-detail.style1 .blog-post.style2 .blog-txt {
-        padding: 5px 0 0;
+        padding: 0;
         width: 59%; }
         .mt-blog-detail.style1 .blog-post.style2 .blog-txt p {
-          margin: 0 0 30px; }
+          margin: 0 0 10px; }
       .mt-blog-detail.style1 .blog-post.style2 .blog-nav {
         margin: 0 0 13px; }
     .mt-blog-detail.style1 .blog-post.detail .blog-txt p {
@@ -6725,9 +6904,9 @@ a:hover {
       .blog-post.style2 .blog-txt p {
         margin: 0 0 32px; }
     .blog-post.style2 h2 {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 22px;
-      margin: 0 0 7px; }
+      margin: 0; }
     .blog-post.style2 .blog-nav {
       margin: 0 0 12px;
       font-size: 13px;
@@ -6821,7 +7000,6 @@ a:hover {
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
     margin: 0 0 17px;
-    text-transform: uppercase;
     color: #494949; }
     .blog-post h2 a {
       -moz-transition: all 0.4s linear;
@@ -6830,7 +7008,7 @@ a:hover {
       transition: all 0.4s linear;
       color: #494949; }
       .blog-post h2 a:hover {
-        color: #ff6060; }
+        color: #338be3; }
   .blog-post .blog-nav {
     font-size: 14px;
     line-height: 16px;
@@ -6859,7 +7037,6 @@ a:hover {
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
-    text-transform: uppercase;
     word-spacing: -3px;
     margin: 0 0 0 4px;
     letter-spacing: 1px;
@@ -6869,7 +7046,7 @@ a:hover {
     transition: all 0.4s linear;
     color: #494949; }
     .blog-post .btn-more:hover {
-      color: #ff6060; }
+      text-decoration: underline; }
   .blog-post .time {
     float: left;
     width: 78px;
@@ -6925,6 +7102,15 @@ a:hover {
         .blog-post .img-block .img a:hover .fa {
           opacity: 1;
           visibility: visible; }
+  .blog-post .caption {
+    padding: 10px 0;
+    font-size: 12px;
+    color: #838383; }
+    .blog-post .caption .date {
+      border-right: 1px solid gray;
+      padding: 0 10px 0 0; }
+    .blog-post .caption .time-blog {
+      padding: 0 10px; }
 
 /*------------------------------------------------------------------
 64. Btn Holder / .btn-holder
@@ -7018,7 +7204,6 @@ a:hover {
     line-height: 20px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    text-transform: uppercase;
     margin: 0 0 23px;
     padding: 0 0 8px;
     position: relative;
@@ -7076,7 +7261,8 @@ a:hover {
       max-width: 260px;
       padding: 3px 7px 0 0; }
       .widget.popular-widget .info-dscrp p {
-        margin: 0 0 2px; }
+        margin: 0 0 5px;
+        font-weight: bold; }
     .widget.popular-widget .time {
       font-style: italic;
       color: #6b6b6b; }
@@ -7193,7 +7379,6 @@ a:hover {
     line-height: 26px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    text-transform: uppercase;
     margin: 0 0 23px;
     padding: 0 0 16px;
     position: relative;
@@ -7312,23 +7497,20 @@ a:hover {
         color: #868686;
         background: #f7f7f7; }
       .mt-comments-section .mt-leave-comment .comment-form .form-btn {
-        width: 93px;
         display: block;
-        padding: 10px;
+        padding: 8px 20px;
         font-size: 14px;
         line-height: 16px;
         font-weight: 400;
-        border: none;
+        border: 1px solid #338be3;
+        border-radius: 5px;
         outline: none;
         -moz-transition: all 0.4s linear;
         -webkit-transition: all 0.4s linear;
         -o-transition: all 0.4s linear;
         transition: all 0.4s linear;
-        background: #f7f7f7;
+        background: #fff;
         color: #868686; }
-        .mt-comments-section .mt-leave-comment .comment-form .form-btn:hover {
-          background: #494949;
-          color: #ff6060; }
 
 #blog-isotops.mt-iso {
   overflow: hidden;
@@ -8053,7 +8235,8 @@ a:hover {
 14. Mt About Section / .mt-about-sec
 -------------------------------------------------------------------*/
 .mt-about-sec {
-  padding: 86px 0 106px; }
+  padding: 20px 0;
+  border-top: 1px solid #d2d2d2; }
   .mt-about-sec .txt {
     overflow: hidden;
     font-size: 18px;
@@ -8074,7 +8257,6 @@ a:hover {
     font-weight: bold;
     margin: 0 0 50px;
     font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
     color: #494949; }
   .mt-about-sec .social-network.social-icon {
     font-size: 18px;
@@ -8432,7 +8614,7 @@ a:hover {
 21. Mt Patners / .mt-patners
 -------------------------------------------------------------------*/
 .mt-patners {
-  padding: 0 0 36px; }
+  padding: 50px 0 100px; }
   .mt-patners .heading {
     color: #3a3a3a;
     margin: 0 0 7px;
@@ -8711,7 +8893,7 @@ a:hover {
     color: #fff;
     margin-top: 15px;
     font-weight: 400;
-    padding: 1px 7px 3px 10px;
+    padding: 5px 7px 7px 10px;
     border-radius: 3px;
     transition: all 0.25s linear; }
     .shop-widget .filter-btn:hover {
@@ -9130,7 +9312,7 @@ a:hover, a:active, a:focus {
       .mt-blog .mt-blog-row .mt-blog-item:hover {
         border-color: #338be3; }
         .mt-blog .mt-blog-row .mt-blog-item:hover .text h3 a:hover {
-          text-decoration: underline; }
+          color: #338be3; }
   .mt-blog .link {
     text-align: right;
     margin-top: 40px; }
@@ -9145,24 +9327,26 @@ a:hover, a:active, a:focus {
       color: #338be3;
       border-color: #338be3; }
 
-.product-list-breadcrumbs .breadcrumbs {
+.breadcrumbs {
   font-size: 14px;
   line-height: 16px;
   font-weight: 200;
   overflow: hidden;
   color: #383838; }
-  .product-list-breadcrumbs .breadcrumbs ul {
+  .breadcrumbs ul {
     overflow: hidden; }
-    .product-list-breadcrumbs .breadcrumbs ul li {
+    .breadcrumbs ul li {
       margin: 0 10px 0 0;
       display: inline-block;
       vertical-align: middle; }
-    .product-list-breadcrumbs .breadcrumbs ul a {
+      .breadcrumbs ul li:last-child {
+        color: #a1a1a1; }
+    .breadcrumbs ul a {
       transition: all 0.25s linear;
       color: #383838; }
-      .product-list-breadcrumbs .breadcrumbs ul a:hover {
+      .breadcrumbs ul a:hover {
         color: #338be3; }
-    .product-list-breadcrumbs .breadcrumbs ul .fa {
+    .breadcrumbs ul .fa {
       margin: 0 0 0 5px;
       font-size: 5px;
       color: #338be3;
@@ -9183,3 +9367,13 @@ a:hover, a:active, a:focus {
         color: #535353; }
         .links-product-list ul li a:hover {
           text-decoration: underline; }
+
+.page-title {
+  width: 34%;
+  margin-bottom: 2%; }
+  .page-title h1 {
+    font-weight: bold;
+    color: #535353; }
+
+label {
+  display: inline; }

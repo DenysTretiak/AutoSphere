@@ -1,0 +1,98 @@
+doctype html
+html(lang='en')
+    include modules/header/head
+    body
+        // main container of all the page elements
+        #wrapper
+            // Page Loader
+            #pre-loader.loader-container
+                .loader
+                    img(src='images/svg/rings.svg', alt='loader')
+            .w1
+                // mt -header style14 start from here
+                include modules/header/header
+                // Main of the Page
+                main#mt-main
+                    section.mt-about-sec.wow.fadeInUp(data-wow-delay='0.4s')
+                        .container-fluid
+                            .row
+                                .col-xs-12
+                                    .nav.breadcrumbs
+                                        ul.list-unstyled
+                                            li
+                                                a(href="#")
+                                                | Главная
+                                                i.fa.fa-circle
+                                            li О нас
+                                    .txt
+                                        h2.text-center О нас
+                                        p
+                                            | Morbi in erat malesuada, sollicitudin massa at, tristique nisl. Maecenas id eros scelerisque, vulputate tortor quis, efficitur arcu sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Umco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit sse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                                            strong Vestibulum sit amet metus euismod, condimentum lectus id, ultrices sem.
+                                        p
+                                            | Fusce mattis nunc lacus, vulputate facilisis dui efficitur ut. Vestibulum sit amet metus euismod, condimentum lectus id, ultrices sem. Morbi in erat malesuada, sollicitudin massa at,
+                                    .mt-follow-holder
+                                        span.title Мы в соцсетях
+                                        // Social Network of the Page
+                                        ul.list-unstyled.social-network
+                                            li
+                                                a(href='#')
+                                                    i.fa.fa-twitter
+                                            li
+                                                a(href='#')
+                                                    i.fa.fa-facebook
+                                            li
+                                                a(href='#')
+                                                    i.fa.fa-google-plus
+                                            li
+                                                a(href='#')
+                                                    i.fa.fa-youtube
+                                            li
+                                                a(href='#')
+                                                    i.fa.fa-linkedin
+                                            li
+                                                a(href='#')
+                                                    i.fa.fa-whatsapp
+                                        // Social Network of the Page end
+                    aside.f-promo-box.f-promo-box-about-us
+                        h2.heading.text-center Наши преимущества
+                        .container.divider
+                            .row
+                                .col-xs-12.col-sm-6.col-md-3.col-md-offset-2.mt-paddingbottomsm
+                                    // F Widget Item of the Page
+                                    .f-widget-item
+                                        span.widget-icon
+                                            i.fa.fa-truck
+                                        .txt-holder
+                                            h1.f-promo-box-heading Быстрая доставка
+                                            p
+                                                | Быстрая и надежая доставка
+                                                | по всей Украине
+                                    // F Widget Item of the Page end
+                                .col-xs-12.col-sm-6.col-md-3.mt-paddingbottomsm
+                                    // F Widget Item of the Page
+                                    .f-widget-item
+                                        span.widget-icon
+                                            i.fa.fa-life-ring
+                                        .txt-holder
+                                            h1.f-promo-box-heading Поддержка 24/7
+                                            p
+                                                | Мы круглосуточно на связи,
+                                                | чтобы решить вашу проблему
+                                    // F Widget Item of the Page
+                                .col-xs-12.col-sm-6.col-md-3.mt-paddingbottomxs
+                                    // F Widget Item of the Page
+                                    .f-widget-item
+                                        span.widget-icon
+                                            i.fa.fa-trophy
+                                        .txt-holder
+                                            h1.f-promo-box-heading Помощь профессионалов
+                                            p
+                                                | Продаем только то, что купили
+                                                | бы сами
+                                    // F Widget Item of the Page
+                    // F Promo Box of the Page end
+                include modules/footer/footer 
+            span#back-top.fa.fa-arrow-up
+        // include jQuery
+        include modules/footer/scripts

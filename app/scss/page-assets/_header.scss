@@ -519,22 +519,21 @@ a:hover{
 				margin: 6px 0 0;
 				float:left;
 			}
+			.fa{
+				color:$colorBlue;
+				font-size:37px;
+			}
 			.phones{
 				display: inline-block;
+				margin-left:10px;
 				.mt-phone{
 					color:rgb(83,83,83);
 					display:block;
 				}
 			}
-			.telephone-icon{
-				width:10%;
-				display: inline-block;
-				vertical-align: top;
-				margin-right:10px;
-			}
 		}
 		.mt-bottom-bar{
-			padding: 26px 0 34px;
+			padding: 10px 0 27px;
 			.mt-logo{margin: 6px 0 0;}
 			.mt-icon-list{padding: 0 12px 0 0;}
 		}
@@ -1056,7 +1055,7 @@ a:hover{
 		> li{
 			position: relative;
 			vertical-align: top;
-			margin: 0 36px 0 7px;
+			margin: 0 36px 0 0;
 			display: inline-block;
 			text-transform: none;
 			.mt-mdropover{pointer-events:none;}

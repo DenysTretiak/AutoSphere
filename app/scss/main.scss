@@ -303,7 +303,7 @@ a{
 						h3{
 						a{
 							&:hover{
-							 text-decoration: underline;
+							 color:$colorBlue;
 							}
 						}
 			    	}  	
@@ -332,30 +332,32 @@ a{
 	}
 } 
 
-.product-list-breadcrumbs{
-	.breadcrumbs{
-		@include font(14px, 16px);
-		font-weight: 200;
+
+.breadcrumbs{
+	@include font(14px, 16px);
+	font-weight: 200;
+	overflow: hidden;
+	color: $clr-28;
+	ul{
 		overflow: hidden;
-		color: $clr-28;
-		ul{
-			overflow: hidden;
-			li{
-				margin: 0 10px 0 0;
-				display: inline-block;
-				vertical-align: middle;
+		li{
+			margin: 0 10px 0 0;
+			display: inline-block;
+			vertical-align: middle;
+			&:last-child{
+				color:rgb(161,161,161);
 			}
-			a{
-				transition: all 0.25s linear;
-				color: $clr-28;
-				&:hover{ color: $colorBlue;}
-			}
-			.fa{
-				margin: 0 0 0 5px;
-				font-size:5px;
-				color:$colorBlue;
-				vertical-align: middle;
-			}
+		}
+		a{
+			transition: all 0.25s linear;
+			color: $clr-28;
+			&:hover{ color: $colorBlue;}
+		}
+		.fa{
+			margin: 0 0 0 5px;
+			font-size:5px;
+			color:$colorBlue;
+			vertical-align: middle;
 		}
 	}
 }
@@ -382,4 +384,16 @@ a{
 			}
 		}
 	}	
+}
+
+.page-title{
+	width:34%;
+	margin-bottom:2%;
+	h1{
+		font-weight: bold;
+		color:rgb(83,83,83);
+	}
+}
+label{
+	display: inline;
 }

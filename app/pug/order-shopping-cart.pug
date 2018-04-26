@@ -1,0 +1,113 @@
+doctype html
+html(lang='en')
+    include modules/header/head
+    body
+        // main container of all the page elements
+        #wrapper
+            // Page Loader
+            #pre-loader.loader-container
+                .loader
+                    img(src='images/svg/rings.svg', alt='loader')
+            .w1
+                // mt -header style14 start from here
+                include modules/header/header-checkout
+                // Main of the Page
+                main#mt-main
+                    .mt-process-sec.wow.fadeInUp(data-wow-delay='0.4s')
+                        .container
+                            .row
+                                .col-xs-12
+                                    ul.list-unstyled.process-list
+                                        li.active
+                                            span.counter 01
+                                            strong.title Корзина
+                                        li
+                                            span.counter.counter-2 02
+                                            strong.title Оформление заказа
+                                        li
+                                            span.counter 03
+                                            strong.title Готово
+                    // Mt Process Section of the Page end
+                    // Mt Product Table of the Page
+                    .mt-product-table.wow.fadeInUp(data-wow-delay='0.4s')
+                        .container
+                            .row.border
+                                .col-xs-12.col-sm-6
+                                    strong.title Товар
+                                .col-xs-12.col-sm-2
+                                    strong.title Цена
+                                .col-xs-12.col-sm-2
+                                    strong.title Количество
+                                .col-xs-12.col-sm-2
+                                    strong.title Всего
+                            .row.border
+                                .col-xs-12.col-sm-2
+                                    .img-holder
+                                        img(src='images/product-list/size-2.png', alt='image description')
+                                .col-xs-12.col-sm-4
+                                    strong.product-name Моторное масло SHELL HELIX HX7 10W-40 1л.
+                                    span код товара 89403
+                                .col-xs-12.col-sm-2
+                                    strong.price 599,00 грн 
+                                .col-xs-12.col-sm-2
+                                    .count
+                                        span.minus -
+                                        span.number 3
+                                        span.plus +
+                                .col-xs-12.col-sm-2
+                                    strong.price 599,00 грн 
+                                    a(href='#')
+                                        i.fa.fa-close
+                            .row.border
+                                .col-xs-12.col-sm-2
+                                    .img-holder
+                                        img(src='images/product-list/size-2.png', alt='image description')
+                                .col-xs-12.col-sm-4
+                                    strong.product-name Моторное масло SHELL HELIX HX7 10W-40 1л.
+                                    span код товара 89403
+                                .col-xs-12.col-sm-2
+                                    strong.price 599,00 грн 
+                                .col-xs-12.col-sm-2
+                                    .count
+                                        span.minus -
+                                        span.number 3
+                                        span.plus +
+                                .col-xs-12.col-sm-2
+                                    strong.price 599,00 грн 
+                                    a(href='#')
+                                        i.fa.fa-close
+                            .row.border
+                                .col-xs-12.col-sm-2
+                                    .img-holder
+                                        img(src='images/product-list/size-2.png', alt='image description')
+                                .col-xs-12.col-sm-4
+                                    strong.product-name Моторное масло SHELL HELIX HX7 10W-40 1л.
+                                    span код товара 89403
+                                .col-xs-12.col-sm-2
+                                    strong.price 599,00 грн 
+                                .col-xs-12.col-sm-2
+                                    .count
+                                        span.minus -
+                                        span.number 3
+                                        span.plus +
+                                .col-xs-12.col-sm-2
+                                    strong.price 599,00 грн 
+                                    a(href='#')
+                                        i.fa.fa-close
+                            .row
+                                .col-md-6.col-xs-12
+                                    form.coupon-form(action='#')
+                                        fieldset
+                                            .mt-holder
+                                                input.form-control(type='text', placeholder='Введите промокод')
+                                                button(type='submit') Активировать
+                                .col-md-6.col-xs-12.confirm
+                                    h3.total Сумма заказа 1800 грн.
+                                    a.procees-btn(href="#") Оформить заказ                 
+                    // Mt Product Table of the Page end
+                // Main of the Page end here
+                // footer of the Page
+                include modules/footer/footer 
+            span#back-top.fa.fa-arrow-up
+        // include jQuery
+        include modules/footer/scripts

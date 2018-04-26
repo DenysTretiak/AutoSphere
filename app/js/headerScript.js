@@ -1,11 +1,13 @@
 function deletePlaceholder(elem, text){
-   elem.addEventListener('focus', function(){
-         elem.placeholder='';
-   });
+  if(elem){
+    elem.addEventListener('focus', function(){
+      elem.placeholder='';
+    });
 
-   elem.addEventListener('blur', function(){
+    elem.addEventListener('blur', function(){
     elem.placeholder = text; 
-  });
+    });
+  }
 }
 
 function extendItems(item, number, before){
@@ -18,8 +20,7 @@ function extendItems(item, number, before){
            continue;
        }
        item.parentNode.appendChild(sidebarItem);   
-      }
-      
+      } 
   }
 }
 

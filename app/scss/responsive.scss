@@ -1264,7 +1264,7 @@
 	.blog-post{
 		.time{
 			width: 58px;
-			margin: -15px 12px 15px 0;
+			margin: -15px 2px 15px 0;
 			@include font(14px, 16px);
 			strong{ @include font(20px, 23px); }
 		}
@@ -1664,4 +1664,28 @@
 }
 @media only screen and (max-width: 767px){
 	.hidden-xs{display: none !important;}
+	.mt-blog{
+		.mt-blog-row{
+			flex-wrap: wrap;
+			.mt-blog-item{
+				width:auto;
+				margin-top:20px;
+			}
+		}
+	}
+	.mt-process-sec{
+		.process-list {
+			li:before {
+				display:none;
+			}
+		} 
+	}
+	.mt-detail-sec{
+		.block{
+			span{
+				font-size:9px;
+			}
+		}
+	} 
+	 
 }
