@@ -36,10 +36,10 @@
       <div class="mt-top-bar mt-top-bar-2 mt-bottom-bar">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-4">
               <div class="mt-logo"><a href="#"><img src="images/mt-logo.png" alt="schon"></a></div>
             </div>
-            <div class="col-xs-12 col-sm-8 text-right">
+            <div class="col-xs-8 text-right">
               <div class="col-xs-12 col-sm-6"><span>
                   <div class="fa fa-phone"></div></span>
                 <div class="phones"><span class="mt-phone">+38(050)583-81-51</span><span class="mt-phone">+38(096)196-40-21</span></div>
@@ -255,28 +255,13 @@
       <!-- mt bottom bar end here--><span class="mt-side-over"></span>
     </header>
     <!-- mt header end here-->
-    <!-- mt side menu end here-->
-    <!-- mt search popup start here-->
-    <div class="mt-search-popup">
-      <div class="mt-holder"><a class="search-close" href="#"><span></span><span></span></a>
-        <div class="mt-frame">
-          <form action="#">
-            <fieldset>
-              <input type="text" placeholder="Search..."><span class="icon-microphone"></span>
-              <button class="icon-magnifier" type="submit"></button>
-            </fieldset>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- mt search popup end here-->
     <!-- mt main start here-->
     <main id="mt-main">
       <!-- Mt Product Detial of the Page-->
       <section class="mt-product-detial wow fadeInUp" data-wow-delay="0.4s">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 product-list-breadcrumbs">
+            <div class="col-xs-12">
               <nav class="breadcrumbs">
                 <ul class="list-unstyled">
                   <li><a href="index.html">Главная <i class="fa fa-circle"></i></a></li>
@@ -337,52 +322,54 @@
                       <del>399,00</del>79.00 грн<span class="in-stock"> <i class="fa fa-check-circle-o"></i>В наличии </span></span></div>
                   <!-- Product Form of the Page-->
                 </div>
-                <table class="table-bordered">
-                  <tr>
-                    <td>
-                      <table>
-                        <tr>
-                          <td>Літри</td>
-                          <td>
-                            <ul>
-                              <li class="btn active">1л</li>
-                              <li class="btn">4л</li>
-                              <li class="btn">5л</li>
-                              <li class="btn disabled">10л</li>
+                <div class="table" style="overflow-x:auto;">
+                  <table class="table-bordered">
+                    <tr>
+                      <td>
+                        <table>
+                          <tr>
+                            <td>Літри</td>
+                            <td>
+                              <ul>
+                                <li class="btn active">1л</li>
+                                <li class="btn">4л</li>
+                                <li class="btn">5л</li>
+                                <li class="btn disabled">10л</li>
+                              </ul>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td>
+                        <ul class="delivery">
+                          <li><b>Самовывоз </b>из <a href="#">наших магазинов</a>- бесплатно </li>
+                          <li><b>Самовывоз из </b><a class="new-post" href="#">Новой почты</a>- 10 грн</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="buy-buttons">
+                        <div class="td-container">
+                          <div class="count"><span class="minus">-</span><span class="number">3</span><span class="plus">+</span>
+                            <h6><a>Перезвоните мне</a></h6>
+                          </div>
+                          <div class="row-val">
+                            <button type="submit">Купить</button>
+                            <ul class="list-unstyled nav">
+                              <li><a href="#"><i class="fa fa-heart"></i> В избранное</a></li>
                             </ul>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td>
-                      <ul class="delivery">
-                        <li><b>Самовывоз </b>из <a href="#">наших магазинов</a>- бесплатно </li>
-                        <li><b>Самовывоз из </b><a class="new-post" href="#">Новой почты</a>- 10 грн</li>
-                      </ul>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="buy-buttons">
-                      <div class="td-container">
-                        <div class="count"><span class="minus">-</span><span class="number">3</span><span class="plus">+</span>
-                          <h6><a>Перезвоните мне</a></h6>
+                          </div>
                         </div>
-                        <div class="row-val">
-                          <button type="submit">Купить</button>
-                          <ul class="list-unstyled nav">
-                            <li><a href="#"><i class="fa fa-heart"></i> В избранное</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <ul class="delivery">
-                        <li><b>Гарантия </b>12 месяцев официальной гарантии</li>
-                        <li><b>Оплата </b>Наличными, безналичными</li>
-                      </ul>
-                    </td>
-                  </tr>
-                </table>
+                      </td>
+                      <td>
+                        <ul class="delivery">
+                          <li><b>Гарантия </b>12 месяцев официальной гарантии</li>
+                          <li><b>Оплата </b>Наличными, безналичными</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
                 <div class="consultation"><span>Получите бесплатную консультацию по товару</span>
                   <div class="phone">
                     <input type="text"><span class="hint">например 063-888-88-88</span>
@@ -590,17 +577,13 @@
                 <!-- Social Network of the Page end-->
               </div>
             </div>
-            <div class="col-sm-12 text-center footer-area">
+            <div class="col-xs-12 text-center footer-area">
               <p>© <a href="index.html">Autospere.</a>- Все права защищены</p>
             </div>
           </div>
         </div>
       </div>
-      <!-- Footer Holder of the Page end-->
-      <!-- Footer Area of the Page-->
     </footer>
-    <!-- Footer Area of the Page end-->
-    <!-- footer of the Page end-->
   </div><span class="fa fa-arrow-up" id="back-top"></span>
 </div>
 <script src="js/main.min.js"></script>

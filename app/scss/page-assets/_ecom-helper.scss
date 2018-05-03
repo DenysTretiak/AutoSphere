@@ -127,7 +127,9 @@
 	overflow: hidden;
 	width: 100%;
 	position: relative;
-	height: 571px;
+	height: 521px;
+	text-align: center;
+	margin:0 0 50px 0;
 	.map-logo{
 		width: 111px;
 		position: absolute;
@@ -157,7 +159,7 @@
 11. Mt Contact Detial / .mt-contact-detial
 -------------------------------------------------------------------*/
 .mt-contact-detail{
-	padding: 75px 0 65px;
+	padding: 10px 0 65px;
 	font-weight: 300;
 	@include font(18px, 22px);
 	position: relative;
@@ -195,7 +197,7 @@
 		color: $clr-28;
 		h2{
 			@include font(30px, 33px);
-			font-weight: 600;
+			font-weight:normal;
 			margin: 0 0 28px;
 			color: $clr-28;
 		}
@@ -205,6 +207,15 @@
 		@include font(14px, 16px);
 		font-weight: 200;
 		overflow: hidden;
+		ul{
+			display: inline-block;
+			padding: 0;
+			li{
+				list-style: none;
+				float:none;
+				margin:0;
+			}
+		}
 	li{
 		float: left;
 		margin: 0 40px 20px 0;
@@ -247,6 +258,12 @@
 			min-height: 89px;
 			resize: none;
 		}
+	}
+}
+section{
+	&.breadcrumbs{
+		border-top:1px solid $colorGray;
+		padding: 20px 0;
 	}
 }
 /*------------------------------------------------------------------
@@ -368,7 +385,7 @@
 		font-weight: 300;
 		margin: 0 0 22px;
 		color: $clr-30;
-		p{margin: 0 0 37px;}
+		p{margin: 0 0 37px;}s
 		strong{
 			display: block;
 			@include font(24px, 26px);
@@ -398,6 +415,116 @@
 		margin: 0 0 15px;
 		font-weight: 700;
 		color: $clr-2;
+	}
+	.reviews-container{
+		text-align: left;
+		width: 60%;
+		margin: 0 auto;
+		h3{
+			color:rgb(73,73,73);
+			font-weight:bold;
+			margin: 0 0 20px 0;
+		}
+		form{
+			img{
+				width: 50px;
+				height: 50px;
+				display: inline-block;
+				vertical-align: top;
+			}
+			.review-data{
+				display: inline-block;
+				.name{
+					display: block;
+				}
+				ul{
+					margin: 0;
+					padding: 0;
+					.text{
+						color:#868686;
+						margin:0 10px 0 0;
+					}
+					li{
+						margin:0 0 30px;
+					}
+				}
+			}
+			.comment-field{
+				position:relative;
+				textarea{
+					resize: none;
+					border: none;
+					background: #f7f7f7;
+					padding: 15px;
+					margin:15px 0 0 0;
+					&:focus{
+						outline: none;
+					}
+				}
+				a{
+					position: absolute;
+					left:20px;
+					bottom: 20px;
+					.fa{
+						font-size:25px;
+					}
+				}
+			}
+
+		}
+		.btn{
+			background: $colorBlue;
+			color:#fff;
+			margin:15px 0;
+		}
+		.list-unstyled{
+			padding:0;
+			.img-box{
+				width:auto;
+				img{
+					width:165px;
+					height:165px;
+				}	
+			}
+			.li-txt{
+				display: inline-block;
+				.txt{
+					width:100%;
+					border:none;
+					padding: 0;
+					margin: 0;
+					h3{
+						display: inline-block;
+					}
+					.mt-time{
+						display: inline-block;
+						color:#868686;
+						font-style:normal;
+					}
+				}
+				.mt-star{
+					margin: 0;
+					padding: 0 0 20px 0;
+					li{
+						padding: 0;
+						margin: 0;
+						&.text{
+							color:#868686;
+							margin:0 10px 0 0;
+						}
+					}
+				}
+			}
+			.comment-li{
+				border-bottom:1px solid $colorGray;
+				margin:0;
+				padding:0 0 55px;
+				margin:55px 0 0;
+			}
+		}
+		&.mt-comments-section{
+			padding: 0;
+		}
 	}
 }
 /*------------------------------------------------------------------

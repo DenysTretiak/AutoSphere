@@ -385,7 +385,24 @@ a{
 		}
 	}	
 }
-
+.page-404{
+	border:none;
+	padding: none;
+	img{
+		width:300px;
+		display: inline-block;
+		margin-bottom: 30px;
+	}
+	p{
+		font-size: 30px;
+	}
+	.confirm{
+		.procees-btn{
+			font-size:14px;
+			background: $colorBlue;
+		}
+	} 
+}
 .page-title{
 	width:34%;
 	margin-bottom:2%;
@@ -396,4 +413,67 @@ a{
 }
 label{
 	display: inline;
+}
+
+.profile-page{
+	padding: 50px 0 250px;
+	ul{
+		margin:0;
+		padding: 0;
+		li{
+			list-style:none;
+			padding:10px 0;
+			border-bottom:1px solid $colorGray;
+			a{
+				font-size:16px;
+				font-weight: bold;
+			}
+			&.active{
+				a{
+					color:$colorBlue;
+				}
+			}
+		}
+	}
+	.profile-data{
+		display: flex;
+		margin:0 0 0 30px;
+		img{
+			width:113px;
+		}
+		.table-responsive{
+			margin-left:45px;
+			tr{
+				td{
+					padding:0 0 25px;
+					font-size: 16px;
+					&:first-child{
+						text-align: right;
+					}
+					&:nth-child(2){
+						color:#535353;
+						padding: 0 25px 30px;
+					}
+				}
+			}
+			li{
+				padding:0 0 10px;
+				display: flex;
+				justify-content: space-around;
+				align-items: middle;
+				border: none;
+				font-size:16px;
+				span{
+					margin:0 10px;
+					color:#535353;
+				}
+			}
+		}
+		a{
+			font-size: 11px;
+			font-weight: normal;
+			border-bottom:1px solid #9c9c9c;
+		}
+		
+	}
 }

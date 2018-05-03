@@ -1813,15 +1813,14 @@ a:hover {
 
 .btn-type3 {
   outline: none;
-  color: #fff;
+  color: #333333;
   padding: 9px 20px;
-  background: #000;
-  border-radius: 21px;
+  background: #fff;
+  border-radius: 5px;
   vertical-align: top;
   display: inline-block;
-  border: 1px solid #000;
-  text-transform: uppercase;
-  font: 300 14px/20px "Monserrat", sans-serif; }
+  border: 1px solid #338be3;
+  font: 300 14px/20px 'Montserrat'; }
   .btn-type3:focus, .btn-type3:hover {
     color: #000;
     background: transparent;
@@ -5015,7 +5014,8 @@ a:hover {
       border-right: none; }
       .mt-product-detial .detial-holder .table-bordered td {
         vertical-align: middle;
-        padding: 10px; }
+        padding: 10px;
+        white-space: nowrap; }
         .mt-product-detial .detial-holder .table-bordered td .btn {
           border-color: #d2d2d2; }
           .mt-product-detial .detial-holder .table-bordered td .btn.active {
@@ -5078,6 +5078,8 @@ a:hover {
       display: flex;
       justify-content: space-around;
       align-items: baseline;
+      flex-wrap: wrap;
+      text-align: center;
       padding: 30px 0 10px 0;
       border-bottom: 1px solid #ddd; }
       .mt-product-detial .detial-holder .consultation span {
@@ -5140,7 +5142,8 @@ a:hover {
           border-color: transparent #d2d2d2 transparent transparent;
           border-width: 9px; }
       .mt-product-detial .detial-holder .link-to-item .link {
-        margin-right: 80px; }
+        margin: 0 80px 10px 0;
+        display: inline-block; }
       .mt-product-detial .detial-holder .link-to-item p {
         margin-top: 20px;
         color: #0c273c; }
@@ -5340,6 +5343,9 @@ a:hover {
       padding: 3px 11px;
       border-radius: 50%;
       margin-right: 5px; }
+  .mt-detail-sec .checkout-h2 {
+    font-size: 18px;
+    line-height: 20px; }
   .mt-detail-sec .is-registered {
     width: 70%;
     display: flex;
@@ -5607,28 +5613,24 @@ a:hover {
 -------------------------------------------------------------------*/
 .mt-product-table {
   padding: 40px 0; }
-  .mt-product-table .border {
-    border-style: solid;
-    border-width: 0 0 1px;
-    border-color: #dcdcdc; }
-    .mt-product-table .border .count {
-      padding: 81px 0 0; }
-      .mt-product-table .border .count span {
-        padding: 5px 10px;
-        border: 2px solid #f8f8f8; }
-      .mt-product-table .border .count .plus {
-        color: #338be3;
-        font-weight: bold;
-        border-left: none;
-        font-size: 20px;
-        cursor: pointer; }
-      .mt-product-table .border .count .minus {
-        border-right: none;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 20px; }
-      .mt-product-table .border .count .number {
-        padding: 10px; }
+  .mt-product-table .count {
+    display: inline-block; }
+    .mt-product-table .count span {
+      padding: 5px 10px;
+      border: 2px solid #f8f8f8; }
+    .mt-product-table .count .plus {
+      color: #338be3;
+      font-weight: bold;
+      border-left: none;
+      font-size: 20px;
+      cursor: pointer; }
+    .mt-product-table .count .minus {
+      border-right: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 20px; }
+    .mt-product-table .count .number {
+      padding: 10px 10px 7px; }
   .mt-product-table .confirm {
     text-align: center;
     padding: 30px 0 52px; }
@@ -5640,7 +5642,6 @@ a:hover {
       color: #fff;
       font-weight: bold;
       margin-left: 20px;
-      width: 40%;
       font-size: 18px; }
     .mt-product-table .confirm .total {
       display: inline-block;
@@ -5654,36 +5655,31 @@ a:hover {
     color: #868686; }
   .mt-product-table .img-holder {
     width: 106px;
-    overflow: hidden;
-    padding: 25px 0 22px; }
+    display: inline-block;
+    overflow: hidden; }
   .mt-product-table .product-name {
     font-size: 18px;
     line-height: 20px;
     display: block;
-    padding: 69px 0 10px;
     color: #757575; }
   .mt-product-table .price {
     font-size: 18px;
     line-height: 20px;
     float: left;
-    padding: 81px 0 0;
     color: #494949; }
-  .mt-product-table .qyt-form {
-    padding: 69px 0 0; }
-    .mt-product-table .qyt-form select {
-      font-size: 18px;
-      line-height: 20px;
-      font-weight: 700;
-      padding: 7px 10px;
-      border: none;
-      outline: none;
-      background: #eeeeee;
-      color: #494949; }
+  .mt-product-table .qyt-form select {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    padding: 7px 10px;
+    border: none;
+    outline: none;
+    background: #eeeeee;
+    color: #494949; }
   .mt-product-table .fa-close {
     font-size: 18px;
     line-height: 20px;
     float: right;
-    margin: 81px 0 0;
     color: #f05c5c;
     -moz-transition: all 0.4s linear;
     -webkit-transition: all 0.4s linear;
@@ -5719,12 +5715,25 @@ a:hover {
       border-radius: 30px;
       outline: none;
       background: #fff;
-      display: block;
+      display: inline-block;
       text-align: center;
       padding: 16px 10px 13px 7px;
-      float: left;
       transition: all 0.25s linear;
       color: #313131; }
+  .mt-product-table table td {
+    vertical-align: middle !important;
+    position: relative; }
+    .mt-product-table table td.td-holder {
+      display: flex;
+      align-items: center; }
+      .mt-product-table table td.td-holder .description-holder {
+        margin-left: 50px; }
+    .mt-product-table table td a {
+      position: absolute;
+      top: 20px;
+      right: 20px; }
+  .mt-product-table table th {
+    border: none !important; }
 
 .complete-container .mt-product-table {
   width: 60%;
@@ -5784,20 +5793,6 @@ a:hover {
   .product-comment .mt-hold {
     margin: 0 0 11px;
     overflow: hidden; }
-  .product-comment .mt-star {
-    padding: 0;
-    color: #e6c376;
-    font-size: 14px;
-    overflow: hidden;
-    list-style: none;
-    margin: 0 17px 0 0;
-    display: inline-block;
-    vertical-align: middle; }
-    .product-comment .mt-star li {
-      float: left;
-      margin: 0 2px 0 0; }
-    .product-comment .mt-star .fa-star-o {
-      color: #d6d6d6; }
   .product-comment .name {
     color: #aaa;
     margin: 0 24px 0 0;
@@ -5860,6 +5855,21 @@ a:hover {
     min-height: 122px; }
   .product-comment .btn-type4 {
     margin: 0 0 0 80px; }
+
+.mt-star {
+  padding: 0;
+  color: #e6c376;
+  font-size: 14px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 17px 0 0;
+  display: inline-block;
+  vertical-align: middle; }
+  .mt-star li {
+    float: left;
+    margin: 0 2px 0 0; }
+  .mt-star .fa-star-o {
+    color: #d6d6d6; }
 
 /*------------------------------------------------------------------
 38. related products / .related-products
@@ -6085,7 +6095,6 @@ a:hover {
       .product-post .title a:hover {
         color: #338be3; }
   .product-post .price {
-    display: block;
     font-size: 22px;
     line-height: 23px;
     color: #000;
@@ -6566,7 +6575,7 @@ a:hover {
   text-decoration: none;
   background: transparent url("../images/fancybox/blank.gif");
   /* helps IE */
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   z-index: 8040; }
 
 .fancybox-prev {
@@ -6694,7 +6703,7 @@ a:hover {
   margin: 0 0 172px; }
 
 .mt-blog-detail.style1 {
-  padding: 46px 0 0;
+  padding: 55px 0 0;
   margin: 0 0 112px; }
   .mt-blog-detail.style1 .blog-post {
     font-size: 16px;
@@ -7991,7 +8000,9 @@ a:hover {
   overflow: hidden;
   width: 100%;
   position: relative;
-  height: 571px; }
+  height: 521px;
+  text-align: center;
+  margin: 0 0 50px 0; }
   .mt-map-holder .map-logo {
     width: 111px;
     position: absolute;
@@ -8022,7 +8033,7 @@ a:hover {
 11. Mt Contact Detial / .mt-contact-detial
 -------------------------------------------------------------------*/
 .mt-contact-detail {
-  padding: 75px 0 65px;
+  padding: 10px 0 65px;
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
@@ -8060,7 +8071,7 @@ a:hover {
     .mt-contact-detail .txt-wrap h2 {
       font-size: 30px;
       line-height: 33px;
-      font-weight: 600;
+      font-weight: normal;
       margin: 0 0 28px;
       color: #383838; }
     .mt-contact-detail .txt-wrap p {
@@ -8070,6 +8081,13 @@ a:hover {
     line-height: 16px;
     font-weight: 200;
     overflow: hidden; }
+    .mt-contact-detail .contact-txt ul {
+      display: inline-block;
+      padding: 0; }
+      .mt-contact-detail .contact-txt ul li {
+        list-style: none;
+        float: none;
+        margin: 0; }
     .mt-contact-detail .contact-txt li {
       float: left;
       margin: 0 40px 20px 0; }
@@ -8119,6 +8137,10 @@ a:hover {
     .mt-contact-detail .contact-form textarea {
       min-height: 89px;
       resize: none; }
+
+section.breadcrumbs {
+  border-top: 1px solid #d2d2d2;
+  padding: 20px 0; }
 
 /*------------------------------------------------------------------
 12. Mt Form Section / .mt-form-sec
@@ -8246,7 +8268,7 @@ a:hover {
     color: #494949; }
     .mt-about-sec .txt p {
       margin: 0 0 37px; }
-    .mt-about-sec .txt strong {
+    .mt-about-sec .txt s strong {
       display: block;
       font-size: 24px;
       line-height: 26px;
@@ -8275,6 +8297,87 @@ a:hover {
     margin: 0 0 15px;
     font-weight: 700;
     color: #575757; }
+  .mt-about-sec .reviews-container {
+    text-align: left;
+    width: 60%;
+    margin: 0 auto; }
+    .mt-about-sec .reviews-container h3 {
+      color: #494949;
+      font-weight: bold;
+      margin: 0 0 20px 0; }
+    .mt-about-sec .reviews-container form img {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      vertical-align: top; }
+    .mt-about-sec .reviews-container form .review-data {
+      display: inline-block; }
+      .mt-about-sec .reviews-container form .review-data .name {
+        display: block; }
+      .mt-about-sec .reviews-container form .review-data ul {
+        margin: 0;
+        padding: 0; }
+        .mt-about-sec .reviews-container form .review-data ul .text {
+          color: #868686;
+          margin: 0 10px 0 0; }
+        .mt-about-sec .reviews-container form .review-data ul li {
+          margin: 0 0 30px; }
+    .mt-about-sec .reviews-container form .comment-field {
+      position: relative; }
+      .mt-about-sec .reviews-container form .comment-field textarea {
+        resize: none;
+        border: none;
+        background: #f7f7f7;
+        padding: 15px;
+        margin: 15px 0 0 0; }
+        .mt-about-sec .reviews-container form .comment-field textarea:focus {
+          outline: none; }
+      .mt-about-sec .reviews-container form .comment-field a {
+        position: absolute;
+        left: 20px;
+        bottom: 20px; }
+        .mt-about-sec .reviews-container form .comment-field a .fa {
+          font-size: 25px; }
+    .mt-about-sec .reviews-container .btn {
+      background: #338be3;
+      color: #fff;
+      margin: 15px 0; }
+    .mt-about-sec .reviews-container .list-unstyled {
+      padding: 0; }
+      .mt-about-sec .reviews-container .list-unstyled .img-box {
+        width: auto; }
+        .mt-about-sec .reviews-container .list-unstyled .img-box img {
+          width: 165px;
+          height: 165px; }
+      .mt-about-sec .reviews-container .list-unstyled .li-txt {
+        display: inline-block; }
+        .mt-about-sec .reviews-container .list-unstyled .li-txt .txt {
+          width: 100%;
+          border: none;
+          padding: 0;
+          margin: 0; }
+          .mt-about-sec .reviews-container .list-unstyled .li-txt .txt h3 {
+            display: inline-block; }
+          .mt-about-sec .reviews-container .list-unstyled .li-txt .txt .mt-time {
+            display: inline-block;
+            color: #868686;
+            font-style: normal; }
+        .mt-about-sec .reviews-container .list-unstyled .li-txt .mt-star {
+          margin: 0;
+          padding: 0 0 20px 0; }
+          .mt-about-sec .reviews-container .list-unstyled .li-txt .mt-star li {
+            padding: 0;
+            margin: 0; }
+            .mt-about-sec .reviews-container .list-unstyled .li-txt .mt-star li.text {
+              color: #868686;
+              margin: 0 10px 0 0; }
+      .mt-about-sec .reviews-container .list-unstyled .comment-li {
+        border-bottom: 1px solid #d2d2d2;
+        margin: 0;
+        padding: 0 0 55px;
+        margin: 55px 0 0; }
+    .mt-about-sec .reviews-container.mt-comments-section {
+      padding: 0; }
 
 /*------------------------------------------------------------------
 15. Mt Team Section / .mt-team-sec
@@ -9368,6 +9471,19 @@ a:hover, a:active, a:focus {
         .links-product-list ul li a:hover {
           text-decoration: underline; }
 
+.page-404 {
+  border: none;
+  padding: none; }
+  .page-404 img {
+    width: 300px;
+    display: inline-block;
+    margin-bottom: 30px; }
+  .page-404 p {
+    font-size: 30px; }
+  .page-404 .confirm .procees-btn {
+    font-size: 14px;
+    background: #338be3; }
+
 .page-title {
   width: 34%;
   margin-bottom: 2%; }
@@ -9377,3 +9493,47 @@ a:hover, a:active, a:focus {
 
 label {
   display: inline; }
+
+.profile-page {
+  padding: 50px 0 250px; }
+  .profile-page ul {
+    margin: 0;
+    padding: 0; }
+    .profile-page ul li {
+      list-style: none;
+      padding: 10px 0;
+      border-bottom: 1px solid #d2d2d2; }
+      .profile-page ul li a {
+        font-size: 16px;
+        font-weight: bold; }
+      .profile-page ul li.active a {
+        color: #338be3; }
+  .profile-page .profile-data {
+    display: flex;
+    margin: 0 0 0 30px; }
+    .profile-page .profile-data img {
+      width: 113px; }
+    .profile-page .profile-data .table-responsive {
+      margin-left: 45px; }
+      .profile-page .profile-data .table-responsive tr td {
+        padding: 0 0 25px;
+        font-size: 16px; }
+        .profile-page .profile-data .table-responsive tr td:first-child {
+          text-align: right; }
+        .profile-page .profile-data .table-responsive tr td:nth-child(2) {
+          color: #535353;
+          padding: 0 25px 30px; }
+      .profile-page .profile-data .table-responsive li {
+        padding: 0 0 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: middle;
+        border: none;
+        font-size: 16px; }
+        .profile-page .profile-data .table-responsive li span {
+          margin: 0 10px;
+          color: #535353; }
+    .profile-page .profile-data a {
+      font-size: 11px;
+      font-weight: normal;
+      border-bottom: 1px solid #9c9c9c; }

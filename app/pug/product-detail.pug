@@ -99,53 +99,54 @@ include modules/header/head
                         i.fa.fa-check-circle-o
                         | В наличии 
                   // Product Form of the Page
-                table.table-bordered
-                  tr
-                    td
-                      table
-                        tr
-                          td Літри
-                          td
-                            ul
-                              li.btn.active 1л
-                              li.btn 4л
-                              li.btn 5л
-                              li.btn.disabled 10л
-                    td
-                      ul.delivery
-                        li
-                          b Самовывоз 
-                          | из 
-                          a(href="#") наших магазинов
-                          | - бесплатно 
-                        li
-                          b Самовывоз из 
-                          a.new-post(href="#") Новой почты
-                          | - 10 грн
-                  tr
-                    td.buy-buttons
-                      .td-container
-                        .count
-                          span.minus -
-                          span.number 3
-                          span.plus +
-                          h6
-                            a Перезвоните мне
-                        .row-val
-                            button(type='submit') Купить
-                            ul.list-unstyled.nav
-                              li
-                                a(href='#')
-                                  i.fa.fa-heart
-                                  |  В избранное
-                    td
-                      ul.delivery
-                        li
-                          b Гарантия 
-                          | 12 месяцев официальной гарантии
-                        li
-                          b Оплата 
-                          | Наличными, безналичными
+                .table(style="overflow-x:auto;")
+                  table.table-bordered
+                    tr
+                      td
+                        table
+                          tr
+                            td Літри
+                            td
+                              ul
+                                li.btn.active 1л
+                                li.btn 4л
+                                li.btn 5л
+                                li.btn.disabled 10л
+                      td
+                        ul.delivery
+                          li
+                            b Самовывоз 
+                            | из 
+                            a(href="#") наших магазинов
+                            | - бесплатно 
+                          li
+                            b Самовывоз из 
+                            a.new-post(href="#") Новой почты
+                            | - 10 грн
+                    tr
+                      td.buy-buttons
+                        .td-container
+                          .count
+                            span.minus -
+                            span.number 3
+                            span.plus +
+                            h6
+                              a Перезвоните мне
+                          .row-val
+                              button(type='submit') Купить
+                              ul.list-unstyled.nav
+                                li
+                                  a(href='#')
+                                    i.fa.fa-heart
+                                    |  В избранное
+                      td
+                        ul.delivery
+                          li
+                            b Гарантия 
+                            | 12 месяцев официальной гарантии
+                          li
+                            b Оплата 
+                            | Наличными, безналичными
                 .consultation
                   span Получите бесплатную консультацию по товару
                   .phone

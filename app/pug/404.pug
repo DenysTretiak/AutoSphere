@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+    include modules/header/head
+    body
+        // main container of all the page elements
+        #wrapper
+            // Page Loader
+            #pre-loader.loader-container
+                .loader
+                    img(src='images/svg/rings.svg', alt='loader')
+            .w1
+                // mt -header style14 start from here
+                include modules/header/header
+                // Main of the Page
+                main#mt-main
+                    section.wow.fadeInUp(data-wow-delay='0.4s')
+                        .container-fluid
+                            .row
+                                .col-xs-12
+                                    section.text-center.mt-product-table.page-404
+                                        img(src='images/404.png')
+                                        p Страница не найдена
+                                        p Но мы работаем над этим
+                                        .confirm
+                                            a.procees-btn(href="#") В каталог товаров 
+                include modules/footer/footer 
+            span#back-top.fa.fa-arrow-up
+        // include jQuery
+        include modules/footer/scripts

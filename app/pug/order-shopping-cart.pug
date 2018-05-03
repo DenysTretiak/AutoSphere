@@ -31,74 +31,73 @@ html(lang='en')
                     // Mt Product Table of the Page
                     .mt-product-table.wow.fadeInUp(data-wow-delay='0.4s')
                         .container
-                            .row.border
-                                .col-xs-12.col-sm-6
-                                    strong.title Товар
-                                .col-xs-12.col-sm-2
-                                    strong.title Цена
-                                .col-xs-12.col-sm-2
-                                    strong.title Количество
-                                .col-xs-12.col-sm-2
-                                    strong.title Всего
-                            .row.border
-                                .col-xs-12.col-sm-2
-                                    .img-holder
-                                        img(src='images/product-list/size-2.png', alt='image description')
-                                .col-xs-12.col-sm-4
-                                    strong.product-name Моторное масло SHELL HELIX HX7 10W-40 1л.
-                                    span код товара 89403
-                                .col-xs-12.col-sm-2
-                                    strong.price 599,00 грн 
-                                .col-xs-12.col-sm-2
-                                    .count
-                                        span.minus -
-                                        span.number 3
-                                        span.plus +
-                                .col-xs-12.col-sm-2
-                                    strong.price 599,00 грн 
-                                    a(href='#')
-                                        i.fa.fa-close
-                            .row.border
-                                .col-xs-12.col-sm-2
-                                    .img-holder
-                                        img(src='images/product-list/size-2.png', alt='image description')
-                                .col-xs-12.col-sm-4
-                                    strong.product-name Моторное масло SHELL HELIX HX7 10W-40 1л.
-                                    span код товара 89403
-                                .col-xs-12.col-sm-2
-                                    strong.price 599,00 грн 
-                                .col-xs-12.col-sm-2
-                                    .count
-                                        span.minus -
-                                        span.number 3
-                                        span.plus +
-                                .col-xs-12.col-sm-2
-                                    strong.price 599,00 грн 
-                                    a(href='#')
-                                        i.fa.fa-close
-                            .row.border
-                                .col-xs-12.col-sm-2
-                                    .img-holder
-                                        img(src='images/product-list/size-2.png', alt='image description')
-                                .col-xs-12.col-sm-4
-                                    strong.product-name Моторное масло SHELL HELIX HX7 10W-40 1л.
-                                    span код товара 89403
-                                .col-xs-12.col-sm-2
-                                    strong.price 599,00 грн 
-                                .col-xs-12.col-sm-2
-                                    .count
-                                        span.minus -
-                                        span.number 3
-                                        span.plus +
-                                .col-xs-12.col-sm-2
-                                    strong.price 599,00 грн 
-                                    a(href='#')
-                                        i.fa.fa-close
+                            .row
+                                .table-responsive
+                                    table.table
+                                        tr
+                                            th Товар
+                                            th Цена
+                                            th Количество
+                                            th Всего
+                                        tr.tr-item
+                                            td.td-holder
+                                                .img-holder
+                                                    img(src='images/product-list/size-2.png', alt='image description')
+                                                .description-holder
+                                                    strong.product-name Моторное масло SHELL HELIX HX7 10W-40 1л.
+                                                    span код товара 89403
+                                            td
+                                                strong.price 599,00 грн 
+                                            td
+                                                .count
+                                                    span.minus -
+                                                    span.number 3
+                                                    span.plus +
+                                            td
+                                                strong.price 599,00 грн 
+                                                a(href='#')
+                                                    i.fa.fa-close
+                                        tr.tr-item
+                                            td.td-holder
+                                                .img-holder
+                                                    img(src='images/product-list/size-2.png', alt='image description')
+                                                .description-holder
+                                                    strong.product-name Моторное масло SHELL HELIX HX7 10W-40 1л.
+                                                    span код товара 89403
+                                            td
+                                                strong.price 599,00 грн 
+                                            td
+                                                .count
+                                                    span.minus -
+                                                    span.number 3
+                                                    span.plus +
+                                            td
+                                                strong.price 599,00 грн 
+                                                a(href='#')
+                                                    i.fa.fa-close
+                                        tr.tr-item
+                                            td.td-holder
+                                                .img-holder
+                                                    img(src='images/product-list/size-2.png', alt='image description')
+                                                .description-holder
+                                                    strong.product-name Моторное масло SHELL HELIX HX7 10W-40 1л.
+                                                    span код товара 89403
+                                            td
+                                                strong.price 599,00 грн 
+                                            td
+                                                .count
+                                                    span.minus -
+                                                    span.number 3
+                                                    span.plus +
+                                            td
+                                                strong.price 599,00 грн 
+                                                a(href='#')
+                                                    i.fa.fa-close
                             .row
                                 .col-md-6.col-xs-12
                                     form.coupon-form(action='#')
                                         fieldset
-                                            .mt-holder
+                                            .mt-holder.col-xs-6.col-md-12
                                                 input.form-control(type='text', placeholder='Введите промокод')
                                                 button(type='submit') Активировать
                                 .col-md-6.col-xs-12.confirm

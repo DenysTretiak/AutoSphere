@@ -655,10 +655,6 @@
     padding: 51px 30px; }
   .mt-detail-sec .block-holder {
     padding: 25px 30px; }
-  .mt-product-table .price {
-    padding: 71px 0 0; }
-  .mt-product-table .fa-close {
-    margin: 71px 0 0; }
   .mt-team-sec {
     padding: 0 0 40px; }
     .mt-team-sec .col {
@@ -1307,18 +1303,10 @@
       margin: 0 0 30px; }
       .mt-process-sec .process-list li:first-child {
         margin: 0 0 30px; }
-  .mt-product-table .product-name {
-    padding: 0; }
-  .mt-product-table .price {
-    padding: 20px 0 0; }
-  .mt-product-table .qyt-form {
-    padding: 20px 0 0; }
-  .mt-product-table .fa-close {
-    margin: 20px 0; }
   .mt-product-table .coupon-form .form-control {
     width: 100%;
-    float: none;
-    margin: 0 0 10px; }
+    margin: 0px 70px 20px 0;
+    display: inline-block; }
   .mt-team-sec {
     padding: 0; }
     .mt-team-sec .col {
@@ -1597,4 +1585,8 @@
   .mt-process-sec .process-list li:before {
     display: none; }
   .mt-detail-sec .block span {
-    font-size: 9px; } }
+    font-size: 9px; }
+  .related-products .mt-product1 {
+    width: 45%; }
+  .mt-about-sec .reviews-container {
+    width: 90%; } }

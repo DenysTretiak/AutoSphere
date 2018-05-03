@@ -1065,6 +1065,7 @@
 			td{
 				vertical-align: middle;
 				padding:10px;
+				white-space: nowrap;
 				.btn{
 					border-color:$colorGray;
 					&.active{
@@ -1148,6 +1149,8 @@
 			display: flex;
 			justify-content: space-around;
 			align-items: baseline;
+			flex-wrap:wrap;
+			text-align: center;
 			padding: 30px 0 10px 0;
 			border-bottom: 1px solid #ddd;
 			span{
@@ -1227,7 +1230,8 @@
 				}
 			}
 			.link{
-				margin-right:80px;
+				margin:0 80px 10px 0;
+				display: inline-block;
 			}
 			p{
 				margin-top:20px;
@@ -1434,6 +1438,9 @@
 			border-radius:50%;
 			margin-right:5px;
 		}
+	}
+	.checkout-h2{
+		@include font(18px, 20px)
 	}
 	.is-registered{
 		width:70%;
@@ -1738,34 +1745,29 @@
 .mt-product-table{
 	padding: 40px 0;
 	@extend %clearfix;
-	.border{
-		border-style: solid;
-		border-width: 0 0 1px;
-		border-color: $clr-38;
-		.count{
-			padding: 81px 0 0;
-			span{
-				padding:5px 10px;
-				border:2px solid #f8f8f8;
-			}
-			.plus{
-				color: $colorBlue;
-				font-weight: bold;
-				border-left:none;
-				font-size:20px;
-				cursor: pointer; 
-			}
-			.minus{
-				border-right:none;
-				cursor: pointer;
-				font-weight: bold;
-				font-size:20px;
-			}
-			.number{
-				padding: 10px;
-			}
+	
+	.count{
+		display: inline-block;
+		span{
+			padding:5px 10px;
+			border:2px solid #f8f8f8;
 		}
-		
+		.plus{
+			color: $colorBlue;
+			font-weight: bold;
+			border-left:none;
+			font-size:20px;
+			cursor: pointer; 
+		}
+		.minus{
+			border-right:none;
+			cursor: pointer;
+			font-weight: bold;
+			font-size:20px;
+		}
+		.number{
+			padding: 10px 10px 7px;
+		}	
 		
 	}
 	.confirm{
@@ -1779,7 +1781,6 @@
 			color:#fff;
 			font-weight: bold;
 			margin-left:20px;
-			width:40%;
 			font-size:18px;
 		}
 		.total{
@@ -1797,23 +1798,20 @@
 	}
 	.img-holder{
 		width: 106px;
+		display: inline-block;
 		overflow: hidden;
-		padding: 25px 0 22px;
 	}
 	.product-name{
 		@include font(18px, 20px);
 		display: block;
-		padding: 69px 0 10px;
 		color: $clr-17;
 	}
 	.price{
 		@include font(18px, 20px);
 		float: left;
-		padding: 81px 0 0;
 		color: $clr-30;
 	}
 	.qyt-form{
-		padding: 69px 0 0;
 		select{
 			@include font(18px, 20px);
 			font-weight: 700;
@@ -1827,7 +1825,6 @@
 	.fa-close{
 		@include font(18px, 20px);
 		float: right;
-		margin: 81px 0 0;
 		color: #f05c5c;
 		@include transition (all, 0.4s, linear);
 		&:hover{color: $clr-30;}
@@ -1859,12 +1856,32 @@
 			border-radius: 30px;
 			outline: none;
 			background: #fff;
-			display: block;
+			display: inline-block;
 			text-align: center;
 			padding: 16px 10px 13px 7px;
-			float: left;
 			transition: all 0.25s linear;
 			color: rgb(49,49,49);
+		}
+	}
+	table{
+		td{
+			vertical-align: middle !important;
+			position: relative;
+			&.td-holder{
+				display: flex;
+				align-items: center;
+				.description-holder{
+					margin-left:50px;
+				}
+			}
+			a{
+				position: absolute;
+				top:20px;
+				right:20px;
+			} 
+		}
+		th{
+			border:none !important;
 		}
 	}
 }
@@ -1940,21 +1957,6 @@
 		margin: 0 0 11px;
 		overflow: hidden;
 	}
-	.mt-star{
-		padding: 0;
-		color: #e6c376;
-		font-size: 14px;
-		overflow: hidden;
-		list-style: none;
-		margin: 0 17px 0 0;
-		display: inline-block;
-		vertical-align:middle;
-		li{
-			float: left;
-			margin: 0 2px 0 0;
-		}
-		.fa-star-o{color: #d6d6d6;}
-	}
 	.name{
 		color: #aaa;
 		margin: 0 24px 0 0;
@@ -2016,6 +2018,21 @@
 	.btn-type4{
 		margin: 0 0 0 80px;
 	}
+}
+.mt-star{
+	padding: 0;
+	color: #e6c376;
+	font-size: 14px;
+	overflow: hidden;
+	list-style: none;
+	margin: 0 17px 0 0;
+	display: inline-block;
+	vertical-align:middle;
+	li{
+		float: left;
+		margin: 0 2px 0 0;
+	}
+	.fa-star-o{color: #d6d6d6;}
 }
 /*------------------------------------------------------------------
 38. related products / .related-products
@@ -2264,7 +2281,6 @@
 		}
 	}
 	.price{
-		display: block;
 		@include font(22px, 23px);
 		color: $black;
 		font-weight: 600;

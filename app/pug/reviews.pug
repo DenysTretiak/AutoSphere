@@ -1,0 +1,87 @@
+doctype html
+html(lang='en')
+    include modules/header/head
+    body
+        // main container of all the page elements
+        #wrapper
+            // Page Loader
+            #pre-loader.loader-container
+                .loader
+                    img(src='images/svg/rings.svg', alt='loader')
+            .w1
+                // mt -header style14 start from here
+                include modules/header/header
+                // Main of the Page
+                main#mt-main
+                    section.mt-about-sec.wow.fadeInUp(data-wow-delay='0.4s')
+                        .container-fluid
+                            .row
+                                .col-xs-12
+                                    .nav.breadcrumbs
+                                        ul.list-unstyled
+                                            li
+                                                a(href="#")
+                                                | Главная
+                                                i.fa.fa-circle
+                                            li Отзывы
+                                    .txt
+                                        h2.text-center Отзывы
+                                    .reviews-container.mt-comments-section
+                                        h3 Добавить отзыв
+                                        form(return false)
+                                            img(src="images/main-page/blog3.png")
+                                            .review-data
+                                                span.name Имя: Олександр
+                                                ul.mt-star
+                                                    li.text Оценка:
+                                                    li
+                                                        i.fa.fa-star
+                                                    li
+                                                        i.fa.fa-star
+                                                    li
+                                                        i.fa.fa-star-o
+                                                    li
+                                                        i.fa.fa-star-o
+                                            .comment-field
+                                                textarea(name="review", cols="80", rows="5") текст
+                                                a(href="#")
+                                                    i.fa.fa-paperclip
+                                            input.btn(type='submit' value="Добавить")
+                                        ul.list-unstyled
+                                            li.comment-li
+                                                .img-box
+                                                    img(src="images/main-page/blog3.png")
+                                                .li-txt
+                                                    .txt
+                                                        h3 Александр
+                                                        time.mt-time(datetime='2016-02-03 20:00') 4 мая 2018
+                                                    ul.mt-star
+                                                        li.text Оценка:
+                                                        li
+                                                            i.fa.fa-star
+                                                        li
+                                                            i.fa.fa-star
+                                                        li
+                                                            i.fa.fa-star-o
+                                                        li
+                                                            i.fa.fa-star-o
+                                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                        .show-more
+                                            btn.show-more-btn Показать еще отзывы
+                                        nav.mt-pagination.mt-pagination-blog
+                                            ul.list-inline
+                                                li.active
+                                                    a(href='#') 1
+                                                li
+                                                    a(href='#') 2
+                                                li
+                                                    a(href='#') 3
+                                                li
+                                                    a(href='#') 4
+                                                li
+                                                    a.next(href='#')
+                                                        i.fa.fa-angle-right
+                include modules/footer/footer 
+            span#back-top.fa.fa-arrow-up
+        // include jQuery
+        include modules/footer/scripts

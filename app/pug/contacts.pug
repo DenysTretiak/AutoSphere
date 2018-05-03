@@ -1,0 +1,72 @@
+doctype html
+html(lang='en')
+  include modules/header/head
+  body
+    // main container of all the page elements
+    #wrapper
+      // Page Loader
+      #pre-loader.loader-container
+        .loader
+          img(src='images/svg/rings.svg', alt='loader')
+      .w1
+        include modules/header/header
+        main#mt-main
+          section.breadcrumbs
+            .container-fluid
+              .row
+                .col-xs-12
+                  nav.breadcrumbs
+                      ul.list-unstyled
+                        li
+                        a(href='index.html')
+                          | Главная 
+                          i.fa.fa-circle
+                        li Контакты
+                  .txt
+                    h1.text-center 
+                      strong Контакты
+          section.mt-contact-detail.content-info.wow.fadeInUp(data-wow-delay='0.4s')
+            .container-fluid
+              .row
+                .col-xs-12.col-sm-8
+                  .txt-wrap
+                    h2 Интернет-магазин автозапчастей AUTO SPHERE
+                    p
+                      | Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                      br
+                      | enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                      br
+                      | aliquip ex ea commodo consequat.
+                  ul.list-unstyled.contact-txt
+                    li
+                      strong Адрес
+                      address
+                        | Украина, Киев,
+                        br 
+                        | Днепровская набережная,  26 
+        
+                    li
+                      strong Телефон
+                      ul
+                        li
+                          a(href='tel:380505838151') +38050583-81-51
+                        li
+                          a(href='tel:380961954021') +38096195-40-21
+                    li
+                      strong Email
+                      a(href='#') info@schon.chair
+                .col-xs-12.col-sm-4
+                  h2 Задайте нам вопрос
+                  // Contact Form of the Page
+                  form.contact-form(action='#')
+                    fieldset
+                      input.form-control(type='text', placeholder='Имя и фамилия')
+                      input.form-control(type='email', placeholder='EMail')
+                      textarea.form-control(placeholder='Комментарий')
+                      button.btn-type3(type='submit') Отправить
+          .mt-map-holder.wow.fadeInUp(data-wow-delay='0.4s', data-lat='52.392363', data-lng='1.480408', data-zoom='8')
+            .map-info
+              iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325515.69299330976!2d30.25181720536443!3d50.40213509915403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1524858975305" width="1000" height="450" frameborder="0" style="border:0" allowfullscreen)
+        include modules/footer/footer
+    span#back-top.fa.fa-arrow-up
+include modules/footer/scripts

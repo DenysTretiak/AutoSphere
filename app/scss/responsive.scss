@@ -674,10 +674,6 @@
 		}
 		.block-holder{ padding: 25px 30px;}
 	}
-	.mt-product-table{
-		.price{ padding: 71px 0 0; }
-		.fa-close{ margin: 71px 0 0;}
-	}
 	.mt-team-sec{
 		padding: 0 0 40px;
 		.col{
@@ -1365,15 +1361,11 @@
 		}
 	}
 	.mt-product-table{
-		.product-name{ padding: 0; }
-		.price{ padding: 20px 0 0;}
-		.qyt-form{ padding: 20px 0 0;}
-		.fa-close{ margin: 20px 0;}
 		.coupon-form{
 			.form-control{
 				width: 100%;
-				float: none;
-				margin: 0 0 10px;
+				margin: 0px 70px 20px 0;
+				display: inline-block;
 			}
 		}
 	}
@@ -1686,6 +1678,15 @@
 				font-size:9px;
 			}
 		}
+	}
+	.related-products{
+		.mt-product1 {
+			width:45%;
+		}
 	} 
-	 
+	.mt-about-sec{
+		.reviews-container{
+			width:90%;
+		} 
+	} 
 }

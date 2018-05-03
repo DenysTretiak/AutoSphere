@@ -1767,16 +1767,15 @@ a:hover{
 }
 .btn-type3{
 	outline: none;
-	color: $white;
+	color: rgb(51,51,51);
 	padding: 9px 20px;
-	background: $black;
+	background: #fff;
 	@extend %transition;
-	border-radius: 21px;
+	border-radius: 5px;
 	vertical-align: top;
 	display: inline-block;
-	border: 1px solid $black;
-	text-transform: uppercase;
-	font: 300 14px/20px $source-sans-pro;
+	border: 1px solid $colorBlue;
+	font: 300 14px/20px 'Montserrat';
 	&:focus,
 	&:hover{
 		color: $black;
