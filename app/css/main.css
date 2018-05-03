@@ -9513,27 +9513,38 @@ label {
     margin: 0 0 0 30px; }
     .profile-page .profile-data img {
       width: 113px; }
-    .profile-page .profile-data .table-responsive {
+    .profile-page .profile-data.settings-container .table-responsive {
       margin-left: 45px; }
-      .profile-page .profile-data .table-responsive tr td {
+      .profile-page .profile-data.settings-container .table-responsive tr td {
         padding: 0 0 25px;
         font-size: 16px; }
-        .profile-page .profile-data .table-responsive tr td:first-child {
+        .profile-page .profile-data.settings-container .table-responsive tr td:first-child {
           text-align: right; }
-        .profile-page .profile-data .table-responsive tr td:nth-child(2) {
+        .profile-page .profile-data.settings-container .table-responsive tr td:nth-child(2) {
           color: #535353;
           padding: 0 25px 30px; }
-      .profile-page .profile-data .table-responsive li {
+      .profile-page .profile-data.settings-container .table-responsive li {
         padding: 0 0 10px;
         display: flex;
         justify-content: space-around;
         align-items: middle;
         border: none;
         font-size: 16px; }
-        .profile-page .profile-data .table-responsive li span {
+        .profile-page .profile-data.settings-container .table-responsive li span {
           margin: 0 10px;
           color: #535353; }
     .profile-page .profile-data a {
       font-size: 11px;
       font-weight: normal;
       border-bottom: 1px solid #9c9c9c; }
+    .profile-page .profile-data.orders-container .table-responsive {
+      margin: 0; }
+      .profile-page .profile-data.orders-container .table-responsive th, .profile-page .profile-data.orders-container .table-responsive td {
+        padding: 0 0 15px 0;
+        font-size: 16px;
+        vertical-align: top;
+        text-align: left; }
+      .profile-page .profile-data.orders-container .table-responsive td {
+        padding: 15px 20px 15px 0; }
+      .profile-page .profile-data.orders-container .table-responsive th {
+        color: #535353; }

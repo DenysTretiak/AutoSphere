@@ -17,7 +17,7 @@ html(lang='en')
                         .container-fluid
                             .row
                                 .col-xs-12
-                                    section.profile-page.settings-container
+                                    section.profile-page
                                         h2.text-center Личный кабинет
                                         .row
                                             .col-md-3.profile-nav
@@ -28,27 +28,27 @@ html(lang='en')
                                                         a(href="#") Мои заказы
                                                     li
                                                         a(href="#") Список избранного
-                                            .col-md-8.profile-data
-                                                .img-container.text-center
-                                                    img(src="images/blog/blogpost_comments.png", alt="profile-image")
-                                                    a(href="#") Изменить фото
+                                            .col-md-8.profile-data.orders-container
                                                 .table-responsive
                                                     table
                                                         tr
-                                                            td Ваше имя:
-                                                            td Александр Иванов
-                                                            td
-                                                                a(href="#") Изменить
+                                                            th Код заказа
+                                                            th Товар
+                                                            th Дата заказа
+                                                            th Сумма заказа
+                                                            th Статус
                                                         tr
-                                                            td Телефон:
-                                                            td +380662536548
-                                                            td
-                                                                a(href="#") Изменить
+                                                            td 99999999
+                                                            td Моторное масло SHELL HELIX HX7 10W-40 1л
+                                                            td 30.07.2018
+                                                            td 20 786 грн.
+                                                            td В обработке
                                                         tr
-                                                            td Электронная почта: 
-                                                            td alex@gmail.com
-                                                            td
-                                                                a(href="#") Изменить
+                                                            td 99999999
+                                                            td Моторное масло SHELL HELIX HX7 10W-40 1л
+                                                            td 30.07.2018
+                                                            td 20 786 грн.
+                                                            td В обработке
                 include modules/footer/footer 
             span#back-top.fa.fa-arrow-up
         include modules/footer/scripts
