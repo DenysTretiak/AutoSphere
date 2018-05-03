@@ -1,0 +1,61 @@
+doctype html
+html(lang='en')
+    include modules/header/head
+    body
+        // main container of all the page elements
+        #wrapper
+            // Page Loader
+            #pre-loader.loader-container
+                .loader
+                    img(src='images/svg/rings.svg', alt='loader')
+            .w1
+                // mt -header style14 start from here
+                include modules/header/header
+                // Main of the Page
+                main#mt-main
+                    section.wow.fadeInUp(data-wow-delay='0.4s')
+                        .container-fluid
+                            .row
+                                .col-xs-12
+                                    section.profile-page
+                                        h2.text-center Личный кабинет
+                                        .row
+                                            .col-md-3.profile-nav
+                                                ul
+                                                    li
+                                                        a(href="#") Мои настройки
+                                                    li
+                                                        a(href="#") Мои заказы
+                                                    li.active
+                                                        a(href="#") Список избранного
+                                            .col-md-8.profile-data.favourite-container
+                                                .product-post
+                                                    // img holder start here
+                                                    .img-holder
+                                                        img(src='images/product-list/size-2.png', alt='image description')
+                                                    .txt-holder
+                                                        .align-left
+                                                            strong.title
+                                                                a(href='product-detail.html') Моторное масло SHELL HELIX HX7 10W-40 1л.
+                                                            span.price 399,00 грн
+                                                            p
+                                                                | Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.
+                                                        .align-right
+                                                            ul.list-unstyled.rating-list
+                                                                li.active
+                                                                    a(href='#')
+                                                                        i.fa.fa-star
+                                                                li.active
+                                                                    a(href='#')
+                                                                        i.fa.fa-star
+                                                                li.active
+                                                                    a(href='#')
+                                                                        i.fa.fa-star
+                                                                li
+                                                                    a(href='#')
+                                                                        i.fa.fa-star-o
+                                                                li Оценок (12)
+                                                            a.btn-cart(href='#') В корзину
+                include modules/footer/footer 
+            span#back-top.fa.fa-arrow-up
+        include modules/footer/scripts

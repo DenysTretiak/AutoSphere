@@ -416,7 +416,7 @@ label{
 }
 
 .profile-page{
-	padding: 50px 0 250px;
+	padding: 50px 0 200px;
 	ul{
 		margin:0;
 		padding: 0;
@@ -470,13 +470,13 @@ label{
 					}
 				}
 			}
+			a{
+				font-size: 11px;
+				font-weight: normal;
+				border-bottom:1px solid #9c9c9c;
+			}
 		}
 		
-		a{
-			font-size: 11px;
-			font-weight: normal;
-			border-bottom:1px solid #9c9c9c;
-		}
 		&.orders-container{
 			.table-responsive{
 				margin:0;
@@ -491,6 +491,19 @@ label{
 				}
 				th{
 					color:#535353;
+				}
+			}
+		}
+		&.favourite-container{
+			display: block;
+			img{
+				width:auto;
+			}
+			.product-post {
+				.rating-list{
+					li{
+						border:0;
+					}
 				}
 			}
 		}

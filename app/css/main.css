@@ -9495,7 +9495,7 @@ label {
   display: inline; }
 
 .profile-page {
-  padding: 50px 0 250px; }
+  padding: 50px 0 200px; }
   .profile-page ul {
     margin: 0;
     padding: 0; }
@@ -9533,7 +9533,7 @@ label {
         .profile-page .profile-data.settings-container .table-responsive li span {
           margin: 0 10px;
           color: #535353; }
-    .profile-page .profile-data a {
+    .profile-page .profile-data.settings-container a {
       font-size: 11px;
       font-weight: normal;
       border-bottom: 1px solid #9c9c9c; }
@@ -9548,3 +9548,9 @@ label {
         padding: 15px 20px 15px 0; }
       .profile-page .profile-data.orders-container .table-responsive th {
         color: #535353; }
+    .profile-page .profile-data.favourite-container {
+      display: block; }
+      .profile-page .profile-data.favourite-container img {
+        width: auto; }
+      .profile-page .profile-data.favourite-container .product-post .rating-list li {
+        border: 0; }
